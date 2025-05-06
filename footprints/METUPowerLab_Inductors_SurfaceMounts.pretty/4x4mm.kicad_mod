@@ -1,0 +1,112 @@
+(footprint "4x4mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "4*4mm")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bf0b1af2-6dbf-43dc-892c-20ddfebcb45c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "4*4mm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af99456d-0942-4624-aedb-6dbbc36b4c68")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4a7c1ee9-62d2-4baf-97ed-8147172a0f1f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "4*4mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11bced27-02f2-445c-a922-c3fe9419badd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 0)
+		(end 4 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "565be807-08dc-4a99-9f9b-5b6ebc476e2b")
+	)
+	(fp_line
+		(start 4 -4)
+		(end 0 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7ad17a39-3c32-4aa4-9055-a245e0525cd5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "8752e1f5-4532-4230-b4cc-b5e6215b291e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+			(justify left)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0.1 -2)
+		(size 1.5 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "86d87056-a55e-4e1a-8a43-40184b2e1baa")
+	)
+	(pad "2" smd roundrect
+		(at 3.9 -2)
+		(size 1.5 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "9cfad3e9-e5fd-4d0d-b2d5-6886a597f33c")
+	)
+	(embedded_fonts no)
+)

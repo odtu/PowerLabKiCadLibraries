@@ -1,0 +1,101 @@
+(footprint "0603 Medium NS"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Capacitor 0603 Medium No Silkscreen")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "32c86166-4791-43ff-ac50-35ce4f99ed59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "0603 Medium No Silkscreen"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8f21a20e-dce3-4838-a179-3bb294593e5e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6cbba1d-0b5e-444c-86b2-de1dece93de6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Resistor 0603 Medium No Silkscreen"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2098d7ea-b447-48ce-897e-99f8d9bd22d4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at -0.5 0.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "aa5edca7-0d5f-4f7e-afe3-96b189f0d3da")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+			(justify left)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.15 -0.4)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "53d8a103-23e8-46d2-bd16-79f7e5cadb9f")
+	)
+	(pad "2" smd rect
+		(at 1.45 -0.4)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "8b84dea9-51f3-40cd-85b7-bf1f8acf6a1e")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Capacitors/Ceramics/SurfaceMounts/METUPowerLab_Capacitors_Ceramics_SurfaceMounts_0603.stp"
+		(offset
+			(xyz 0.8 0.4 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

@@ -1,0 +1,100 @@
+(footprint "0402 Small NS"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TVS Diode 0402 Small No Silkscreen")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5a049d23-b849-416d-bc06-41bc4bbe2082")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "0402 Small No Silkscreen"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "786e43e1-dc53-457a-94af-4cfd355e6ea3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9386f7f1-c8d5-4977-af68-82a223a64961")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "TVS Diode 0402 Small No Silkscreen"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e2e22a0b-d834-4a69-b94b-333b3ff5e85e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 2.5 0.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "c7a0397a-e8f8-43b2-8f29-e8309ef8f56f")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -0.3)
+		(size 0.4 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "adca72aa-c260-43d5-8888-e744f67b4a9b")
+	)
+	(pad "2" smd rect
+		(at 1 -0.3)
+		(size 0.4 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "8b0757f6-168e-4e59-a89a-a0b196423280")
+	)
+	(embedded_fonts no)
+	(model " ${METUPOWERLAB_3D}/Diodes/TVSDiodes/METUPowerLab_Diodes_TVSDiodes_0402.step "
+		(offset
+			(xyz 0.5 0.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

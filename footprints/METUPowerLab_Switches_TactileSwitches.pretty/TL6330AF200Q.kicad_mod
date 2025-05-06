@@ -1,0 +1,157 @@
+(footprint "TL6330AF200Q"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TL6330AF200Q")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c1ed8f72-66f5-4912-a7f7-0e30859279c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TL6330AF200Q"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d6e5600-09cc-494b-81d8-0f8ee9a08ad2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45186311-c73c-4bf3-b603-231ebf993b73")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "TL6330AF200Q"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1a1a617e-c031-4adc-80f7-fc6631b4ce11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 -1.8)
+		(end 0 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c3cdee4e-c02d-4687-9e7a-636ebe287255")
+	)
+	(fp_line
+		(start 0.3 0)
+		(end 3.2 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9b031356-f261-4c97-a8a9-7ebbcc3431b7")
+	)
+	(fp_line
+		(start 3.2 -2.8)
+		(end 0.5 -2.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cdcf98ef-d0ac-4893-8162-297be5c7897f")
+	)
+	(fp_line
+		(start 3.75 -1)
+		(end 3.75 -1.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a33ebe4a-35bb-4ddc-89c0-716de7d5e08c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "41d761fb-14c8-414f-b6ed-5345b582af0a")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.08)
+			)
+			(justify left)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.1 -0.45)
+		(size 0.7 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "83efe72a-9cef-4773-a01b-e7d73d221ba7")
+	)
+	(pad "1" smd rect
+		(at 3.8 -0.45)
+		(size 0.7 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "f0c9a684-17a2-4f8d-8d7f-60d00d114ab9")
+	)
+	(pad "2" smd rect
+		(at -0.1 -2.35)
+		(size 0.7 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "116aba0a-cb2d-4a08-8955-1e2190cdf677")
+	)
+	(pad "2" smd rect
+		(at 3.8 -2.35)
+		(size 0.7 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "f33afd7a-f935-44fd-a6c7-93404a77a0e6")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Switches/TactileSwitches/METUPowerLab_SwitchesTactile_TL6330AF200Q.step"
+		(offset
+			(xyz 1.875 1.4 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

@@ -1,0 +1,101 @@
+(footprint "0603 Large NS"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Ferrite Bead 0603 Large No Silkscreen")
+	(property "Reference" "REF**"
+		(at 0 -0.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9ad58a6d-dcd9-49aa-9d51-9a44780dc6ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "0603 Large No Silkscreen"
+		(at -0.1 0.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e44e1047-671d-4030-9478-02616e9dd8b0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d97fad90-b6a2-43ee-917a-ec2737f3c7da")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Ferrite Bead 0603 Large No Silkscreen"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b30c31ef-c795-4ffa-8309-ab40c70a12a4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at -0.5 0.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6bdf641d-71b1-43ed-8d22-f5a7c03a7523")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+			(justify left)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -0.4)
+		(size 1 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "f8ba4eb4-04d3-41f4-82f1-a94bd2378a3c")
+	)
+	(pad "2" smd rect
+		(at 1.6 -0.4)
+		(size 1 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "20e1a77d-44a8-4ca7-8b8f-e65eaf092501")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/CircuitProtections/FerriteBeads/METUPowerLab_CircuitProtections_FerriteBeads_0603.stp"
+		(offset
+			(xyz 0.8 0.4 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
