@@ -8,7 +8,7 @@ KiCad Advenced Footprint, Symbol & 3D Libraries
 
 #### Step 1:
 
-Download the repository with [here](https://github.com/odtu/PowerLabKiCadLibraries/archive/refs/heads/main.zip) and unzipped.
+Download the repository with [here](https://github.com/odtu/PowerLabKiCadLibraries/archive/refs/heads/main.zip) and unzip it.
 
 #### Step 2:
 
