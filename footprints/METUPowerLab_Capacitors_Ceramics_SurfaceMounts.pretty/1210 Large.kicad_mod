@@ -1,0 +1,140 @@
+(footprint "1210 Large"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Capacitor 1210 Large")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7dfb8fa5-3c6e-49e2-89a5-84d33c316d60")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Capacitor 1210 Large"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fa4d07e5-4661-4ea4-b85b-c424318b00ae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "44c79f0f-343f-4821-ae7b-970e32bf2c82")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Capacitor 1210 Large"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef2403de-e9ba-42b4-9a01-1141bc8707aa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1 -2.7)
+		(end 4.2 -2.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "744da12c-58ee-4f4e-a2af-6a113e5d5060")
+	)
+	(fp_line
+		(start -1 0.2)
+		(end -1 -2.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "931f8e51-2b80-47d6-bd3b-127ef7a87af2")
+	)
+	(fp_line
+		(start 4.2 -2.7)
+		(end 4.2 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c41f4ae5-3a8e-4ee4-8ddf-55fcdeca5603")
+	)
+	(fp_line
+		(start 4.2 0.2)
+		(end -1 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6433a625-00b2-4a91-ac1e-51a3b864f928")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.9 1.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "38ab2642-34fd-44b3-94cf-064acc86b1bc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.1 -1.25 180)
+		(size 1.7 2.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "d170b72b-b4b2-4233-8ad0-9ff74af8461d")
+	)
+	(pad "2" smd rect
+		(at 3.1 -1.25 180)
+		(size 1.7 2.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "75e09f15-9b10-4ef3-96d5-77fce3473d64")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Capacitors/Ceramics/SurfaceMounts/METUPowerLab_Capacitors_Ceramics_SurfaceMounts_1210.stp"
+		(offset
+			(xyz 1.6 1.25 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
