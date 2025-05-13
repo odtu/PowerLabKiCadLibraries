@@ -60,6 +60,24 @@ As the last stage, file paths named "METUPOWERLAB_3D, METUPOWERLAB_FOOTPRINTS, M
 
 ---
 
-An informational text on how to add updates and create new designs (only for the Power Lab team) will be shared soon.
+### How to import library updates to KiCad?
 
+Our library is quite dynamic and unfortunately there is no way for us to automatically import this movement to your computer, but you can do this at intervals with short steps.
 
+![image](/assets/update.png)
+
+#### Step 1:
+
+After opening our library in Plugin and Content Manager on KiCad, the new version is downloaded by clicking Download.
+
+#### Step 2:
+
+Afterwards, the old version is removed by clicking Uninstall and Apply Pending Changes respectively.
+
+#### Step 3:
+
+Finally, the new downloaded version is imported by clicking Install from File, just like the first installation.
+
+---
+
+Please contact [Ekrem](https://github.com/ekremturanfirat) if you have any problems.
