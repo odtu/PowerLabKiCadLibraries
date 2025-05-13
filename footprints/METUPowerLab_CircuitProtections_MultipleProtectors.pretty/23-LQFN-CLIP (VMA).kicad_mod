@@ -527,4 +527,26 @@
 		(uuid "e56809ce-2552-4d77-8ebc-d45c7fb0982b")
 	)
 	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/CircuitProtections/MultipleProtectors/METUPowerLab_CircuitPrtections_MultipleProtectors_23-LQFN_CLIP(VMA).stp"
+		(offset
+			(xyz 3 2.5 1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 -0 -0)
+		)
+	)
+	(model "${METUPOWERLAB_3D}/CircuitProtections/MultipleProtectors/METUPowerLab_CircuitPrtections_MultipleProtectors_23-LQFN_CLIP(VMA)-PTPS16890VMAR.step"
+		(offset
+			(xyz 3 2.5 1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 -0 -0)
+		)
+	)
 )
