@@ -1,0 +1,199 @@
+(footprint "6x6mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "6*6mm")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "beebd3ee-68bf-4a8c-9516-a87662018dd4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "6*6mm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dbf9bbbc-4ba1-461c-a328-298caa038631")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "15d41f97-bb73-44e5-add4-e916936ae0ab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "6*6mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0019daaf-f2cc-4580-9ebe-92a2a631efa8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 -6)
+		(end 6 -6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "855db6d2-7050-43cf-8850-b49bbae98961")
+	)
+	(fp_line
+		(start 0 -5.6)
+		(end 0 -6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8aa17da1-068e-4748-8ae9-89c5229f36aa")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 -0.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "447f9f87-abab-4243-8387-16ccc234371c")
+	)
+	(fp_line
+		(start 6 -5.6)
+		(end 6 -6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4c7e1676-c5b2-42e9-8f6d-67dc4685c9e5")
+	)
+	(fp_line
+		(start 6 -0.4)
+		(end 6 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a7fe72a9-a8a8-42c9-a21b-44b820d01d1a")
+	)
+	(fp_line
+		(start 6 0)
+		(end 0 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3459c555-9729-4494-82d0-c17c248d347f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.1 1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d9018580-1a3d-4fac-a095-0bc806eb7ed2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left)
+		)
+	)
+	(pad "1" smd rect
+		(at 0.1 -3)
+		(size 3 4.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "ada99883-24e4-4e3a-9b3a-d7f1df68e087")
+	)
+	(pad "2" smd rect
+		(at 5.9 -3)
+		(size 3 4.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "f1f217c2-dd6e-4857-9e69-6fedeeac630b")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
+			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
+			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
+			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
+			"In29.Cu" "In30.Cu"
+		)
+		(uuid "6322d7a0-c3ba-42b9-ac02-b026f4449585")
+		(name "Copper Keep Out")
+		(hatch full 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 1.8 0) (xy 1.8 -6) (xy 4.2 -6) (xy 4.2 0)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_6_6mm.step"
+		(offset
+			(xyz 3 3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
