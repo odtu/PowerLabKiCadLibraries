@@ -54,8 +54,7 @@ When you return to the home page, click on "Preferences" and then "Configure Pat
 
 #### Step 9:
 
-As the last stage, file paths named "METUPOWERLAB_3D, METUPOWERLAB_FOOTPRINTS, METUPOWERLAB_SYMBOLS" are created. The created file paths are found in our folders added from KiCad/3rdparty in the Documents folder as in the image and the process is completed.
-
+As the last stage, file paths named " METUPOWERLAB_3D " ,  " METUPOWERLAB_FOOTPRINTS " ,  " METUPOWERLAB_SYMBOLS " should be created. First, press the "+" icon at the bottom left corner. Then copy and paste the names provided above (which can also be seen in the picture below). After creating the names, click on the empty "path" boxes near them. When you click, a "gray file symbol" will appear from where we will select our paths. After clicking the file symbol, a file explorer window will open. The created file paths are found in "C:\Users\user\Documents\KiCad\9.0\3rdparty" as in the image below. (The file paths should not be exactly the same. Find the similar file paths on your computer where the Kicad folders are located.) And the process is completed.
 ![image](/assets/step9.png)
 
 ---
