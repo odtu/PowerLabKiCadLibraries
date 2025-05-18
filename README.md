@@ -54,7 +54,10 @@ When you return to the home page, click on "Preferences" and then "Configure Pat
 
 #### Step 9:
 
-As the last stage, file paths named " METUPOWERLAB_3D " ,  " METUPOWERLAB_FOOTPRINTS " ,  " METUPOWERLAB_SYMBOLS " should be created. First, press the "+" icon at the bottom left corner. Then copy and paste the names provided above (which can also be seen in the picture below). After creating the names, click on the empty "path" boxes near them. When you click, a "gray file symbol" will appear from where we will select our paths. After clicking the file symbol, a file explorer window will open. The created file paths are found in "C:\Users\user\Documents\KiCad\9.0\3rdparty" as in the image below. (The file paths should not be exactly the same. Find the similar file paths on your computer where the Kicad folders are located.) And the process is completed.
+As the last stage, file paths named " METUPOWERLAB_3D " ,  " METUPOWERLAB_FOOTPRINTS " ,  " METUPOWERLAB_SYMBOLS " should be created. First, press the "+" icon at the bottom left corner. Then copy and paste the names provided above (which can also be seen in the picture below). After creating the names, click on the empty "path" boxes near them. When you click, a "gray file symbol" will appear from where we will select our paths. After clicking the file symbol, a file explorer window will open. The created file paths are found in "C:\Users\user\Documents\KiCad\9.0\3rdparty" as in the image below. (The file paths should not be exactly the same. Find the similar file paths on your computer where the Kicad folders are located.) And the process is completed.+
+
+![Ekran görüntüsü 2025-05-18 195941](https://github.com/user-attachments/assets/d992c191-a354-4046-9254-68afb7f58b72)
+
 ![image](/assets/step9.png)
 
 ---
