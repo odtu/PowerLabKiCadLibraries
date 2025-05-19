@@ -288,7 +288,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "3.3µH"
+	(symbol "2.2µH"
 		(pin_numbers
 			(hide yes)
 		)
@@ -306,7 +306,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3µH"
+		(property "Value" "2.2µH"
 			(at 0 -1.778 0)
 			(effects
 				(font
@@ -314,7 +314,7 @@
 				)
 			)
 		)
-		(property "Footprint" "METUPowerLab_Inductors_SurfaceMounts:4x4mm"
+		(property "Footprint" ""
 			(at 0 0 0)
 			(effects
 				(font
@@ -323,7 +323,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/610/NRS4018T3R3MDGJ_SS.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61A107ME20-01.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -332,7 +332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "2A Shielded Inductor"
+		(property "Description" "3.3A Shielded Inductor"
 			(at 0 0 0)
 			(effects
 				(font
@@ -341,7 +341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer " "Taiyo Yuden"
+		(property "Manufacturer " "Murata Electronics"
 			(at 0 0 0)
 			(effects
 				(font
@@ -350,7 +350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "NRS4018T3R3MDGJ"
+		(property "Manufacturer Number" "DFE322520F-2R2M=P2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -368,7 +368,7 @@
 				(hide yes)
 			)
 		)
-		(property "Current Rating" "2A"
+		(property "Current Rating" "3.3A"
 			(at 0 0 0)
 			(effects
 				(font
@@ -377,7 +377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Saturation Current" "2.3A"
+		(property "Saturation Current" "4.4A"
 			(at 0 0 0)
 			(effects
 				(font
@@ -395,7 +395,7 @@
 				(hide yes)
 			)
 		)
-		(property "DC Resistance" "66 mOhm"
+		(property "DC Resistance" "40mOhm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -413,7 +413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-25°C up to 120°C"
+		(property "Operating Temperature" "-40°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -422,7 +422,43 @@
 				(hide yes)
 			)
 		)
-		(symbol "3.3µH_0_1"
+		(property "Package" "1210 (3225 Metric) "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key Number" "490-DFE322520F-2R2M=P2CT-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Number" "81-DFE322520F2R2M=P2 "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell Number" "4062083 "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "2.2µH_0_1"
 			(arc
 				(start -2.54 0)
 				(mid -1.905 0.6323)
@@ -472,7 +508,7 @@
 				)
 			)
 		)
-		(symbol "3.3µH_1_1"
+		(symbol "2.2µH_1_1"
 			(polyline
 				(pts
 					(xy -3.175 -0.635) (xy -3.175 0.635)
@@ -796,88 +832,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "R"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "R"
-			(at 0 4.445 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "R_0_1"
-			(rectangle
-				(start -2.54 1.27)
-				(end 2.54 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "R_1_1"
-			(pin input line
-				(at -5.08 0 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
