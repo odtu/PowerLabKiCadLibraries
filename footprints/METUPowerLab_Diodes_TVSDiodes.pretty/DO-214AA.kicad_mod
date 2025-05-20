@@ -146,7 +146,7 @@
 		(uuid "ee4f4556-e05a-4b6e-b692-ec63999181d2")
 	)
 	(embedded_fonts no)
-	(model " ${METUPOWERLAB_3D}/Diodes/TVSDiodes/MergenElektronik_Diodes_TVSDiodes_DO-214AA.step"
+	(model "${METUPOWERLAB_3D}/Diodes/TVSDiodes/METUPowerLab_Diodes_TVSDiodes_DO-214AA.step"
 		(offset
 			(xyz 2.1 1.8 0)
 		)

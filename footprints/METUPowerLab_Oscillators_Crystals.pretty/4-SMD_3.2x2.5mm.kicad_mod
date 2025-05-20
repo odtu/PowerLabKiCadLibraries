@@ -153,7 +153,7 @@
 		(uuid "407896ba-336d-4f30-9a49-c70643c4430f")
 	)
 	(embedded_fonts no)
-	(model "METUPOWERLAB_3D/Oscillators/Crystals/METUPowerLab_Oscillators_Crystals_4-SMD_3.2x2.5mm.step"
+	(model "${METUPOWERLAB_3D}/Oscillators/Crystals/METUPowerLab_Oscillators_Crystals_4-SMD_3.2x2.5mm.step"
 		(offset
 			(xyz 1.6 1.25 0)
 		)
@@ -164,7 +164,7 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${METUPOWERLAB_3D]/Oscillators/Crystals/METUPowerLab_Oscillators_Crystals_4-SMD_3.2x2.5mm-830069882_.step"
+	(model "${METUPOWERLAB_3D}/Oscillators/Crystals/METUPowerLab_Oscillators_Crystals_4-SMD_3.2x2.5mm-830069882_.step"
 		(offset
 			(xyz 1.6 1.25 0)
 		)

@@ -86,7 +86,7 @@
 		(uuid "8b0757f6-168e-4e59-a89a-a0b196423280")
 	)
 	(embedded_fonts no)
-	(model " ${METUPOWERLAB_3D}/Diodes/TVSDiodes/METUPowerLab_Diodes_TVSDiodes_0402.step "
+	(model "${METUPOWERLAB_3D}/Diodes/TVSDiodes/METUPowerLab_Diodes_TVSDiodes_0402.step"
 		(offset
 			(xyz 0.5 0.3 0)
 		)

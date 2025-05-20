@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "METUPowerLab_Memories_EEPROM:SOT-23-6"
 			(at 0 0 0)
 			(effects
 				(font

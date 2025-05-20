@@ -515,7 +515,7 @@
 		(uuid "c40f6809-9e8f-472a-ba71-50a197310969")
 	)
 	(embedded_fonts no)
-	(model "${METUPOWERLAB_3D}Interfaces/USBBridges/METUPowerLab_Interfaces_USBBridges_48-LQFP_.step"
+	(model "${METUPOWERLAB_3D}/Interfaces/USBBridges/METUPowerLab_Interfaces_USBBridges_48-LQFP_.step"
 		(offset
 			(xyz 3.5 2.5 0)
 		)
@@ -526,7 +526,7 @@
 			(xyz -90 -0 -0)
 		)
 	)
-	(model "${METUPOWERLAB_3D}Interfaces/USBBridges/METUPowerLab_Interfaces_USBBridges_48-LQFP-FT232HL_.step"
+	(model "${METUPOWERLAB_3D}/Interfaces/USBBridges/METUPowerLab_Interfaces_USBBridges_48-LQFP-FT232HL.step"
 		(offset
 			(xyz 3.5 2.5 0)
 		)

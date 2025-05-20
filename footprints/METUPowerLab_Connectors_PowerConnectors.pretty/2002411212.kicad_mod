@@ -1,0 +1,200 @@
+(footprint "2002411212"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "2002411212")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "eb6c648e-81be-4222-8e2d-07160c11a14e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "2002411212"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "20c8c6ed-6d23-4354-9516-262e165a3528")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "93a115d9-26b5-45b1-b17c-567689288cb3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2002411212"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "392784fa-d9c3-42b6-9de5-591dafcc1fed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 -17)
+		(end 12 -17)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5a184420-26c7-4381-9b96-329cb5348778")
+	)
+	(fp_line
+		(start 0 -14.8)
+		(end 0 -17)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c9da204e-0fc3-44ed-9051-d29db3e1ba59")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 -14.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "52cc6618-7ace-4573-98e1-48c0bea78ed2")
+	)
+	(fp_line
+		(start 0 0)
+		(end 1.8 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "25fb59f1-526c-4b45-a5f3-dc145d8284c0")
+	)
+	(fp_line
+		(start 4.5 0)
+		(end 7.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "49b614d0-125e-497d-8f6c-5e7700f4f267")
+	)
+	(fp_line
+		(start 10.2 0)
+		(end 12 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6d5cae3d-be87-4b4e-8400-be64aba36eda")
+	)
+	(fp_line
+		(start 12 -17)
+		(end 12 -14.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b0953702-49a6-4c04-b185-c82d51f8882c")
+	)
+	(fp_line
+		(start 12 -14.8)
+		(end 0 -14.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8ecb030a-6d10-4bfc-95f3-6cb26ac82ae4")
+	)
+	(fp_line
+		(start 12 0)
+		(end 12 -14.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "42539410-fb58-4819-b438-253510fe1fc7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -1.6 -1.2 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "50f844c7-5685-4a8a-beb3-07e44fbbaa40")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 6 -6.5)
+		(size 3.5 3.5)
+		(drill 3.5)
+		(layers "F&B.Cu" "*.Mask" "Dwgs.User")
+		(solder_mask_margin 0.1)
+		(uuid "ab14ee66-042d-47bf-b5a9-73e434f3a008")
+	)
+	(pad "1" thru_hole circle
+		(at 3.17 1.1)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
+		(uuid "74dd932c-519d-41c6-94b7-0ac4b16be105")
+	)
+	(pad "2" thru_hole circle
+		(at 8.87 1.1)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
+		(uuid "ad33b7ea-0359-4f60-be58-0059d933dfa7")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Connectors/PowerConnectors/METUPowerLab_Connectors_PowerConnectors_2002411212.step"
+		(offset
+			(xyz 6 15 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 180)
+		)
+	)
+)

@@ -313,7 +313,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "402F2001XIAR_1"
+	(symbol "830069882"
 		(pin_names
 			(offset 1.016)
 			(hide yes)
@@ -481,7 +481,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "402F2001XIAR_1_0_1"
+		(symbol "830069882_0_1"
 			(polyline
 				(pts
 					(xy -2.54 0) (xy -1.905 0)
@@ -566,7 +566,7 @@
 				)
 			)
 		)
-		(symbol "402F2001XIAR_1_1_1"
+		(symbol "830069882_1_1"
 			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
