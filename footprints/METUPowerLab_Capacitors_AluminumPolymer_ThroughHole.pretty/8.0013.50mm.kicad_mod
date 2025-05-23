@@ -215,4 +215,15 @@
 		(uuid "e1d2161a-d95c-4de2-8d9e-45a29b21e28c")
 	)
 	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Capacitors/AluminumPolymers/ThroughHoles/METUPowerLab_Capacitors_AluminumPolymers_ThroughHoles_107AVG063MFBJ.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
