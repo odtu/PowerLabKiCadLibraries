@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "F280049CPZS"
-			(at 6.35 -1.27 0)
+			(at 6.35 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -773,7 +773,7 @@
 		(symbol "F280049CPZS_4_1"
 			(rectangle
 				(start 0 58.42)
-				(end 20.32 0)
+				(end 20.32 -2.54)
 				(stroke
 					(width 0)
 					(type solid)
@@ -897,7 +897,7 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 2.54 0)
+				(at -5.08 0 0)
 				(length 5.08)
 				(name "VREFLOC"
 					(effects
@@ -1327,6 +1327,28 @@
 			(pin input line
 				(at 25.4 5.08 180)
 				(length 5.08)
+				(name "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AIO240" input line)
+				(alternate "CMP6_HN1" input line)
+				(alternate "CMP6_HP1" input line)
+				(alternate "CMP6_LP1" input line)
+			)
+			(pin input line
+				(at 25.4 2.54 180)
+				(length 5.08)
 				(name "C5"
 					(effects
 						(font
@@ -1347,7 +1369,7 @@
 				(alternate "CMP6_LP1" input line)
 			)
 			(pin input line
-				(at 25.4 2.54 180)
+				(at 25.4 0 180)
 				(length 5.08)
 				(name "C14"
 					(effects
