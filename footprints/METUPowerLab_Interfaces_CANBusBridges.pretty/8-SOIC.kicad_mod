@@ -1,0 +1,209 @@
+(footprint "8-SOIC"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c0da85cb-cebf-43a1-bacb-b3488bd33a88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "8-SOIC"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e5a0eaf0-8922-4d6f-b7d8-8a1d2b7c3558")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c28f3fa-2dc2-46d5-a822-49653356e787")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c74b808-0e0d-4754-b427-dbc2cf3f2aa8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 -4.95)
+		(end 0 -0.05)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a6eccc4e-11cd-47c2-a1f6-862e50b16612")
+	)
+	(fp_line
+		(start 0 -0.05)
+		(end 3.9 -0.05)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a38ea323-99db-4f97-873f-fa4e63938fc2")
+	)
+	(fp_line
+		(start 3.9 -4.95)
+		(end 0 -4.95)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8958b35e-44a5-4c71-a2d7-bde979ab2d27")
+	)
+	(fp_line
+		(start 3.9 -0.05)
+		(end 3.9 -4.95)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0c24bc57-017d-4d2a-a0b9-2e717a30c009")
+	)
+	(fp_circle
+		(center -0.3 -5.3)
+		(end -0.25 -5.3)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "9543c6f4-dc2b-4310-8d34-4271b98b3cbf")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2 0.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "fb2d4281-8928-41d0-a3d1-3160310758ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.8 -4.366667 270)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "713abcf2-1f89-4571-8f73-49d86a8064f2")
+	)
+	(pad "2" smd rect
+		(at -0.8 -3.1 270)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "f4ed5d7a-aeb7-4997-831f-55aada51155f")
+	)
+	(pad "3" smd rect
+		(at -0.8 -1.833334 270)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "21b27e79-ee8a-476e-8b40-08762aaf639c")
+	)
+	(pad "4" smd rect
+		(at -0.8 -0.566667 270)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "87f0e9c4-617d-4107-93ed-0b74157d65b3")
+	)
+	(pad "5" smd rect
+		(at 4.7 -0.55 90)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "8cbfe804-a85b-47e2-bd4a-c9f355e9cc75")
+	)
+	(pad "6" smd rect
+		(at 4.7 -1.816667 90)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "c436f790-beca-42ab-b151-171b72fdf33a")
+	)
+	(pad "7" smd rect
+		(at 4.7 -3.083333 90)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "f556ea83-29cf-4f69-9bfd-62b14b3fe800")
+	)
+	(pad "8" smd rect
+		(at 4.7 -4.35 90)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "cf7323b3-7559-4e7f-af1a-3e2a8d43948e")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Interfaces/CANBusBridges/METUPowerLab_Interfaces_CANBusBridges_SOIC-8_.step"
+		(offset
+			(xyz 1.95 2.45 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+	(model "${METUPOWERLAB_3D}/Interfaces/CANBusBridges/METUPowerLab_Interfaces_CANBusBridges_SOIC-8-SN65HVD230DR_.step"
+		(offset
+			(xyz 1.95 2.45 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
