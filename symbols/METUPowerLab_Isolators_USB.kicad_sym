@@ -67,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "Isolated Power " "No"
+		(property "Isolated Power" "No"
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Channels " "1"
+		(property "Number of Channels" "1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Inputs - Side 1/Side 2 " "1/1 "
+		(property "Inputs - Side 1/Side 2" "1/1 "
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Channel Type " "Bidirectional "
+		(property "Channel Type" "Bidirectional "
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Data Rate " "12Mbos"
+		(property "Data Rate" "12Mbos"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139,7 +139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Surface Mount" "Surface Mount "
+		(property "Mounting Type" "Surface Mount "
 			(at 0 0 0)
 			(effects
 				(font
@@ -157,7 +157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package " "16-SOIC-IC "
+		(property "Package" "16-SOIC-IC "
 			(at 0 0 0)
 			(effects
 				(font

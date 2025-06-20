@@ -402,7 +402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply Voltage Range" "2V up to 36V"
+		(property "Supply Voltage Rating" "2V up to 36V"
 			(at 0 0 0)
 			(effects
 				(font

@@ -1368,7 +1368,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer " "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1413,7 +1413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 125°C (TJ) "
+		(property "Operating Temperature" "-40°C up to 125°C (TJ) "
 			(at 0 0 0)
 			(effects
 				(font
@@ -1422,7 +1422,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount "
+		(property "Mounting Type" "Surface Mount "
 			(at 0 0 0)
 			(effects
 				(font
@@ -1431,7 +1431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ron (typ) (mΩ) " "31"
+		(property "Ron (typ) (mΩ)" "31"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1440,7 +1440,7 @@
 				(hide yes)
 			)
 		)
-		(property "Soft start " "Adjustable"
+		(property "Soft start" "Adjustable"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1467,7 +1467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package " "24-VQFN"
+		(property "Package" "24-VQFN"
 			(at 0 0 0)
 			(effects
 				(font

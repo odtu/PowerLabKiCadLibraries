@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "METUPowerLab_Interfaces_USBBridges:48-LQFP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package " "48-LQFP "
+		(property "Package" "48-LQFP "
 			(at 0 0 0)
 			(effects
 				(font
@@ -131,6 +131,15 @@
 			)
 		)
 		(property "Digi-Key Number" "768-1101-1-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "FT232HL-REEL"
 			(at 0 0 0)
 			(effects
 				(font

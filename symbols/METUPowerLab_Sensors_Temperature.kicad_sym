@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply Voltage Range" "2.3V up to 5.5V"
+		(property "Supply Voltage Rating" "2.3V up to 5.5V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Accuracy " "±1°C"
+		(property "Accuracy" "±1°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-50°C up to 150°C (TA)"
+		(property "Operating Temperature" "-50°C up to 150°C (TA)"
 			(at 0 0 0)
 			(effects
 				(font

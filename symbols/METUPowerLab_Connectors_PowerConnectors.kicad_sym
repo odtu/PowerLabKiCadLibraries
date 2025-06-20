@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Through Hole, Right Angle "
+		(property "Mounting Type" "Through Hole, Right Angle "
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating " "600VAC/DC "
+		(property "Voltage Rating" "600VAC/DC "
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Current Rating " "27A"
+		(property "Current Rating" "27A"
 			(at 0 0 0)
 			(effects
 				(font

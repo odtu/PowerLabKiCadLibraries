@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Raing" "48VDC"
+		(property "Voltage Rating" "48VDC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount, Right Angle; Through Hole "
+		(property "Mounting Type" "Surface Mount, Right Angle; Through Hole "
 			(at 0 0 0)
 			(effects
 				(font

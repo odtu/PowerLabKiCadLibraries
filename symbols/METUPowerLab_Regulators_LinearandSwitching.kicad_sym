@@ -149,7 +149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply Voltage Range" "4.5V up to 18V"
+		(property "Supply Voltage Rating" "4.5V up to 18V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -158,7 +158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 85°C (TA) "
+		(property "Operating Temperature" "-40°C up to 85°C (TA) "
 			(at 0 0 0)
 			(effects
 				(font

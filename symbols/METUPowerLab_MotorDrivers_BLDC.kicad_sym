@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 125°C (TA) "
+		(property "Operating Temperature" "-40°C up to 125°C (TA) "
 			(at 0 0 0)
 			(effects
 				(font

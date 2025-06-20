@@ -55,7 +55,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer " "Bourns Inc."
+		(property "Manufacturer" "Bourns Inc."
 			(at 0 0 0)
 			(effects
 				(font

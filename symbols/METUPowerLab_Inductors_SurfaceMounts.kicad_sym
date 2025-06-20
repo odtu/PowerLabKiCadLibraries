@@ -55,7 +55,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer " "TDK Corporation"
+		(property "Manufacturer" "TDK Corporation"
 			(at 0 0 0)
 			(effects
 				(font
@@ -341,7 +341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer " "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 0 0 0)
 			(effects
 				(font
@@ -627,7 +627,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer " "Eaton - Electronics Division"
+		(property "Manufacturer" "Eaton - Electronics Division"
 			(at 0 0 0)
 			(effects
 				(font

@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Current Range" "1A"
+		(property "Current Rating" "1A"
 			(at 0 0 0)
 			(effects
 				(font

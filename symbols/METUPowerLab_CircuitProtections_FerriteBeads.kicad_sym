@@ -64,7 +64,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Product Number" "BLM18EG221SN1D"
+		(property "Manufacturer Number" "BLM18EG221SN1D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -91,7 +91,7 @@
 				(hide yes)
 			)
 		)
-		(property "DC Resistance (DC)" "50 mOhm"
+		(property "DC Resistance " "50 mOhm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -100,7 +100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 125°C "
+		(property "Operating Temperature" "-40°C up to 125°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -118,7 +118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount "
+		(property "Mounting Type" "Surface Mount "
 			(at 0 0 0)
 			(effects
 				(font
@@ -312,7 +312,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Product Number" "FBMH1608HM600-T"
+		(property "Manufacturer Number" "FBMH1608HM600-T"
 			(at 0 0 0)
 			(effects
 				(font
@@ -339,7 +339,7 @@
 				(hide yes)
 			)
 		)
-		(property "DC Resistance (DC)" "25 mOhm"
+		(property "DC Resistance " "25 mOhm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -348,7 +348,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 125°C "
+		(property "Operating Temperature" "-40°C up to 125°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -366,7 +366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount "
+		(property "Mounting Type" "Surface Mount "
 			(at 0 0 0)
 			(effects
 				(font

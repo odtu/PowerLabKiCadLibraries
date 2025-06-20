@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "BidirectionalChannels" "1"
+		(property "Bidirectional Channels" "1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -354,7 +354,7 @@
 				(hide yes)
 			)
 		)
-		(property "BidirectionalChannels" "1"
+		(property "Bidirectional Channels" "1"
 			(at 0 0 0)
 			(effects
 				(font

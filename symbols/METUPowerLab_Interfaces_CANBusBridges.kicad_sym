@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage  Rating" "3V up to 3.6V "
+		(property "Voltage Rating" "3V up to 3.6V "
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount "
+		(property "Mounting Type" "Surface Mount "
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package " "8-SOIC"
+		(property "Package" "8-SOIC"
 			(at 0 0 0)
 			(effects
 				(font

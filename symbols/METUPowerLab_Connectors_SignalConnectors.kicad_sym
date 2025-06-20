@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount, Right Angle "
+		(property "Mounting Type" "Surface Mount, Right Angle "
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating " "600V"
+		(property "Voltage Rating" "600V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -632,7 +632,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount, Right Angle "
+		(property "Mounting Type" "Surface Mount, Right Angle "
 			(at 0 0 0)
 			(effects
 				(font
@@ -641,7 +641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -659,7 +659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating " "600V"
+		(property "Voltage Rating" "600V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1335,7 +1335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount, Right Angle "
+		(property "Mounting Type" "Surface Mount, Right Angle "
 			(at 0 0 0)
 			(effects
 				(font
@@ -1362,7 +1362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating " "-"
+		(property "Voltage Rating" "-"
 			(at 0 0 0)
 			(effects
 				(font

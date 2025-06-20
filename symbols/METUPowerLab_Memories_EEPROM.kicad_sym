@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Memory Size " "2Kbit "
+		(property "Memory Size" "2Kbit "
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 85°C (TA) "
+		(property "Operating Temperature" "-40°C up to 85°C (TA) "
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount "
+		(property "Mounting Type" "Surface Mount "
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package " "SOT-23-6"
+		(property "Package" "SOT-23-6"
 			(at 0 0 0)
 			(effects
 				(font

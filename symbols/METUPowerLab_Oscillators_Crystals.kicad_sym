@@ -116,7 +116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -329,7 +329,7 @@
 				)
 			)
 		)
-		(property "Value" "20 MHz"
+		(property "Value" "12 MHz"
 			(at 0 3.81 0)
 			(effects
 				(font
@@ -427,7 +427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 125°C "
+		(property "Operating Temperature" "-40°C up to 125°C "
 			(at 0 0 0)
 			(effects
 				(font
