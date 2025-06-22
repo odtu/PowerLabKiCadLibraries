@@ -686,7 +686,7 @@
 		(uuid "69931caf-3199-4c64-9801-6e3ac0362dd6")
 	)
 	(pad "Shield" smd rect
-		(at 32 -4.6)
+		(at 32 -5.4)
 		(size 2 1.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.1)
