@@ -1569,7 +1569,7 @@
 				)
 			)
 		)
-		(property "Footprint" "METUPowerLab_Connectors_SignalConnectors:0430451809"
+		(property "Footprint" "METUPowerLab_Connectors_SignalConnectors:FTSH-120-04-F-DH-A"
 			(at 0 0 0)
 			(effects
 				(font
