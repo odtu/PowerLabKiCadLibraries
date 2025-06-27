@@ -2558,7 +2558,7 @@
 						)
 					)
 				)
-				(alternate "EQEP1_A" input line)
+				(alternate "EQEP1_A" input line)
 				(alternate "EQEP2_STROBE" bidirectional line)
 				(alternate "SCIB_TX" output line)
 				(alternate "SD1_D3" input line)
