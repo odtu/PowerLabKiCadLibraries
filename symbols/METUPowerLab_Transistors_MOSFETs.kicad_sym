@@ -37,7 +37,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IAUZ30N06S5L140-DataSheet-v01_00-EN.pdf?fileId=5546d46271bf4f920171f471819e61b6"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1133/AO3400A_ds.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -330,7 +330,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -348,7 +348,7 @@
 						)
 					)
 				)
-				(number "5"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -366,7 +366,7 @@
 						)
 					)
 				)
-				(number "1,_2,_3"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
