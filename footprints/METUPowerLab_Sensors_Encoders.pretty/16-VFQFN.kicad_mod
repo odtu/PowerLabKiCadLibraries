@@ -9,7 +9,7 @@
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "c1b80519-c361-4033-8b91-fc72242bc21e")
+		(uuid "0b98c85d-8192-4854-a1e3-126bb9c2bfda")
 		(effects
 			(font
 				(size 1 1)
@@ -22,7 +22,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "11143676-e723-445c-845f-d8d0ee518fb0")
+		(uuid "b32f7b65-f292-44d8-b04e-2efbaf70d55d")
 		(effects
 			(font
 				(size 1 1)
@@ -35,7 +35,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2468c029-d76c-4747-bae8-5392ba7787d5")
+		(uuid "1e0cf1bc-bbce-42ad-96bb-72cc5e2fec90")
 		(effects
 			(font
 				(size 1 1)
@@ -48,7 +48,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3209a530-5fb8-46b9-90bf-505b97a9ed92")
+		(uuid "e1d8c22a-43dc-4410-a962-919051419575")
 		(effects
 			(font
 				(size 1 1)
@@ -308,6 +308,15 @@
 		(solder_mask_margin 0.1)
 		(zone_connect 2)
 		(uuid "c1f0dffe-fed4-4692-96bb-a28535264180")
+	)
+	(pad "Shield" smd rect
+		(at 1.5 -1.5)
+		(size 1.75 1.75)
+		(property pad_prop_heatsink)
+		(layers "B.Cu" "B.Mask")
+		(solder_mask_margin 0.1)
+		(zone_connect 2)
+		(uuid "aa0707a2-c399-4c5a-be4d-d12d1aad8d81")
 	)
 	(pad "Shield" thru_hole circle
 		(at 1.9 -1.9)
