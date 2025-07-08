@@ -130,6 +130,42 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Number" "93LC56BT-I/OTCT-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Farnell Number" "93LC56BT-I/OT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Number" "579-93LC56BT-I/OT "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Özdisan Number" "93LC56BT-I/OT"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(symbol "93LC56BT-I/OT_1_1"
 			(rectangle
 				(start 0 12.7)

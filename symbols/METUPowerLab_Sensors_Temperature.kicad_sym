@@ -139,6 +139,24 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Number" "296-50016-1-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Number" "TMP235A4DCKR"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(symbol "TMP235A4DCKR_1_1"
 			(rectangle
 				(start 0 7.62)

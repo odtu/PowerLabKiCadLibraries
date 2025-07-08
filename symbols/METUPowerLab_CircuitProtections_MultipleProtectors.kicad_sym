@@ -1476,6 +1476,24 @@
 				(hide yes)
 			)
 		)
+		(property "Digi-Key Number" "296-TPS26631RGERCT-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Number" "595-TPS26631RGER "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(symbol "TPS26631RGER_0_0"
 			(polyline
 				(pts

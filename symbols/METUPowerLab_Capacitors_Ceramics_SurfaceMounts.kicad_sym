@@ -2390,7 +2390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Number" "1276-1871-1-ND"
+		(property "Digi-Key Number" "1276-1040-1-ND"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3459,7 +3459,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "GCM188R71H473KA55D"
+		(property "Manufacturer Number" "GRM1885C1H332JA01D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3512,7 +3512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Number" "296-46251-1-ND"
+		(property "Digi-Key Number" "490-6385-1-ND"
 			(at 0 0 0)
 			(effects
 				(font
