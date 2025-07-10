@@ -1,0 +1,120 @@
+(footprint "2220"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "2220")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f6ebca67-a700-4114-a1d1-c32a048c37a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "2220"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ac9223aa-bbba-42da-979d-3c2869513c5c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c37b609d-dbe3-4f0b-822a-79707cc7f549")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2220"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2a18af27-18ae-41da-9052-1c2a3d3c4993")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 1.7 0)
+		(end 4 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "41506320-b5e7-42e2-9c9b-3a74494b6f27")
+	)
+	(fp_line
+		(start 4 -5)
+		(end 1.7 -5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3b704fee-0c8f-468f-80a4-6fa137f49530")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 3 1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "fb2cc910-32f3-43ff-9b7d-2255069c8f04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -2.5)
+		(size 3 5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "1a31c6ff-4e71-4da3-a019-7d8fe05685b2")
+	)
+	(pad "2" smd rect
+		(at 5.7 -2.5)
+		(size 3 5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "a29bce65-477b-4cb7-8558-e9e4e6f793cb")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Capacitors/Ceramics/SurfaceMounts/METUPowerLab_Capacitors_Ceramics_SurfaceMounts_2220.STEP"
+		(offset
+			(xyz 2.75 2.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
