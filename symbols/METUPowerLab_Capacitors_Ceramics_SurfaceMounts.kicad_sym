@@ -146,6 +146,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -366,6 +375,15 @@
 			)
 		)
 		(property "Özdisan Number" "CL10B105KP8NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -602,6 +620,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -822,6 +849,15 @@
 			)
 		)
 		(property "Özdisan Number" "CL10A106MP8NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1058,6 +1094,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -1278,6 +1323,15 @@
 			)
 		)
 		(property "Özdisan Number" "CL10A106MA8NRNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1514,6 +1568,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -1734,6 +1797,15 @@
 			)
 		)
 		(property "Özdisan Number" "CL10B104KC8NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1970,6 +2042,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -2190,6 +2271,15 @@
 			)
 		)
 		(property "Özdisan Number" "CL10C120JC81PNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2426,6 +2516,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -2637,6 +2736,15 @@
 			)
 		)
 		(property "Özdisan Number" "CL10C220JB8NFNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2873,6 +2981,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -3075,6 +3192,15 @@
 			)
 		)
 		(property "Farnell Number" "3416277"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3294,6 +3420,15 @@
 			)
 		)
 		(property "Özdisan Number" "CL10B221JB8NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3530,6 +3665,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -3758,6 +3902,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -3977,6 +4130,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -4188,6 +4350,15 @@
 			)
 		)
 		(property "Özdisan Number" "CL32Y475MCIVPNE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4424,6 +4595,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -4643,6 +4823,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mounting Type" "Surface Mount"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "cap capacitor"
 			(at 0 0 0)
 			(effects
@@ -4854,6 +5043,15 @@
 			)
 		)
 		(property "Özdisan Number" "TMK325ABJ476MM-T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
