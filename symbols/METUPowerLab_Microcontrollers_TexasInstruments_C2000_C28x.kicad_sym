@@ -2645,12 +2645,11 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -66.675 64.77 0)
+			(at 1.905 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "F280049PMS"

@@ -2181,24 +2181,6 @@
 				)
 			)
 			(pin input line
-				(at -5.08 17.78 0)
-				(length 5.08)
-				(name "PLIM"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -5.08 12.7 0)
 				(length 5.08)
 				(name "MODE"
