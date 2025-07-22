@@ -1,0 +1,182 @@
+(footprint "2147210040"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "2147210040")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f03f9923-7df3-4f96-ad53-cdbb18fdb07f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "2147210040"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1caf2a07-1c8f-4010-b106-c3a8988c7062")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b177c86c-2dab-497e-ab2d-5db38e91028c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2147210040"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b0e1a17-dc0a-4fcf-9dac-692e84917678")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 -2.4)
+		(end 0 -1.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "613ad77b-5c5d-47f9-93e7-eb7dd4002051")
+	)
+	(fp_line
+		(start 1 0)
+		(end 4.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f25d25a5-9895-4195-829f-80140239e349")
+	)
+	(fp_line
+		(start 1.1 -2.4)
+		(end 0 -2.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a10ea8c3-b8e4-48f3-820a-8615c4840c7f")
+	)
+	(fp_line
+		(start 4.4 -2.4)
+		(end 5.5 -2.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0682400d-0434-4500-8f88-c66c4c3e0b89")
+	)
+	(fp_line
+		(start 5.5 -1.7)
+		(end 5.5 -2.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "633f819d-69ea-4491-90b2-b4ef29fc3b75")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "bbd07689-486d-4d44-8121-777a7e512de7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 1.55 -2.2)
+		(size 0.5 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "2cc410bb-651d-4f6f-b560-64046e931ea5")
+	)
+	(pad "2" smd rect
+		(at 2.35 -2.2)
+		(size 0.5 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "45c2bd23-b658-4aed-a881-6365642873ed")
+	)
+	(pad "3" smd rect
+		(at 3.15 -2.2)
+		(size 0.5 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "d050f45d-78e4-462f-b7e9-34bceffca4f0")
+	)
+	(pad "4" smd rect
+		(at 3.95 -2.2)
+		(size 0.5 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "03fff4b4-b1ae-4de7-afcc-aa345de1bea1")
+	)
+	(pad "Shield" smd rect
+		(at 0.2 -0.6)
+		(size 1.2 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "8801a645-c01a-485d-bf9b-de1539cc75b8")
+	)
+	(pad "Shield" smd rect
+		(at 5.3 -0.6)
+		(size 1.2 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "01002a06-0e1b-464d-90f8-6a9b8fc0c04b")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Connectors/SignalConnectors/METUPowerLab_Connectors_SignalConnectors_2147210040.step"
+		(offset
+			(xyz 2.75 -1.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
