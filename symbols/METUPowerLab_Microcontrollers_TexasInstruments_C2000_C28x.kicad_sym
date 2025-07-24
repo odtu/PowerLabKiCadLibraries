@@ -3199,7 +3199,7 @@
 						)
 					)
 				)
-				(number "48"
+				(number "41"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4340,7 +4340,7 @@
 				)
 				(alternate "CANB_TX" output line)
 				(alternate "EPWM5_A" output line)
-				(alternate "EQP1_STROBE" bidirectional line)
+				(alternate "EQEP1_STROBE" bidirectional line)
 				(alternate "OUTPUTXBAR7" output line)
 				(alternate "PMBUSA_SCL" bidirectional line)
 				(alternate "SCIA_TX" output line)
