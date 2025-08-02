@@ -196,4 +196,15 @@
 			(xyz -90 -0 -0)
 		)
 	)
+	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab-Inductors_SurfaceMounts_6_6_2.8.stp"
+		(offset
+			(xyz 3 3 1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
