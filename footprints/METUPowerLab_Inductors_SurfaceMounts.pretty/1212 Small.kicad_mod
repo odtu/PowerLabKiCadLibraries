@@ -1,15 +1,15 @@
-(footprint "1210 Medium NS"
+(footprint "1212 Small"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "Inductor 1210 Medium No Silkscreen")
+	(descr "Inductor 1210 Small ")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "7dfb8fa5-3c6e-49e2-89a5-84d33c316d60")
+		(uuid "48dbd634-d8f2-4133-b271-84898ef66065")
 		(effects
 			(font
 				(size 1 1)
@@ -17,12 +17,12 @@
 			)
 		)
 	)
-	(property "Value" "Inductor 1210 Medium No Silkscreen"
+	(property "Value" "Inductor 1210 Small "
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "fa4d07e5-4661-4ea4-b85b-c424318b00ae")
+		(uuid "548260bb-a5ad-4244-8a68-c429d90facfe")
 		(effects
 			(font
 				(size 1 1)
@@ -35,7 +35,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "44c79f0f-343f-4821-ae7b-970e32bf2c82")
+		(uuid "f542472c-cd35-41ed-ad2c-b9df00f8c4a7")
 		(effects
 			(font
 				(size 1 1)
@@ -43,12 +43,12 @@
 			)
 		)
 	)
-	(property "Description" "Inductor 1210 Medium No Silkscreen"
+	(property "Description" "Inductor 1210 Small "
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ef2403de-e9ba-42b4-9a01-1141bc8707aa")
+		(uuid "e38187da-278d-4898-9515-7f5c553b56b5")
 		(effects
 			(font
 				(size 1 1)
@@ -57,11 +57,51 @@
 		)
 	)
 	(attr smd)
+	(fp_line
+		(start -0.7 -3.2)
+		(end -0.7 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b9a27ffb-b8e6-4348-ba28-b4686f95a89c")
+	)
+	(fp_line
+		(start -0.7 0.2)
+		(end 3.7 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "436acb84-929e-455e-9724-029713cf6d73")
+	)
+	(fp_line
+		(start 3.7 -3.2)
+		(end -0.7 -3.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "33cef998-70c8-4a69-8b33-7349eff0cf31")
+	)
+	(fp_line
+		(start 3.7 0.2)
+		(end 3.7 -3.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3098a3d9-3ca2-46f8-977a-723570758cd8")
+	)
 	(fp_text user "${REFERENCE}"
-		(at 1.7 1.1 0)
+		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "38ab2642-34fd-44b3-94cf-064acc86b1bc")
+		(uuid "c045c549-fd89-4940-ad1b-212d0305c554")
 		(effects
 			(font
 				(size 1 1)
@@ -70,26 +110,26 @@
 		)
 	)
 	(pad "1" smd rect
-		(at 0.2 -1.25 180)
-		(size 1.7 2.5)
+		(at 0.3 -1.5)
+		(size 1.5 3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
-		(uuid "d170b72b-b4b2-4233-8ad0-9ff74af8461d")
+		(uuid "c170892a-65b8-46ec-b37f-f876f2153130")
 	)
 	(pad "2" smd rect
-		(at 3 -1.25 180)
-		(size 1.7 2.5)
+		(at 2.7 -1.5)
+		(size 1.5 3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
-		(uuid "75e09f15-9b10-4ef3-96d5-77fce3473d64")
+		(uuid "2e489699-23d2-4bf2-9206-b3a54a99b86a")
 	)
 	(zone
 		(net 0)
 		(net_name "")
 		(layers "F.Cu" "B.Cu" "In1.Cu")
-		(uuid "e45cc1c5-294f-47ea-b1de-9e9fe82a3716")
+		(uuid "ac0fa7bf-ae3f-4de4-96a9-22bdccd3eedd")
 		(name "Copper Keep Out")
 		(hatch full 0.5)
 		(connect_pads
@@ -114,20 +154,20 @@
 		)
 		(polygon
 			(pts
-				(xy 1.2 0) (xy 1.2 -2.5) (xy 2 -2.5) (xy 2 0)
+				(xy 1.2 0) (xy 1.2 -3) (xy 1.8 -3) (xy 1.8 0)
 			)
 		)
 	)
 	(embedded_fonts no)
-	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_1210.stp"
+	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_1212-LQH3NPN4R7MMEL.STEP"
 		(offset
-			(xyz 1.6 1.25 0)
+			(xyz 1.5 1.5 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -0)
+			(xyz -90 -0 -0)
 		)
 	)
 )
