@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "Shunt Resistors 0805 Medium No Silkscreen")
+	(descr "Capacitor 0805 Medium No Silkscreen")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
 		(unlocked yes)
@@ -43,7 +43,7 @@
 			)
 		)
 	)
-	(property "Description" "Shunt Resistors 0805 MediumNo Silkscreen"
+	(property "Description" "Capacitor 0805 MediumNo Silkscreen"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")

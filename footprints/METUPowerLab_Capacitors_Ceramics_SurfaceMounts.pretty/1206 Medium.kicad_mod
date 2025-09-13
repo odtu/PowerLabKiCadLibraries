@@ -1,15 +1,15 @@
-(footprint "0805 Small"
+(footprint "1206 Medium"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "Capacitor 0805 Small")
+	(descr "Capacitor 1206 Medium")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "d4ebf5dd-7d01-4db5-9e34-79a1318afe80")
+		(uuid "f30328d6-dfd9-4ac4-a2f3-2b2ac665977f")
 		(effects
 			(font
 				(size 1 1)
@@ -17,12 +17,12 @@
 			)
 		)
 	)
-	(property "Value" "0805 Small"
+	(property "Value" "Capacitor 1206 Medium"
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f8aac822-7163-49d0-ac32-5975ad5fc1c7")
+		(uuid "31afa63a-0e58-4ea1-a4c2-b103c8a01b64")
 		(effects
 			(font
 				(size 1 1)
@@ -35,7 +35,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "348ebe4f-7977-43b6-b07f-aa6034043000")
+		(uuid "42547dcb-f522-4f54-bf88-ccd798110f87")
 		(effects
 			(font
 				(size 1 1)
@@ -43,12 +43,12 @@
 			)
 		)
 	)
-	(property "Description" "Capacitor 0805 Small"
+	(property "Description" "Capacitor 1206 Medium"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "61b1d55e-9187-4068-816e-650ecaa8562e")
+		(uuid "5304095a-342e-4272-a0f2-65ca16d62f89")
 		(effects
 			(font
 				(size 1 1)
@@ -58,50 +58,50 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -0.5 -1.4)
-		(end -0.5 0.2)
+		(start -0.6 -0.8)
+		(end 3.8 -0.8)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "97edb73f-b682-493e-8dec-36df53935ea5")
+		(uuid "b70b6409-7b02-4356-803c-d52d4b7da905")
 	)
 	(fp_line
-		(start -0.5 0.2)
-		(end 2.5 0.2)
+		(start -0.6 1.2)
+		(end -0.6 -0.8)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "757f85df-de89-48c3-9546-ba50d6863c43")
+		(uuid "bf433fdc-4282-479c-b007-550cc935cc22")
 	)
 	(fp_line
-		(start 2.5 -1.4)
-		(end -0.5 -1.4)
+		(start 3.8 -0.8)
+		(end 3.8 1.2)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "3a32e71d-a38e-49ec-9734-1fcd3e071153")
+		(uuid "3601b8ae-d850-4b4a-a9ed-13ba3b6226d5")
 	)
 	(fp_line
-		(start 2.5 0.2)
-		(end 2.5 -1.4)
+		(start 3.8 1.2)
+		(end -0.6 1.2)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "1be48da9-7904-44b4-b246-f98b25f21368")
+		(uuid "b80f41ed-e4dc-459c-a1ac-d33a78dd4fd8")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "877bb190-91ba-4f78-a810-f1e6d5eeec4a")
+		(uuid "e0dbc306-347a-469d-bec1-be1335e9ed1b")
 		(effects
 			(font
 				(size 1 1)
@@ -110,25 +110,25 @@
 		)
 	)
 	(pad "1" smd rect
-		(at 0.2 -0.6)
-		(size 1 1.2)
+		(at 0.4 0.2)
+		(size 1.6 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
-		(uuid "ac72eaee-f1a0-407a-9427-63a25833427d")
+		(uuid "1e5bf9d1-de4e-4428-a446-55f53185a557")
 	)
 	(pad "2" smd rect
-		(at 1.8 -0.6)
-		(size 1 1.2)
+		(at 2.8 0.2)
+		(size 1.6 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
-		(uuid "0eb822ed-d251-4dc7-967b-b215d65be9c9")
+		(uuid "a2584927-ea8b-47fc-a81c-42b24fd76ebc")
 	)
 	(embedded_fonts no)
-	(model "${METUPOWERLAB_3D}/Capacitors/Ceramics/SurfaceMounts/METUPowerLab_Capacitors_Ceramics_SurfaceMounts_0805.stp"
+	(model "${METUPOWERLAB_3D}/Capacitors/Ceramics/SurfaceMounts/METUPowerLab_Capacitors_Ceramics_SurfaceMounts_1206.stp"
 		(offset
-			(xyz 1 0.6 0)
+			(xyz 1.6 -0.2 0)
 		)
 		(scale
 			(xyz 1 1 1)
