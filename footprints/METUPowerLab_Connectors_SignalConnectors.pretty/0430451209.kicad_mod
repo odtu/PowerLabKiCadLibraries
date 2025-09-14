@@ -574,7 +574,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${METUPOWERLAB_3D}/Connectors/PowerConnectors/METUPowerLab_Connectors_SignalConnectors_0430451209.step"
+	(model "${METUPOWERLAB_3D}/Connectors/SignalConnectors/METUPowerLab_Connectors_SignalConnectors_0430451209.step"
 		(offset
 			(xyz 11 4 4.2)
 		)

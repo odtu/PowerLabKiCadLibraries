@@ -145,7 +145,7 @@
 		(uuid "643e7abb-f9d2-4347-ae5f-0ab9c0dec292")
 	)
 	(embedded_fonts no)
-	(model "${METUPOWERLAB_3D}/Connectors/PowerConnectors/METUPowerLab_Connectors_PowerConnectors_2157601002_.step"
+	(model "${METUPOWERLAB_3D}/Connectors/PowerConnectors/METUPowerLab_Connectors_PowerConnectors_2157601002.step"
 		(offset
 			(xyz 3.45 4.95 0)
 		)
