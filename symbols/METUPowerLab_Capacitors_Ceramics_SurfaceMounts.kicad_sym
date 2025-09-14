@@ -1424,7 +1424,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "10 µF 100V 1210"
+	(symbol "10 µF 100V 1206"
 		(pin_numbers
 			(hide yes)
 		)
@@ -1586,7 +1586,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "10 µF 100V 1210_0_1"
+		(symbol "10 µF 100V 1206_0_1"
 			(polyline
 				(pts
 					(xy -2.032 0.762) (xy 2.032 0.762)
@@ -1612,7 +1612,7 @@
 				)
 			)
 		)
-		(symbol "10 µF 100V 1210_1_1"
+		(symbol "10 µF 100V 1206_1_1"
 			(pin passive line
 				(at 0 5.08 270)
 				(length 4.064)
