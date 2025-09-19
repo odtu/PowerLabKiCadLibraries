@@ -419,7 +419,7 @@
 		(uuid "f6550888-1e13-460a-89cc-a731ba428f92")
 	)
 	(embedded_fonts no)
-	(model "${METUPOWERLAB_3D}/CircuitProtections/MultipleProtectors/METUPowerLab_CircuitPrtections_MultipleProtectors_24-VFQFN_.step"
+	(model "${METUPOWERLAB_3D}/CircuitProtections/eFuses/METUPowerLab_CircuitProtections_eFuses_24-VFQFN.step"
 		(offset
 			(xyz 2 2 0)
 		)
@@ -430,7 +430,7 @@
 			(xyz -90 -0 -0)
 		)
 	)
-	(model "${METUPOWERLAB_3D}/CircuitProtections/MultipleProtectors/METUPowerLab_CircuitPrtections_MultipleProtectors_24-VFQFN-TPS26631RGER_.step"
+	(model "${METUPOWERLAB_3D}/CircuitProtections/eFuses/METUPowerLab_CircuitProtections_eFuses_24-VFQFN-TPS26631RGER.step"
 		(offset
 			(xyz 2 2 0)
 		)

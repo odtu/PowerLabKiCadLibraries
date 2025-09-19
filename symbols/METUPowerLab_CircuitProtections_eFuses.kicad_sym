@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "METUPowerLab_CircuitProtections_MultipleProtectors:23-LQFN-CLIP (VMA)"
+		(property "Footprint" "METUPowerLab_CircuitProtections_eFuses:23-LQFN-CLIP (VMA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1341,7 +1341,7 @@
 				)
 			)
 		)
-		(property "Footprint" "METUPowerLab_CircuitProtections_MultipleProtectors:24-VFQFN"
+		(property "Footprint" "METUPowerLab_CircuitProtections_eFuses:24-VFQFN"
 			(at 0 2.54 0)
 			(effects
 				(font
