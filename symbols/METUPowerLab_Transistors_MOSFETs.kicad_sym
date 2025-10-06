@@ -796,7 +796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-IAUZ30N06S5L140-DataSheet-v01_00-EN.pdf?fileId=5546d46271bf4f920171f471819e61b6"
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ntmfs006n08mc-d.pdf"
 			(at 0 0 0)
 			(effects
 				(font
