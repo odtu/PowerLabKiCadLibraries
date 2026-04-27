@@ -243,6 +243,18 @@
 		)
 	)
 	(model "${METUPOWERLAB_3D}/Transistors/MOSFETs/METUPowerLab_Transistors_MOSFETs_8-PowerTDFN(5x6mm)_NTMFS006N08MC.step"
+		(hide yes)
+		(offset
+			(xyz 2.5 3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+	(model "${METUPOWERLAB_3D}/Transistors/MOSFETs/METUPowerLab_Transistors_MOSFETs_8-PowerTDFN(5x6mm)_NVMFS6H800NT1G.step"
 		(offset
 			(xyz 2.5 3 0)
 		)
