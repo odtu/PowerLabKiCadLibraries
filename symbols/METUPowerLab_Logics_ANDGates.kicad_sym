@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "SN74LVC1G32DCKR"
+	(symbol "SN74LVC1G08DCKR"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -12,17 +12,19 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "SN74LVC1G32DCKR"
+		(property "Value" "SN74LVC1G08DCKR"
 			(at 7.62 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "METUPowerLab_Logics_ORGates:SC-70-5"
+		(property "Footprint" "METUPowerLab_Logics_ANDGates:SC-70-5"
 			(at 0 0 0)
 			(effects
 				(font
@@ -31,7 +33,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1781610203708&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Fsn74lvc1g32"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf"
 			(at 0 0 0)
 			(effects
 				(font
@@ -58,7 +60,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "SN74LVC1G32DCKR"
+		(property "Manufacturer Number" "SN74LVC1G08DCKR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -85,7 +87,7 @@
 				(hide yes)
 			)
 		)
-		(property "Logic Type" "OR Gate"
+		(property "Logic Type" "AND Gate"
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key Number" "296-9848-1-ND"
+		(property "Digi-Key Number" "296-11602-1-ND"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +132,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "595-SN74LVC1G32DCKR "
+		(property "Mouser Number" "595-SN74LVC1G08DCKR "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Özdisan Number" "SN74LVC1G08DCKR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -157,82 +168,22 @@
 				(hide yes)
 			)
 		)
-		(symbol "SN74LVC1G32DCKR_0_1"
+		(symbol "SN74LVC1G08DCKR_0_1"
 			(arc
-				(start -7.62 5.08)
-				(mid -5.838 0)
-				(end -7.62 -5.08)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -7.62 2.54) (xy -6.35 2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy -7.62 -2.54) (xy -6.35 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(arc
-				(start 5.08 0)
-				(mid 3.202 -3.202)
+				(start 0 5.08)
+				(mid 5.0579 0)
 				(end 0 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
 				)
 				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 0 5.08)
-				(mid 3.2271 3.2271)
-				(end 5.08 0)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 5.08) (xy -7.62 5.08)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
 					(type background)
 				)
 			)
 			(polyline
 				(pts
-					(xy 0 -5.08) (xy -7.62 -5.08)
+					(xy 0 -5.08) (xy -7.62 -5.08) (xy -7.62 5.08) (xy 0 5.08)
 				)
 				(stroke
 					(width 0.254)
@@ -243,7 +194,7 @@
 				)
 			)
 		)
-		(symbol "SN74LVC1G32DCKR_1_1"
+		(symbol "SN74LVC1G08DCKR_1_1"
 			(pin input line
 				(at -15.24 2.54 0)
 				(length 7.62)
