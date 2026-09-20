@@ -75,7 +75,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Rating @ Voltage " "0.05A @ 32VDC "
+		(property "Contact Rating @ Voltage" "0.05A @ 32VDC "
 			(at 0 0 0)
 			(effects
 				(font
@@ -84,7 +84,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mechanical Life " "200,000 Cycles "
+		(property "Mechanical Life" "200,000 Cycles "
 			(at 0 0 0)
 			(effects
 				(font

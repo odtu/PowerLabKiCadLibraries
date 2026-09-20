@@ -67,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Positions " "2"
+		(property "Number of Positions" "2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Rows " "1"
+		(property "Number of Rows" "1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -288,7 +288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Positions " "2"
+		(property "Number of Positions" "2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -297,7 +297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Rows " "1"
+		(property "Number of Rows" "1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -509,7 +509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Positions " "2"
+		(property "Number of Positions" "2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -518,7 +518,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Rows " "1"
+		(property "Number of Rows" "1"
 			(at 0 0 0)
 			(effects
 				(font

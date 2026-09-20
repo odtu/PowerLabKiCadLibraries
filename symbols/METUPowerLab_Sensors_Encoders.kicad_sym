@@ -544,7 +544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Raitng" "5V"
+		(property "Voltage Rating" "5V"
 			(at 0 0 0)
 			(effects
 				(font

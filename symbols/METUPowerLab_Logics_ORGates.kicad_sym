@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature " "-40°C up to 125°C "
+		(property "Temperature" "-40°C up to 125°C "
 			(at 0 0 0)
 			(effects
 				(font

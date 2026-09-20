@@ -75,7 +75,7 @@
 				(hide yes)
 			)
 		)
-		(property "Output Configuration " "Half Bridge"
+		(property "Output Configuration" "Half Bridge"
 			(at 0 0 0)
 			(effects
 				(font
@@ -102,7 +102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rds On" "5.2 mOhm"
+		(property "RDSon" "5.2 mOhm"
 			(at 0 0 0)
 			(effects
 				(font

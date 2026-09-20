@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "METUPowerLab_CircuitProtections_eFuses:23-LQFN-CLIP (VMA)"
+		(property "Footprint" "METUPowerLab_CircuitProtections_eFuses:23-LQFN-CLIP_(VMA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2484,7 +2484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ron (typ) (mΩ)" "31"
+		(property "RDSon" "31 mOhm"
 			(at 0 0 0)
 			(effects
 				(font

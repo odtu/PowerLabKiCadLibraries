@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-55°C up to 150°C (TJ) "
+		(property "Operating Temperature" "-55°C up to 150°C (TJ) "
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type " "Surface Mount "
+		(property "Mounting Type" "Surface Mount "
 			(at 0 0 0)
 			(effects
 				(font

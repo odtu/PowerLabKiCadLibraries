@@ -80,7 +80,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency Stability " "±15ppm "
+		(property "Frequency Stability" "±15ppm "
 			(at 0 0 0)
 			(effects
 				(font
@@ -89,7 +89,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance " "±10ppm "
+		(property "Frequency Tolerance" "±10ppm "
 			(at 0 0 0)
 			(effects
 				(font
@@ -98,7 +98,7 @@
 				(hide yes)
 			)
 		)
-		(property "Load Capacitance " "10pF"
+		(property "Load Capacitance" "10pF"
 			(at 0 0 0)
 			(effects
 				(font
@@ -211,7 +211,7 @@
 				(start -1.143 2.54)
 				(end 1.143 -2.54)
 				(stroke
-					(width 0.3048)
+					(width 0)
 					(type default)
 				)
 				(fill
@@ -391,7 +391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency Stability " "±100ppm "
+		(property "Frequency Stability" "±100ppm "
 			(at 0 0 0)
 			(effects
 				(font
@@ -400,7 +400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance " "±30ppm "
+		(property "Frequency Tolerance" "±30ppm "
 			(at 0 0 0)
 			(effects
 				(font
@@ -409,7 +409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Load Capacitance " "10pF"
+		(property "Load Capacitance" "10pF"
 			(at 0 0 0)
 			(effects
 				(font
@@ -522,7 +522,7 @@
 				(start -1.143 2.54)
 				(end 1.143 -2.54)
 				(stroke
-					(width 0.3048)
+					(width 0)
 					(type default)
 				)
 				(fill

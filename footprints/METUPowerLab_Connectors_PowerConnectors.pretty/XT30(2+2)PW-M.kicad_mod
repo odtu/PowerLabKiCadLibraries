@@ -3,6 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
+	(descr "XT30(2+2)PW-M")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
 		(unlocked yes)
@@ -55,7 +56,7 @@
 			)
 		)
 	)
-	(attr smd)
+	(attr through_hole)
 	(fp_line
 		(start 0 -9)
 		(end 0 0)
@@ -165,6 +166,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "fa7a2385-e754-44ac-ac6b-3f3e7075d375")
+		(solder_mask_margin 0.1)
 	)
 	(pad "2" thru_hole circle
 		(at 8.5 -11.8)
@@ -173,6 +175,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "57945fe9-63b6-406e-abe3-c48edcae2da1")
+		(solder_mask_margin 0.1)
 	)
 	(pad "3" thru_hole circle
 		(at 12.35 -10.57)
@@ -181,6 +184,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "549fb46c-cf84-4214-b788-fabd0ea6da05")
+		(solder_mask_margin 0.1)
 	)
 	(pad "4" thru_hole circle
 		(at 12.35 -8.57)
@@ -189,6 +193,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "4af2855e-e629-44c4-b7f3-93d0ffad8200")
+		(solder_mask_margin 0.1)
 	)
 	(embedded_fonts no)
 	(model "${METUPOWERLAB_3D}/Connectors/PowerConnectors/METUPowerLab_Connectors_PowerConnectors_XT30(2+2)PW-M.step"

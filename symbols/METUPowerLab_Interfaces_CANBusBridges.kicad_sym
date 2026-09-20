@@ -58,7 +58,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Drivers/Receivers " "1/1 "
+		(property "Number of Drivers/Receivers" "1/1 "
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Receiver Hysteresis " "100 mV "
+		(property "Receiver Hysteresis" "100 mV "
 			(at 0 0 0)
 			(effects
 				(font
@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Data Rate " "1Mbps"
+		(property "Data Rate" "1Mbps"
 			(at 0 0 0)
 			(effects
 				(font

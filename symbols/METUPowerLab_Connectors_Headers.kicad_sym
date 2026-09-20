@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Psitions" "2"
+		(property "Number of Positions" "2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -351,7 +351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Psitions" "2"
+		(property "Number of Positions" "2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -563,7 +563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type " "Male Pin "
+		(property "Contact Type" "Male Pin "
 			(at 0 0 0)
 			(effects
 				(font
@@ -572,7 +572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Positions " "40"
+		(property "Number of Positions" "40"
 			(at 0 0 0)
 			(effects
 				(font
@@ -581,7 +581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Rows " "2"
+		(property "Number of Rows" "2"
 			(at 0 0 0)
 			(effects
 				(font

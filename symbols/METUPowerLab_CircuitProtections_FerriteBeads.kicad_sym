@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Impedance @ Frequency " "220 Ohms @ 100 MHz "
+		(property "Impedance @ Frequency" "220 Ohms @ 100 MHz "
 			(at 0 0 0)
 			(effects
 				(font
@@ -91,7 +91,7 @@
 				(hide yes)
 			)
 		)
-		(property "DC Resistance " "50 mOhm"
+		(property "DC Resistance" "50 mOhm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -321,7 +321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Impedance @ Frequency " "60 Ohms @ 100 MHz "
+		(property "Impedance @ Frequency" "60 Ohms @ 100 MHz "
 			(at 0 0 0)
 			(effects
 				(font
@@ -339,7 +339,7 @@
 				(hide yes)
 			)
 		)
-		(property "DC Resistance " "25 mOhm"
+		(property "DC Resistance" "25 mOhm"
 			(at 0 0 0)
 			(effects
 				(font

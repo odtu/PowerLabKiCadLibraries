@@ -142,7 +142,7 @@
 		(uuid "77714688-1430-494b-8234-6363f2d1d032")
 	)
 	(embedded_fonts no)
-	(model "D:/Belgeler/METUPowerLab/PowerLabKiCadLibraries/3dmodels/powerlab.3dshapes/Regulators/LDOs/METUPowerLab_Regulators_LDOs_SOT-223.step"
+	(model "${METUPOWERLAB_3D}/Regulators/LDOs/METUPowerLab_Regulators_LDOs_SOT-223.step"
 		(offset
 			(xyz 3.25 1.75 0)
 		)

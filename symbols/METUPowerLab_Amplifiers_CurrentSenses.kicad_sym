@@ -54,7 +54,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturers" "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 0 0 0)
 			(effects
 				(font

@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Specifications " "USB 2.0 "
+		(property "Specifications" "USB 2.0 "
 			(at 0 0 0)
 			(effects
 				(font
@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Connector Type " "USB TYPE-C"
+		(property "Connector Type" "USB TYPE-C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Contacts " "24 (16+8 Dummy) "
+		(property "Number of Contacts" "24 (16+8 Dummy) "
 			(at 0 0 0)
 			(effects
 				(font

@@ -3,6 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
+	(descr "8-SOIC")
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
 		(unlocked yes)

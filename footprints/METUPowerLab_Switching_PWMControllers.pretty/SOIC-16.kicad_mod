@@ -216,7 +216,7 @@
 		(uuid "f67e81d2-e194-4399-92fb-b51e3963cb0b")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3RD_PARTY}/3dmodels/METUPowerLab_kicad_library/powerlab.3dshapes/Switching/PWMControllers/METUPowerLab_Switching_PWMControllers_SOIC-16.step"
+	(model "${METUPOWERLAB_3D}/Switching/PWMControllers/METUPowerLab_Switching_PWMControllers_SOIC-16.step"
 		(hide yes)
 		(offset
 			(xyz 1.9 4.95 0)
@@ -228,7 +228,7 @@
 			(xyz -90 -0 -0)
 		)
 	)
-	(model "${KICAD10_3RD_PARTY}/3dmodels/METUPowerLab_kicad_library/powerlab.3dshapes/Switching/PWMControllers/METUPowerLab_Switching_PWMControllers_SOIC-16-TL494CDR.step"
+	(model "${METUPOWERLAB_3D}/Switching/PWMControllers/METUPowerLab_Switching_PWMControllers_SOIC-16-TL494CDR.step"
 		(offset
 			(xyz 1.9 4.95 0)
 		)

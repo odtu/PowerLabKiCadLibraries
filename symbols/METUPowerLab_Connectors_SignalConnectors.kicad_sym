@@ -67,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type " "Male Pin "
+		(property "Contact Type" "Male Pin "
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Positions " "12"
+		(property "Number of Positions" "12"
 			(at 0 0 0)
 			(effects
 				(font
@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Rows " "2"
+		(property "Number of Rows" "2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -605,7 +605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type " "Male Pin "
+		(property "Contact Type" "Male Pin "
 			(at 0 0 0)
 			(effects
 				(font
@@ -614,7 +614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Positions " "18"
+		(property "Number of Positions" "18"
 			(at 0 0 0)
 			(effects
 				(font
@@ -623,7 +623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Rows " "2"
+		(property "Number of Rows" "2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1308,7 +1308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type " "Forked"
+		(property "Contact Type" "Forked"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1317,7 +1317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Positions " "4"
+		(property "Number of Positions" "4"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1326,7 +1326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Rows " "1"
+		(property "Number of Rows" "1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1344,7 +1344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C "
 			(at 0 0 0)
 			(effects
 				(font
@@ -1605,7 +1605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type " "Male Pin "
+		(property "Contact Type" "Male Pin "
 			(at 0 0 0)
 			(effects
 				(font
@@ -1614,7 +1614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Positions " "4"
+		(property "Number of Positions" "4"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1623,7 +1623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Rows " "1"
+		(property "Number of Rows" "1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1641,7 +1641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature " "-55°C up to 150°C "
+		(property "Operating Temperature" "-55°C up to 150°C "
 			(at 0 0 0)
 			(effects
 				(font

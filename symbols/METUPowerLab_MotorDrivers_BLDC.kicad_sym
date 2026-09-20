@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Output Configuration " "Half Bridge"
+		(property "Output Configuration" "Half Bridge"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Interface " "SPI"
+		(property "Interface" "SPI"
 			(at 0 0 0)
 			(effects
 				(font
