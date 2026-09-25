@@ -67,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type" "Male Pin "
+		(property "Contact Type" "Male Pin"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount, Right Angle "
+		(property "Mounting Type" "Surface Mount, Right Angle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Current Rating" "Varies by Wire Gauge "
+		(property "Current Rating" "Varies by Wire Gauge"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "538-43045-1209 "
+		(property "Mouser Number" "538-43045-1209"
 			(at 0 0 0)
 			(effects
 				(font
@@ -605,7 +605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type" "Male Pin "
+		(property "Contact Type" "Male Pin"
 			(at 0 0 0)
 			(effects
 				(font
@@ -632,7 +632,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount, Right Angle "
+		(property "Mounting Type" "Surface Mount, Right Angle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -641,7 +641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -650,7 +650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Current Rating" "Varies by Wire Gauge "
+		(property "Current Rating" "Varies by Wire Gauge"
 			(at 0 0 0)
 			(effects
 				(font
@@ -668,7 +668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "538-43045-1809 "
+		(property "Mouser Number" "538-43045-1809"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1335,7 +1335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount, Right Angle "
+		(property "Mounting Type" "Surface Mount, Right Angle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1344,7 +1344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1371,7 +1371,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "538-214721-0040 "
+		(property "Mouser Number" "538-214721-0040"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1605,7 +1605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type" "Male Pin "
+		(property "Contact Type" "Male Pin"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1632,7 +1632,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount, Right Angle "
+		(property "Mounting Type" "Surface Mount, Right Angle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1641,7 +1641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-55°C up to 150°C "
+		(property "Operating Temperature" "-55°C up to 150°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1650,7 +1650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Current Rating" "12A per Contact "
+		(property "Current Rating" "12A per Contact"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1668,7 +1668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Number" "4060713 "
+		(property "Farnell Number" "4060713"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1677,7 +1677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "305-384471 "
+		(property "Mouser Number" "305-384471"
 			(at 0 0 0)
 			(effects
 				(font

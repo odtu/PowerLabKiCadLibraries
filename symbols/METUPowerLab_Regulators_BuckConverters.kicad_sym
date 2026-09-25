@@ -39,7 +39,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr38020.pdf?ts=1694746577941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLMR38020%253FkeyMatch%253DLMR38020%2526tisearch%253Dsearch-everything%2526usecase%253DGPN"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr38020.pdf"
 			(at 10.16 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -50,7 +50,7 @@
 				)
 			)
 		)
-		(property "Description" "1 Ch  4.2V-80v Input 1V-75V Output 2A Buck Converter"
+		(property "Description" "1 Ch 4.2V-80V Input 1V-75V Output 2A Buck Converter"
 			(at 5.08 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -204,7 +204,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "595-LMR38020FSDDAR "
+		(property "Mouser Number" "595-LMR38020FSDDAR"
 			(at 10.16 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1028,7 +1028,7 @@
 					(type background)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -5.08 -5.08 0)
 				(length 5.08)
 				(name "GND"
@@ -1046,7 +1046,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -5.08 7.62 0)
 				(length 5.08)
 				(name "EN"
@@ -1082,7 +1082,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -5.08 2.54 0)
 				(length 5.08)
 				(name "RT/SYNC"
@@ -1100,7 +1100,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(name "FB"
@@ -1118,7 +1118,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin open_collector line
 				(at 20.32 -7.62 180)
 				(length 5.08)
 				(name "PG"
@@ -1230,7 +1230,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr51606.pdf?ts=1704242784728&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FLMR51606"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr51606.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1241,7 +1241,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1 Ch 4V-65V Input 0.8V-28V Output 1A Buck Converter"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1395,7 +1395,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "595-LMR51610XDBVR "
+		(property "Mouser Number" "595-LMR51610XDBVR"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1436,7 +1436,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -2.54 2.54 0)
 				(length 2.54)
 				(name "GND"
@@ -1454,7 +1454,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 17.78 2.54 180)
 				(length 2.54)
 				(name "FB"
@@ -1472,7 +1472,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -2.54 7.62 0)
 				(length 2.54)
 				(name "EN"
@@ -1555,7 +1555,7 @@
 				)
 			)
 		)
-		(property "Footprint" "METUPowerLab_Regulators_BuckConverters:SOT-23-6"
+		(property "Footprint" "METUPowerLab_Regulators_BuckConverters:TSOT-23-6"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1566,7 +1566,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftps561201"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps561201.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1577,7 +1577,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1 Ch 4.5V-17V Input 0.76V-7V Output 1A Buck Converter"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1709,7 +1709,7 @@
 				)
 			)
 		)
-		(property "Package" "SOT-23-6"
+		(property "Package" "TSOT-23-6"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1731,7 +1731,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "595-LMR51610XDBVR "
+		(property "Mouser Number" "595-TPS561201DDCR"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1754,7 +1754,7 @@
 					(type background)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -2.54 2.54 0)
 				(length 2.54)
 				(name "GND"
@@ -1808,7 +1808,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 17.78 2.54 180)
 				(length 2.54)
 				(name "VFB"
@@ -1826,7 +1826,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -2.54 7.62 0)
 				(length 2.54)
 				(name "EN"

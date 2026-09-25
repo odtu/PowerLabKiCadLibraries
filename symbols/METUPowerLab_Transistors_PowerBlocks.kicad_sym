@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "VTH" "2.5V "
+		(property "VTH" "2.5V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-55°C up to 150°C (TJ) "
+		(property "Operating Temperature" "-55°C up to 150°C (TJ)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "22-PowerTFDFN "
+		(property "Package" "22-PowerTFDFN"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "595-CSD88599Q5DC "
+		(property "Mouser Number" "595-CSD88599Q5DC"
 			(at 0 0 0)
 			(effects
 				(font

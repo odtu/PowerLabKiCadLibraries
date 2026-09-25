@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "48-LQFP "
+		(property "Package" "48-LQFP"
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "895-FT232HL-REEL "
+		(property "Mouser Number" "895-FT232HL-REEL"
 			(at 0 0 0)
 			(effects
 				(font

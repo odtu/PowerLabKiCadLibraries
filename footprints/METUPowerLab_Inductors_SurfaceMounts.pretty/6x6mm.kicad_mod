@@ -185,7 +185,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_6_6mm.step"
+	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_6_6mm.STEP"
 		(offset
 			(xyz 3 3 0)
 		)
@@ -196,7 +196,7 @@
 			(xyz -90 -0 -0)
 		)
 	)
-	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab-Inductors_SurfaceMounts_6_6_2.8.stp"
+	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_6_6_2.8.stp"
 		(offset
 			(xyz 3 3 1.5)
 		)

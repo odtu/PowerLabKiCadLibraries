@@ -129,7 +129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 125°C (TJ) "
+		(property "Operating Temperature" "-40°C up to 125°C (TJ)"
 			(at 0 0 0)
 			(effects
 				(font

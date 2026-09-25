@@ -49,7 +49,7 @@
 				(hide yes)
 			)
 		)
-		(property "Protocol" "CANbus "
+		(property "Protocol" "CANbus"
 			(at 0 0 0)
 			(effects
 				(font
@@ -58,7 +58,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Drivers/Receivers" "1/1 "
+		(property "Number of Drivers/Receivers" "1/1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Receiver Hysteresis" "100 mV "
+		(property "Receiver Hysteresis" "100 mV"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating" "3V up to 3.6V "
+		(property "Voltage Rating" "3V up to 3.6V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -166,7 +166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Number" "3124671 "
+		(property "Farnell Number" "3124671"
 			(at 0 0 0)
 			(effects
 				(font
@@ -175,7 +175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "595-SN65HVD230DR "
+		(property "Mouser Number" "595-SN65HVD230DR"
 			(at 0 0 0)
 			(effects
 				(font

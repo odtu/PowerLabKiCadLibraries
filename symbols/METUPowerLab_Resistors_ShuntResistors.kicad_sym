@@ -82,7 +82,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-55°C ~ 170°C "
+		(property "Operating Temperature" "-55°C ~ 170°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -91,7 +91,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "2512 (6432 Metric) "
+		(property "Package" "2512 (6432 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -118,7 +118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "576-SSA2512LR002JWR "
+		(property "Mouser Number" "576-SSA2512LR002JWR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -296,7 +296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-55°C ~ 155°C "
+		(property "Operating Temperature" "-55°C ~ 155°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -305,7 +305,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0805 (2012 Metric) "
+		(property "Package" "0805 (2012 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -324,6 +324,15 @@
 			)
 		)
 		(property "Digi-Key Number" "13-PA0805FRE870R002LCT-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ShuntResistors:0805_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -501,7 +510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-65°C ~ 170°C "
+		(property "Operating Temperature" "-65°C ~ 170°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -510,7 +519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "2010 (5025 Metric) "
+		(property "Package" "2010 (5025 Metric)"
 			(at 0 0 0)
 			(effects
 				(font

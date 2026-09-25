@@ -166,7 +166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "710-61300211121 "
+		(property "Mouser Number" "710-61300211121"
 			(at 0 0 0)
 			(effects
 				(font
@@ -414,7 +414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "538-53048-0210 "
+		(property "Mouser Number" "538-53048-0210"
 			(at 0 0 0)
 			(effects
 				(font
@@ -563,7 +563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Type" "Male Pin "
+		(property "Contact Type" "Male Pin"
 			(at 0 0 0)
 			(effects
 				(font
@@ -590,7 +590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount, Right Angle "
+		(property "Mounting Type" "Surface Mount, Right Angle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -599,7 +599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-55°C up to 125°C "
+		(property "Operating Temperature" "-55°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -626,7 +626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "200-FTSH12004FDHA "
+		(property "Mouser Number" "200-FTSH12004FDHA"
 			(at 0 0 0)
 			(effects
 				(font

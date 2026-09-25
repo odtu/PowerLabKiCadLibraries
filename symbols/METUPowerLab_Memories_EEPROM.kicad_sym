@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Memory Size" "2Kbit "
+		(property "Memory Size" "2Kbit"
 			(at 0 0 0)
 			(effects
 				(font
@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Clock Frequency" "2 MHz "
+		(property "Clock Frequency" "2 MHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating" "2.5V up to 5.5V "
+		(property "Voltage Rating" "2.5V up to 5.5V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 85°C (TA) "
+		(property "Operating Temperature" "-40°C up to 85°C (TA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "579-93LC56BT-I/OT "
+		(property "Mouser Number" "579-93LC56BT-I/OT"
 			(at 0 0 0)
 			(effects
 				(font

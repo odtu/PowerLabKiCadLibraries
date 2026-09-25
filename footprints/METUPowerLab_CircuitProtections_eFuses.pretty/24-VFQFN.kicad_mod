@@ -368,6 +368,7 @@
 		(drill 0.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "0645d7a8-8e57-4588-bc0e-d92c77e03b5c")
 	)
 	(pad "Shield" thru_hole circle
@@ -376,6 +377,7 @@
 		(drill 0.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "f057d964-2bdc-4bc1-843e-99756ae3bba7")
 	)
 	(pad "Shield" thru_hole circle
@@ -384,6 +386,7 @@
 		(drill 0.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "1428f752-1ed9-4a36-8002-bc8d350dd09f")
 	)
 	(pad "Shield" smd rect
@@ -408,6 +411,7 @@
 		(drill 0.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "6d87c2de-b32c-4b88-b10e-00a5ff5d4bb2")
 	)
 	(pad "Shield" thru_hole circle
@@ -416,6 +420,7 @@
 		(drill 0.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "f6550888-1e13-460a-89cc-a731ba428f92")
 	)
 	(embedded_fonts no)

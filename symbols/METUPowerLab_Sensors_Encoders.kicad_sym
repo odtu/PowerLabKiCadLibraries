@@ -535,7 +535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Reading Type" " Axial, Linear, Radial, Rotary"
+		(property "Reading Type" "Axial, Linear, Radial, Rotary"
 			(at 0 0 0)
 			(effects
 				(font

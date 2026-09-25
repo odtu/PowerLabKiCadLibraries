@@ -13,7 +13,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "S"
+		(property "Reference" "SW"
 			(at 1.27 2.54 0)
 			(effects
 				(font
@@ -75,7 +75,7 @@
 				(hide yes)
 			)
 		)
-		(property "Contact Rating @ Voltage" "0.05A @ 32VDC "
+		(property "Contact Rating @ Voltage" "0.05A @ 32VDC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -84,7 +84,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mechanical Life" "200,000 Cycles "
+		(property "Mechanical Life" "200,000 Cycles"
 			(at 0 0 0)
 			(effects
 				(font
@@ -93,7 +93,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -111,7 +111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -129,7 +129,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "612-TL6330AF200Q "
+		(property "Mouser Number" "612-TL6330AF200Q"
 			(at 0 0 0)
 			(effects
 				(font

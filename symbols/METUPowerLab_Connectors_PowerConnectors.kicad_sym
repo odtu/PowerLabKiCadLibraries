@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Through Hole, Right Angle "
+		(property "Mounting Type" "Through Hole, Right Angle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating" "600VAC/DC "
+		(property "Voltage Rating" "600VAC/DC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "200241-1212 "
+		(property "Mouser Number" "200241-1212"
 			(at 0 0 0)
 			(effects
 				(font
@@ -315,7 +315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -324,7 +324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating" "600VAC/DC "
+		(property "Voltage Rating" "600VAC/DC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -351,7 +351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "538-212520-1002 "
+		(property "Mouser Number" "538-212520-1002"
 			(at 0 0 0)
 			(effects
 				(font
@@ -527,7 +527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Through Hole, Right Angle "
+		(property "Mounting Type" "Through Hole, Right Angle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -536,7 +536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -545,7 +545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating" "600VAC/DC "
+		(property "Voltage Rating" "600VAC/DC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -572,7 +572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "538-215760-1002 "
+		(property "Mouser Number" "538-215760-1002"
 			(at 0 0 0)
 			(effects
 				(font
@@ -694,7 +694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/partdetail/5906261-XT30_2_2_PWM/C5211275"
 			(at 0 0 0)
 			(effects
 				(font
@@ -703,7 +703,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XT30(2+2)PW-M"
+		(property "Description" "2+2 15A 500V"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Changzhou Amass Elec"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "XT30(2+2)PW-M"
 			(at 0 0 0)
 			(effects
 				(font

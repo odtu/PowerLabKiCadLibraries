@@ -1,0 +1,160 @@
+(footprint "DO-214AC"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TVS Diode DO-214AC (SMA)")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c410fb42-0100-4133-b3b8-21803a9a3e36")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TVS Diode DO-214AC (SMA)"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ee2c3d3b-7d2c-487b-875f-e3780a483222")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98803e30-7668-4db7-b753-7663326f6237")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "TVS Diode DO-214AC (SMA)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b5443ee3-ed1f-48b6-ade4-31fa65ef6047")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 -2.6)
+		(end 0 -2.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "57537c86-643b-4387-b799-6397991c549a")
+	)
+	(fp_line
+		(start 0 -0.25)
+		(end 0 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f17d569b-db81-4443-b03c-3802ea06cd4b")
+	)
+	(fp_line
+		(start 0 0)
+		(end 4 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6631a228-9b1f-4f0e-b502-2f86964efe27")
+	)
+	(fp_line
+		(start 4 -2.6)
+		(end 0 -2.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fbc19991-4b49-44f8-94b2-f65db5ba842a")
+	)
+	(fp_line
+		(start 4 -2.6)
+		(end 4 -2.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d22844e5-4421-4e82-813b-1ea334139154")
+	)
+	(fp_line
+		(start 4 -0.25)
+		(end 4 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "89fc1b82-e820-4fd0-bc8a-f335115a71c4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2 1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ea24ff11-c23a-4762-b2dd-38d6a9abf6de")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -1.3)
+		(size 2 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "c291cfb0-7dbd-497c-976c-5fdc1a8b08fa")
+	)
+	(pad "2" smd rect
+		(at 4 -1.3)
+		(size 2 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "49edf724-b271-410c-aebd-6d2bfd4ffb66")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step"
+		(offset
+			(xyz 2 1.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

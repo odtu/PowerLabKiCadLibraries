@@ -91,7 +91,7 @@
 				(hide yes)
 			)
 		)
-		(property "Forward Voltage" "500 mV @ 900 mA "
+		(property "Forward Voltage" "500 mV @ 900 mA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -100,7 +100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Speed" "Fast Recovery =< 500ns, > 200mA (Io) "
+		(property "Speed" "Fast Recovery =< 500ns, > 200mA (Io)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -109,7 +109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Reverse Leakage Current" "50 µA @ 15 V "
+		(property "Reverse Leakage Current" "50 µA @ 15 V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -118,7 +118,7 @@
 				(hide yes)
 			)
 		)
-		(property "VR Capacitance" "29pF @ 5V, 1MHz "
+		(property "VR Capacitance" "29pF @ 5V, 1MHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -127,7 +127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-55°C up to 125°C "
+		(property "Operating Temperature" "-55°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -163,7 +163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "863-NSR0320MW2T1G "
+		(property "Mouser Number" "863-NSR0320MW2T1G"
 			(at 0 0 0)
 			(effects
 				(font
@@ -172,7 +172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Özdisan Number" "863-NSR0320MW2T1G "
+		(property "Özdisan Number" "863-NSR0320MW2T1G"
 			(at 0 0 0)
 			(effects
 				(font

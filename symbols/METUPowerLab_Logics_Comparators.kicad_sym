@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Output Type" "DTL, MOS, Open-Collector, Open-Emitter, RTL, TTL "
+		(property "Output Type" "DTL, MOS, Open-Collector, Open-Emitter, RTL, TTL"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "511-LM211DT "
+		(property "Mouser Number" "511-LM211DT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -438,7 +438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "511-TS391IL "
+		(property "Mouser Number" "511-TS391IL"
 			(at 0 0 0)
 			(effects
 				(font

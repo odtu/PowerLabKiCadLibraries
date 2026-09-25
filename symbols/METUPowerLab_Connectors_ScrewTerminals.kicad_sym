@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "534-7770 "
+		(property "Mouser Number" "534-7770"
 			(at 1.27 6.985 0)
 			(effects
 				(font

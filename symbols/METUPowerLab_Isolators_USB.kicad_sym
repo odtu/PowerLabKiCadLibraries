@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "Inputs - Side 1/Side 2" "1/1 "
+		(property "Inputs - Side 1/Side 2" "1/1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Channel Type" "Bidirectional "
+		(property "Channel Type" "Bidirectional"
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Technology" "Magnetic Coupling "
+		(property "Technology" "Magnetic Coupling"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage Rating" "3.1V up to 5.5V "
+		(property "Voltage Rating" "3.1V up to 5.5V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139,7 +139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 105°C "
+		(property "Operating Temperature" "-40°C up to 105°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -157,7 +157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "16-SOIC-IC "
+		(property "Package" "16-SOIC-IC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -166,7 +166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "584-ADUM4160BRIZ "
+		(property "Mouser Number" "584-ADUM4160BRIZ"
 			(at 0 0 0)
 			(effects
 				(font

@@ -80,7 +80,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency Stability" "±15ppm "
+		(property "Frequency Stability" "±15ppm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -89,7 +89,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance" "±10ppm "
+		(property "Frequency Tolerance" "±10ppm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -107,7 +107,7 @@
 				(hide yes)
 			)
 		)
-		(property "ESR" "100 Ohms "
+		(property "ESR" "100 Ohms"
 			(at 0 0 0)
 			(effects
 				(font
@@ -116,7 +116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -134,7 +134,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "774-402F2001XIAR "
+		(property "Mouser Number" "774-402F2001XIAR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -391,7 +391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency Stability" "±100ppm "
+		(property "Frequency Stability" "±100ppm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -400,7 +400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency Tolerance" "±30ppm "
+		(property "Frequency Tolerance" "±30ppm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -418,7 +418,7 @@
 				(hide yes)
 			)
 		)
-		(property "ESR" "100 Ohms "
+		(property "ESR" "100 Ohms"
 			(at 0 0 0)
 			(effects
 				(font
@@ -427,7 +427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 125°C "
+		(property "Operating Temperature" "-40°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -445,7 +445,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "710-830069882 "
+		(property "Mouser Number" "710-830069882"
 			(at 0 0 0)
 			(effects
 				(font

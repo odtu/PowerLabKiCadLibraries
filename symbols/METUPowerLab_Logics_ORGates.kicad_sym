@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Supply Voltage Rating" "1.65V up to 5.5V "
+		(property "Supply Voltage Rating" "1.65V up to 5.5V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "SC-70-5 "
+		(property "Package" "SC-70-5"
 			(at 0 0 0)
 			(effects
 				(font
@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Temperature" "-40°C up to 125°C "
+		(property "Temperature" "-40°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "595-SN74LVC1G32DCKR "
+		(property "Mouser Number" "595-SN74LVC1G32DCKR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Single Gate OR "
+		(property "ki_keywords" "Single Gate OR"
 			(at 0 0 0)
 			(effects
 				(font

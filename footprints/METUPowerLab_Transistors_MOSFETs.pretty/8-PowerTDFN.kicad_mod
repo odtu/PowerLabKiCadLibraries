@@ -272,15 +272,15 @@
 		(uuid "ba19681b-97b2-42cb-b23e-765515ed3850")
 	)
 	(embedded_fonts no)
-	(model "C:/Users/ekrem/Desktop/PowerDI3333-8.step"
+	(model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Diodes_PowerDI3333-8.step"
 		(offset
-			(xyz 1.65 1.6 0)
+			(xyz 1.625 1.5 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -0)
+			(xyz 0 0 90)
 		)
 	)
 )

@@ -101,7 +101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0603 (1608Metric) "
+		(property "Package" "0603 (1608Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -119,7 +119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-GCM1885C2A102JA6D "
+		(property "Mouser Number" "81-GCM1885C2A102JA6D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -329,7 +329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "1210 (3225 Metric) "
+		(property "Package" "1210 (3225 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -347,7 +347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL32B105KCJSNNE "
+		(property "Mouser Number" "187-CL32B105KCJSNNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -566,7 +566,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0603 (1608Metric) "
+		(property "Package" "0603 (1608Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -584,7 +584,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL32B105KCJSNNE "
+		(property "Mouser Number" "187-CL32B105KCJSNNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -803,7 +803,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "1210 (3225 Metric) "
+		(property "Package" "1210 (3225 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -821,7 +821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10B105KP8NNNC "
+		(property "Mouser Number" "187-CL10B105KP8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1058,7 +1058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10B103KB8NNNC "
+		(property "Mouser Number" "187-CL10B103KB8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1295,7 +1295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10A106MP8NNNC "
+		(property "Mouser Number" "187-CL10A106MP8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1532,7 +1532,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-GRM32EC72A106KE05 "
+		(property "Mouser Number" "81-GRM32EC72A106KE05"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1769,7 +1769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "810-C3216X6S2A106K16 "
+		(property "Mouser Number" "810-C3216X6S2A106K16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1997,7 +1997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10A106MA8NRNC "
+		(property "Mouser Number" "187-CL10A106MA8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2234,7 +2234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "810-CGA6P1X7R1N106K2 "
+		(property "Mouser Number" "810-CGA6P1X7R1N106K2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2471,7 +2471,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "603-CC603KRX7R7BB104 "
+		(property "Mouser Number" "603-CC603KRX7R7BB104"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2708,7 +2708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10B104KC8NNNC "
+		(property "Mouser Number" "187-CL10B104KC8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2927,7 +2927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "1210 (3225 Metric) "
+		(property "Package" "1210 (3225 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2945,7 +2945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-GRM32ER61A107ME0L "
+		(property "Mouser Number" "81-GRM32ER61A107ME0L"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2954,7 +2954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Number" "2611956 "
+		(property "Farnell Number" "2611956"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3191,7 +3191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10C120JC81PNC "
+		(property "Mouser Number" "187-CL10C120JC81PNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3419,7 +3419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "80-C0603C222K1R "
+		(property "Mouser Number" "80-C0603C222K1R"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3647,7 +3647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10A225KO8NNNC "
+		(property "Mouser Number" "187-CL10A225KO8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3884,7 +3884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL32B225KCJSNNE "
+		(property "Mouser Number" "187-CL32B225KCJSNNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4568,7 +4568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10A226MP8NUNE "
+		(property "Mouser Number" "187-CL10A226MP8NUNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4787,7 +4787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "2220 (5750 Metric) "
+		(property "Package" "2220 (5750 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5024,7 +5024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL10B221JB8NNNC "
+		(property "Mouser Number" "187-CL10B221JB8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5270,7 +5270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "603-CC603JRNPO9BN250 "
+		(property "Mouser Number" "603-CC603JRNPO9BN250"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5489,7 +5489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-GRM1885C1H332JA1D "
+		(property "Mouser Number" "81-GRM1885C1H332JA1D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5735,7 +5735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-GCM1885C2A331J16D "
+		(property "Mouser Number" "81-GCM1885C2A331J16D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5954,7 +5954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-GCM188R72A472K37D "
+		(property "Mouser Number" "81-GCM188R72A472K37D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6173,7 +6173,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "1210 (3225 Metric) "
+		(property "Package" "1210 (3225 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6191,7 +6191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "187-CL32Y475MCIVPNE "
+		(property "Mouser Number" "187-CL32Y475MCIVPNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6401,7 +6401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0805 (2012 Metric) "
+		(property "Package" "0805 (2012 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6419,7 +6419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "810-C2012X5R2A475K12 "
+		(property "Mouser Number" "810-C2012X5R2A475K12"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6647,7 +6647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-GCM188R71H473K55D "
+		(property "Mouser Number" "81-GCM188R71H473K55D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -6884,7 +6884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "710-885012206118 "
+		(property "Mouser Number" "710-885012206118"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7094,7 +7094,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "1210 (3225 Metric) "
+		(property "Package" "1210 (3225 Metric)"
 			(at 0 0 0)
 			(effects
 				(font

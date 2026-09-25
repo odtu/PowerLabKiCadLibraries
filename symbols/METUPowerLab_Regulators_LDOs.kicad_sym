@@ -67,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "Output Type" "Fixed "
+		(property "Output Type" "Fixed"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Dropout Voltage (Max)" "1.2V @ 800mA "
+		(property "Dropout Voltage (Max)" "1.2V @ 800mA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -121,7 +121,7 @@
 				(hide yes)
 			)
 		)
-		(property "Protection Features" "Over Current, Over Temperature "
+		(property "Protection Features" "Over Current, Over Temperature"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "0°C up to 125°C "
+		(property "Operating Temperature" "0°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -139,7 +139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "SOT-223 "
+		(property "Package" "SOT-223"
 			(at 0 0 0)
 			(effects
 				(font
@@ -166,7 +166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "863-NCP1117ST33T3G "
+		(property "Mouser Number" "863-NCP1117ST33T3G"
 			(at 0 0 0)
 			(effects
 				(font

@@ -90,7 +90,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 125°C "
+		(property "Operating Temperature" "-40°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -126,7 +126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "595-INA240A4DR "
+		(property "Mouser Number" "595-INA240A4DR"
 			(at 0 0 0)
 			(effects
 				(font

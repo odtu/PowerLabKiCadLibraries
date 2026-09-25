@@ -446,6 +446,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "29da3038-b301-4480-a7e7-9b0358935c25")
 	)
 	(pad "24" thru_hole circle
@@ -454,6 +455,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "c48f88e2-835b-472f-b3fc-dd3b4f2df257")
 	)
 	(pad "24" thru_hole circle
@@ -462,6 +464,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "a5703a43-15bb-458b-87f1-1e188f0e109f")
 	)
 	(pad "24" thru_hole circle
@@ -470,6 +473,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "d1e20f69-514a-4058-8986-f58843523658")
 	)
 	(pad "24" thru_hole circle
@@ -478,12 +482,14 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "72220ce3-6470-4131-af08-12d3b10dd14b")
 	)
 	(pad "24" smd rect
 		(at 3 -2.5)
 		(size 3.4 2.35)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
 		(uuid "5390a98f-26ac-423a-8cc6-404a77e893cf")
 	)
@@ -491,6 +497,7 @@
 		(at 3 -2.5)
 		(size 3.4 2.35)
 		(layers "B.Cu" "B.Mask" "B.Paste")
+		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
 		(uuid "4d6f01ba-8752-4df8-9621-6adc39682816")
 	)
@@ -500,6 +507,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "777e1aa3-a5c9-44a0-9ce5-051094e5217d")
 	)
 	(pad "24" thru_hole circle
@@ -508,6 +516,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "6a055b32-290b-4ea9-ab90-a7023ce34c42")
 	)
 	(pad "24" thru_hole circle
@@ -516,6 +525,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "80e2a578-39f8-47f8-9a0a-ca062870e673")
 	)
 	(pad "24" thru_hole circle
@@ -524,6 +534,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "e56809ce-2552-4d77-8ebc-d45c7fb0982b")
 	)
 	(embedded_fonts no)

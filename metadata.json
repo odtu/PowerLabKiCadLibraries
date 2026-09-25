@@ -1,27 +1,25 @@
 {
-"$schema": "https://go.kicad.org/pcm/schemas/v1",
-"name": "METU Power Lab KiCad Libraries",
-"description": "KiCad Advanced Libraries",
-"description_full": "KiCad Advanced Footprint, Symbol & 3D Libraries",
-"identifier": "METUPowerLab.kicad.library",
-"type": "library",
-"author": {
-"name": "METU Power Lab",
-"contact": {
-}
-},
-"license": "CERN-OHL",
-"resources": {
-},
-
-"versions": [
-{
-"version": "1.0.0",
-"status": "stable",
-"kicad_version": "8.99",
-"download_size": 5760000,
-"download_url": "https://github.com/odtu/PowerLabKicadLibraries/raw/main/PowerLabKicadLibraries.zip",
-"ïnstall_size": 98600000
-}
-]
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "METU Power Lab KiCad Libraries",
+    "description": "KiCad Advanced Libraries",
+    "description_full": "KiCad Advanced Footprint, Symbol & 3D Libraries",
+    "identifier": "METUPowerLab.kicad.library",
+    "type": "library",
+    "author": {
+        "name": "METU Power Lab",
+        "contact": {}
+    },
+    "license": "CERN-OHL",
+    "resources": {},
+    "versions": [
+        {
+            "version": "2.0.0",
+            "status": "stable",
+            "kicad_version": "10.0",
+            "download_url": "https://github.com/odtu/PowerLabKiCadLibraries/raw/main/PowerLabKiCadLibraries.zip",
+            "download_sha256": "010de8ce0dcf63515988ee86e3ef2d96b9d87bf222f400859f698f048b7f7168",
+            "download_size": 12579590,
+            "install_size": 80705012
+        }
+    ]
 }

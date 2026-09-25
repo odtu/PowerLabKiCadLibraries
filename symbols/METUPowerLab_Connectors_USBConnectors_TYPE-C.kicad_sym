@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Specifications" "USB 2.0 "
+		(property "Specifications" "USB 2.0"
 			(at 0 0 0)
 			(effects
 				(font
@@ -94,7 +94,7 @@
 				(hide yes)
 			)
 		)
-		(property "Number of Contacts" "24 (16+8 Dummy) "
+		(property "Number of Contacts" "24 (16+8 Dummy)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -103,7 +103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 85°C "
+		(property "Operating Temperature" "-40°C up to 85°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -130,7 +130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount, Right Angle; Through Hole "
+		(property "Mounting Type" "Surface Mount, Right Angle; Through Hole"
 			(at 0 0 0)
 			(effects
 				(font
@@ -157,7 +157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Number" "3588205 "
+		(property "Farnell Number" "3588205"
 			(at 0 0 0)
 			(effects
 				(font

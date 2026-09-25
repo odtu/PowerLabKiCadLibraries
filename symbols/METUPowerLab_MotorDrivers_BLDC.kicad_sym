@@ -112,7 +112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 125°C (TA) "
+		(property "Operating Temperature" "-40°C up to 125°C (TA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "595-DRV8323RSRGZT "
+		(property "Mouser Number" "595-DRV8323RSRGZT"
 			(at 0 0 0)
 			(effects
 				(font

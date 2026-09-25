@@ -177,7 +177,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -465,7 +465,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -720,7 +720,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "708-RMCF0603FT1K20 "
+		(property "Mouser Number" "708-RMCF0603FT1K20"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -753,7 +753,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1041,7 +1041,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1329,7 +1329,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1617,7 +1617,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1872,7 +1872,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RC0603FR-0710KL "
+		(property "Mouser Number" "603-RC0603FR-0710KL"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1927,7 +1927,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2182,7 +2182,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RC0603FR-07100RL "
+		(property "Mouser Number" "603-RC0603FR-07100RL"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2237,7 +2237,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2525,7 +2525,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2813,7 +2813,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3101,7 +3101,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3389,7 +3389,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3644,7 +3644,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RT0603BRD07123KL "
+		(property "Mouser Number" "603-RT0603BRD07123KL"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3688,7 +3688,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3877,7 +3877,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Number" "RMCF0603FT147K "
+		(property "Manufacturer Number" "RMCF0603FT147K"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3943,7 +3943,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "708-RMCF0603FT147K "
+		(property "Mouser Number" "708-RMCF0603FT147K"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3976,7 +3976,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4231,7 +4231,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "708-RMCF0603FT2K10 "
+		(property "Mouser Number" "708-RMCF0603FT2K10"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4264,7 +4264,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4519,7 +4519,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RC0603FR-072K2L "
+		(property "Mouser Number" "603-RC0603FR-072K2L"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4574,7 +4574,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4829,7 +4829,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "708-RMCF0603FT20K0 "
+		(property "Mouser Number" "708-RMCF0603FT20K0"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4862,7 +4862,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5117,7 +5117,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RC0603JR-07200KL "
+		(property "Mouser Number" "603-RC0603JR-07200KL"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5172,7 +5172,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5460,7 +5460,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5748,7 +5748,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6003,7 +6003,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RC0603FR-07232KL "
+		(property "Mouser Number" "603-RC0603FR-07232KL"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6058,7 +6058,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6346,7 +6346,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6634,7 +6634,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6889,7 +6889,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RC0603FR-0733KL "
+		(property "Mouser Number" "603-RC0603FR-0733KL"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6944,7 +6944,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7199,7 +7199,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RC0603FR-0733K2L "
+		(property "Mouser Number" "603-RC0603FR-0733K2L"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7254,7 +7254,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7542,7 +7542,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7830,7 +7830,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8085,7 +8085,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "708-RMCF0603FT45K3 "
+		(property "Mouser Number" "708-RMCF0603FT45K3"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8118,7 +8118,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8406,7 +8406,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8694,7 +8694,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8982,7 +8982,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9270,7 +9270,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9470,7 +9470,7 @@
 				)
 			)
 		)
-		(property "Tolerance" " ±1%"
+		(property "Tolerance" "±1%"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9558,7 +9558,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9846,7 +9846,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10134,7 +10134,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10389,7 +10389,7 @@
 				)
 			)
 		)
-		(property "Mouser Number" "603-RC0603FR-0773K2L "
+		(property "Mouser Number" "603-RC0603FR-0773K2L"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10444,7 +10444,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10732,7 +10732,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11020,7 +11020,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11308,7 +11308,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11596,7 +11596,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11884,7 +11884,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MergenElektronik_Resistors_ChipResistors:MergenElekronik_Resistors_ChipResistors_0603"
+		(property "ki_fp_filters" "METUPowerLab_Resistors_ChipResistors:0603_*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

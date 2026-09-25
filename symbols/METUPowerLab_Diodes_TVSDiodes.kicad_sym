@@ -91,7 +91,7 @@
 				(hide yes)
 			)
 		)
-		(property "Breakdown Voltage" "26.7V "
+		(property "Breakdown Voltage" "26.7V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -100,7 +100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Clamping Voltage" "46.2V "
+		(property "Clamping Voltage" "46.2V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -109,7 +109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Current - Peak Pulse(10/1000µs)" "9A (8/20µs) "
+		(property "Current - Peak Pulse(10/1000µs)" "9A (8/20µs)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -172,7 +172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "652-CDSOD323-T24SC "
+		(property "Mouser Number" "652-CDSOD323-T24SC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -462,7 +462,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "750-CPDQC3V3C-HF "
+		(property "Mouser Number" "750-CPDQC3V3C-HF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_Diodes_TVSDiodes:0402_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -743,7 +752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "621-DESD5V0U1BL-7B "
+		(property "Mouser Number" "621-DESD5V0U1BL-7B"
 			(at 0 0 0)
 			(effects
 				(font
@@ -753,6 +762,15 @@
 			)
 		)
 		(property "Farnell Number" "3946159"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_Diodes_TVSDiodes:0402_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -952,7 +970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Breakdown Voltage" "1.4V "
+		(property "Breakdown Voltage" "1.4V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -961,7 +979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Clamping Voltage" "5.2V "
+		(property "Clamping Voltage" "5.2V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1033,7 +1051,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "863-ESDL2012MX4T5G "
+		(property "Mouser Number" "863-ESDL2012MX4T5G"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1043,6 +1061,15 @@
 			)
 		)
 		(property "Farnell Number" "2992291"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_Diodes_TVSDiodes:0201_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1179,7 +1206,7 @@
 				)
 			)
 		)
-		(property "Footprint" "METUPowerLab_Diodes_TVSDiodes:DO-214AA"
+		(property "Footprint" "METUPowerLab_Diodes_TVSDiodes:DO-214AC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1251,7 +1278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Clamping Voltage" "87.1V "
+		(property "Clamping Voltage" "87.1V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1305,7 +1332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0201 (0603 Metric)"
+		(property "Package" "DO-214AC (SMA)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1323,7 +1350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "576-SMAJ54CA "
+		(property "Mouser Number" "576-SMAJ54CA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1550,7 +1577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Clamping Voltage" "77.4V "
+		(property "Clamping Voltage" "77.4V"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1604,7 +1631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "0201 (0603 Metric)"
+		(property "Package" "DO-214AA (SMB)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1622,7 +1649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "621-SMBJ48CA-13-F "
+		(property "Mouser Number" "621-SMBJ48CA-13-F"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1822,7 +1849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Reverse Standoff Voltage" "1V (Max) "
+		(property "Reverse Standoff Voltage" "1V (Max)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1912,7 +1939,16 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "576-SP0115-01UTG "
+		(property "Mouser Number" "576-SP0115-01UTG"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_Diodes_TVSDiodes:0603_*"
 			(at 0 0 0)
 			(effects
 				(font

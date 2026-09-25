@@ -197,7 +197,7 @@
 			(xyz -90 -0 -0)
 		)
 	)
-	(model "${METUPOWERLAB_3D}/Amplifiers/CurrentSenses/MergenElektronik_Logics_Comparators_SOIC-8-INA240A4DR.step"
+	(model "${METUPOWERLAB_3D}/Amplifiers/CurrentSenses/METUPowerLab_Amplifiers_CurrentSenses_SOIC-8-INA240A4DR.step"
 		(offset
 			(xyz 2 2.5 0)
 		)

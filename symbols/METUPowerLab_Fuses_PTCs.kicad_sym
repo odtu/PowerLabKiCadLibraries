@@ -127,7 +127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Resistance - Post Trip" "3.5 Ohms "
+		(property "Resistance - Post Trip" "3.5 Ohms"
 			(at 0 0 0)
 			(effects
 				(font
@@ -145,7 +145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -172,7 +172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "652-MFFSMF020X-2 "
+		(property "Mouser Number" "652-MFFSMF020X-2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -200,6 +200,15 @@
 			)
 		)
 		(property "ki_keywords" "PTC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_Fuses_PTCs:0603_*"
 			(at 0 0 0)
 			(effects
 				(font

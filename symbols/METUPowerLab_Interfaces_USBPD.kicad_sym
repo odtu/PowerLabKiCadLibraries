@@ -40,7 +40,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB TYPEC  PD Controller Interface, TSSOP-16"
+		(property "Description" "USB TYPEC PD Controller Interface, TSSOP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -67,7 +67,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "TSSOP-16 "
+		(property "Package" "TSSOP-16"
 			(at 0 0 0)
 			(effects
 				(font
@@ -76,7 +76,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40℃up to +85℃ "
+		(property "Operating Temperature" "-40℃up to +85℃"
 			(at 0 0 0)
 			(effects
 				(font

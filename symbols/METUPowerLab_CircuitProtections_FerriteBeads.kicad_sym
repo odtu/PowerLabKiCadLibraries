@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Impedance @ Frequency" "220 Ohms @ 100 MHz "
+		(property "Impedance @ Frequency" "220 Ohms @ 100 MHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -100,7 +100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 125°C "
+		(property "Operating Temperature" "-40°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -118,7 +118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -145,7 +145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-BLM18EG221SN1D "
+		(property "Mouser Number" "81-BLM18EG221SN1D"
 			(at 0 0 0)
 			(effects
 				(font
@@ -321,7 +321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Impedance @ Frequency" "60 Ohms @ 100 MHz "
+		(property "Impedance @ Frequency" "60 Ohms @ 100 MHz"
 			(at 0 0 0)
 			(effects
 				(font
@@ -348,7 +348,7 @@
 				(hide yes)
 			)
 		)
-		(property "Operating Temperature" "-40°C up to 125°C "
+		(property "Operating Temperature" "-40°C up to 125°C"
 			(at 0 0 0)
 			(effects
 				(font
@@ -366,7 +366,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mounting Type" "Surface Mount "
+		(property "Mounting Type" "Surface Mount"
 			(at 0 0 0)
 			(effects
 				(font
@@ -393,7 +393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "963-FBMH1608HM600-T "
+		(property "Mouser Number" "963-FBMH1608HM600-T"
 			(at 0 0 0)
 			(effects
 				(font

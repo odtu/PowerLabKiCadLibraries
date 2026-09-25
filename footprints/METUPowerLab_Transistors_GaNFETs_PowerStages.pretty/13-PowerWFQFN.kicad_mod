@@ -200,6 +200,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "4f78deef-0c28-44b7-8c68-49a622288cee")
 	)
 	(pad "8" thru_hole circle
@@ -208,6 +209,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "ccb82b99-11f5-4e9f-b803-dcc4ee92ee06")
 	)
 	(pad "8" thru_hole circle
@@ -216,6 +218,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "9ccbcc30-b38c-48a4-8c58-87270845059c")
 	)
 	(pad "8" thru_hole circle
@@ -224,6 +227,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "358c45c2-8c3f-434c-8609-f604a07db777")
 	)
 	(pad "8" thru_hole circle
@@ -232,6 +236,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "6590ffd3-4ab8-4e72-b212-2f9636aeacc4")
 	)
 	(pad "8" smd rect
@@ -304,6 +309,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "3e12acac-ab9f-406d-b669-da5e80cce14a")
 	)
 	(pad "9" thru_hole circle
@@ -312,6 +318,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "32f0a121-1cd2-4394-a064-12659381074c")
 	)
 	(pad "9" thru_hole circle
@@ -320,6 +327,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "de8e80bc-5616-441e-abb8-612e6e1877c7")
 	)
 	(pad "9" thru_hole circle
@@ -328,6 +336,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "83db9ede-a9a5-44e5-854b-532594354c38")
 	)
 	(pad "9" smd rect
@@ -352,6 +361,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "210885b0-6ced-4c87-a32d-da473f024586")
 	)
 	(pad "9" thru_hole circle
@@ -360,6 +370,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "8d656680-0582-4ff5-a0bf-46f26d2a5d29")
 	)
 	(pad "9" thru_hole circle
@@ -368,6 +379,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "1d2a44d7-9df1-4b1c-be0c-9e77b35d9103")
 	)
 	(pad "10" smd rect
@@ -440,6 +452,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "7826d79f-563d-45bd-a1c2-d638f794e49d")
 	)
 	(pad "10" thru_hole circle
@@ -448,6 +461,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "5e36d7eb-b36c-49db-afe6-8b943a65b975")
 	)
 	(pad "10" thru_hole circle
@@ -456,6 +470,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "38e04377-b8a3-4f1b-8ec1-73ea8eaf1dee")
 	)
 	(pad "10" thru_hole circle
@@ -464,6 +479,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "ef132c4d-1fdf-43cd-9eba-0d428a5e26bb")
 	)
 	(pad "10" thru_hole circle
@@ -472,6 +488,7 @@
 		(drill 0.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
 		(uuid "de7f91ae-26b7-42e9-b08a-eab1ea2d5243")
 	)
 	(pad "11" smd rect
@@ -507,7 +524,7 @@
 		(uuid "487ee522-3eaf-492b-b3c4-4fa30cac3436")
 	)
 	(embedded_fonts no)
-	(model "${METUPOWERLAB_3D}/Transistors/GaNFETs/PowerStages/METUPowerLab_Transistors_GaNFETs_PowerStages_13-PowerWFQFN v2.step"
+	(model "${METUPOWERLAB_3D}/Transistors/GaNFETs/PowerStages/METUPowerLab_Transistors_GaNFETs_PowerStages_13-PowerWFQFN_v2.step"
 		(offset
 			(xyz 1.75 2.5 0)
 		)

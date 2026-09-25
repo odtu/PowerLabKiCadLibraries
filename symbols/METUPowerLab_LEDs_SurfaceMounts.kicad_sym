@@ -73,7 +73,7 @@
 				(hide yes)
 			)
 		)
-		(property "Color" "Green"
+		(property "Color" "Blue"
 			(at 0 0 0)
 			(effects
 				(font
@@ -145,7 +145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "710-150060BS75000 "
+		(property "Mouser Number" "710-150060BS75000"
 			(at 0 0 0)
 			(effects
 				(font
@@ -164,6 +164,15 @@
 			)
 		)
 		(property "Özdisan Number" "150060BS75000"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_LEDs_SurfaceMounts:0603_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -429,7 +438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "710-150060GS75000 "
+		(property "Mouser Number" "710-150060GS75000"
 			(at 0 0 0)
 			(effects
 				(font
@@ -448,6 +457,15 @@
 			)
 		)
 		(property "Özdisan Number" "150060GS75000"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_LEDs_SurfaceMounts:0603_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -713,7 +731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "710-150060RS75000 "
+		(property "Mouser Number" "710-150060RS75000"
 			(at 0 0 0)
 			(effects
 				(font
@@ -732,6 +750,15 @@
 			)
 		)
 		(property "Özdisan Number" "150060RS75000"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_LEDs_SurfaceMounts:0603_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -916,7 +943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "150060RS75000"
+		(property "Manufacturer Number" "150060WS75000"
 			(at 0 0 0)
 			(effects
 				(font
@@ -925,7 +952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Color" "Red"
+		(property "Color" "White"
 			(at 0 0 0)
 			(effects
 				(font
@@ -998,6 +1025,15 @@
 			)
 		)
 		(property "Mouser Number" "710-150060WS75000"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_LEDs_SurfaceMounts:0603_*"
 			(at 0 0 0)
 			(effects
 				(font

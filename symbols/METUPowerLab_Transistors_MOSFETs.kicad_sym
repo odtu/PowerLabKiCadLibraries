@@ -100,7 +100,7 @@
 				(hide yes)
 			)
 		)
-		(property "RDSon" "26.5 mOhm "
+		(property "RDSon" "26.5 mOhm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -136,7 +136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "8-PowerTDFN"
+		(property "Package" "SOT-23"
 			(at 0 0 0)
 			(effects
 				(font
@@ -529,7 +529,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "726-IAUZ30N06S5L140A "
+		(property "Mouser Number" "726-IAUZ30N06S5L140A"
 			(at 0 0 0)
 			(effects
 				(font
@@ -913,7 +913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "863-NTMFS006N08MC "
+		(property "Mouser Number" "863-NTMFS006N08MC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1297,7 +1297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "863-NVMFD6H840NLWF1G "
+		(property "Mouser Number" "863-NVMFD6H840NLWF1G"
 			(at 46.99 15.24 0)
 			(effects
 				(font
@@ -1976,7 +1976,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "863-NVMFS6H800NT1G "
+		(property "Mouser Number" "863-NVMFS6H800NT1G"
 			(at 0 0 0)
 			(effects
 				(font

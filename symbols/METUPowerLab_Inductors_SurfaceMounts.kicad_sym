@@ -145,7 +145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "810-VLS6045EX-101M "
+		(property "Mouser Number" "810-VLS6045EX-101M"
 			(at 0 0 0)
 			(effects
 				(font
@@ -422,7 +422,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "1210 (3225 Metric) "
+		(property "Package" "1210 (3225 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -440,7 +440,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "81-DFE322520F2R2M=P2 "
+		(property "Mouser Number" "81-DFE322520F2R2M=P2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -449,7 +449,16 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Number" "4062083 "
+		(property "Farnell Number" "4062083"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_Inductors_SurfaceMounts:1210_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -726,7 +735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "710-74404063330 "
+		(property "Mouser Number" "710-74404063330"
 			(at 0 0 0)
 			(effects
 				(font
@@ -735,7 +744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Number" "2431525 "
+		(property "Farnell Number" "2431525"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1003,7 +1012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "704-EXLA1V0505-4R7-R "
+		(property "Mouser Number" "704-EXLA1V0505-4R7-R"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1289,6 +1298,15 @@
 				(hide yes)
 			)
 		)
+		(property "ki_fp_filters" "METUPowerLab_Inductors_SurfaceMounts:1212_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(symbol "4.7µH 1A_0_1"
 			(arc
 				(start -2.54 0)
@@ -1539,7 +1557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "1210 (3225 Metric) "
+		(property "Package" "1210 (3225 Metric)"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1557,7 +1575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Number" "810-BCL322520RT6R8MD "
+		(property "Mouser Number" "810-BCL322520RT6R8MD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1566,7 +1584,16 @@
 				(hide yes)
 			)
 		)
-		(property "Farnell Number" "4125621 "
+		(property "Farnell Number" "4125621"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "METUPowerLab_Inductors_SurfaceMounts:1210_*"
 			(at 0 0 0)
 			(effects
 				(font

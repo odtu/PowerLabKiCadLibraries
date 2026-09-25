@@ -87,7 +87,7 @@
 		(uuid "20e1a77d-44a8-4ca7-8b8f-e65eaf092501")
 	)
 	(embedded_fonts no)
-	(model " ${METUPOWERLAB_3D}/Resistors/ChipResistor/METUPowerLab_Resistors_ChipResistors_0603.stp "
+	(model "${METUPOWERLAB_3D}/Resistors/ChipResistor/METUPowerLab_Resistors_ChipResistors_0603.stp"
 		(offset
 			(xyz 0.8 0.4 0)
 		)
