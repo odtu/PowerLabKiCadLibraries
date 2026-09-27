@@ -1,1 +1,1 @@
-yazılıcak
+Please review DesignRules.md and follow the guidelines when designing the libraries. Once you're done, fork the repo and open a pull request. We will review your submission and merge it if everything looks good.
