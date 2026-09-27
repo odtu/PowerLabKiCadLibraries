@@ -105,8 +105,8 @@
 		)
 		(symbol "NetTie_2_0.5mm_1_1"
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -5.08 0 0)
+				(length 3.81)
 				(name ""
 					(effects
 						(font
@@ -123,8 +123,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 5.08 0 180)
+				(length 3.81)
 				(name ""
 					(effects
 						(font
