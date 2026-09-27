@@ -148,7 +148,7 @@
 		(thermal_bridge_angle 45)
 		(uuid "b551c57a-3bd0-4301-b681-dd18cd652354")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 1 -6)
 		(size 1 1)
 		(drill 0.5)
@@ -157,7 +157,7 @@
 		(solder_mask_margin 0.1)
 		(uuid "ac04e137-7825-4af5-bbf5-eeb25984fca3")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 1 -4.5)
 		(size 1 1)
 		(drill 0.5)
@@ -166,7 +166,7 @@
 		(solder_mask_margin 0.1)
 		(uuid "5e3a543f-ad49-4f5c-8793-deeba52970e0")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 1 -3)
 		(size 1 1)
 		(drill 0.5)
@@ -175,7 +175,7 @@
 		(solder_mask_margin 0.1)
 		(uuid "5cb38df0-94ad-47f1-9339-32213264d7b6")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 2.5 -6)
 		(size 1 1)
 		(drill 0.5)
@@ -184,7 +184,7 @@
 		(solder_mask_margin 0.1)
 		(uuid "e9294ec0-b742-4297-b371-544ab0806222")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 2.5 -4.5)
 		(size 1 1)
 		(drill 0.5)
@@ -193,7 +193,7 @@
 		(solder_mask_margin 0.1)
 		(uuid "b859d298-fe8b-41fb-9269-b540b08450d9")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 2.5 -3)
 		(size 1 1)
 		(drill 0.5)
@@ -202,7 +202,7 @@
 		(solder_mask_margin 0.1)
 		(uuid "e86cc701-20f2-4496-89cc-fd1ff40728d6")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 4 -6)
 		(size 1 1)
 		(drill 0.5)
@@ -211,7 +211,7 @@
 		(solder_mask_margin 0.1)
 		(uuid "aae971d0-57de-4762-bf88-3fbfe6ae08cf")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 4 -4.5)
 		(size 1 1)
 		(drill 0.5)
@@ -220,7 +220,7 @@
 		(solder_mask_margin 0.1)
 		(uuid "e8429a9d-6f50-48c9-8e9f-2172957d2893")
 	)
-	(pad "5" thru_hole circle
+	(pad "3" thru_hole circle
 		(at 4 -3)
 		(size 1 1)
 		(drill 0.5)
