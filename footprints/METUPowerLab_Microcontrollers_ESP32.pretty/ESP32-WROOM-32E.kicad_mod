@@ -403,18 +403,18 @@
 	)
 	(pad "39" thru_hole circle
 		(at -2.2 1.76)
-		(size 0.5 0.5)
+		(size 0.6 0.6)
 		(drill 0.3)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.1)
 		(uuid "1a2c8b21-7d3a-4866-b6c2-70beeada410a")
 	)
 	(pad "39" thru_hole circle
 		(at -2.2 3.16)
-		(size 0.5 0.5)
+		(size 0.6 0.6)
 		(drill 0.3)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.1)
 		(uuid "44295996-9251-4623-bd21-80562748de4e")
@@ -449,18 +449,18 @@
 	)
 	(pad "39" thru_hole circle
 		(at -0.8 1.76)
-		(size 0.5 0.5)
+		(size 0.6 0.6)
 		(drill 0.3)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.1)
 		(uuid "a8ee942a-1995-4bf3-880d-bad8f247d826")
 	)
 	(pad "39" thru_hole circle
 		(at -0.8 3.16)
-		(size 0.5 0.5)
+		(size 0.6 0.6)
 		(drill 0.3)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.1)
 		(uuid "2b4a1043-5327-4089-8c85-b4421dc1c779")
@@ -487,12 +487,7 @@
 		(uuid "c12f35be-0582-43a5-b9d5-222bb19e2adf")
 	)
 	(zone
-		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
-			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
-			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
-			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
-			"In29.Cu" "In30.Cu"
-		)
+		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu" "In30.Cu")
 		(uuid "2ae545b8-be1f-41d4-875b-4cdc5f957633")
 		(name "Antenna Keepout")
 		(hatch full 0.5)
@@ -518,14 +513,17 @@
 		)
 		(polygon
 			(pts
-				(xy -9 -12.75) (xy 9 -12.75) (xy 9 -6.56) (xy -9 -6.56)
+				(xy -9 -12.75)
+				(xy 9 -12.75)
+				(xy 9 -6.56)
+				(xy -9 -6.56)
 			)
 		)
 	)
 	(embedded_fonts no)
 	(model "${METUPOWERLAB_3D}/Microcontrollers/METUPowerLab_Microcontrollers_ESP32_ESP32-WROOM-32E.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz -9.01 -12.75 0)
 		)
 		(scale
 			(xyz 1 1 1)
