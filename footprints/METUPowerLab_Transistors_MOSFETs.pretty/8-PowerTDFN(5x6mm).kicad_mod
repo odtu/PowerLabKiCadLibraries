@@ -143,7 +143,7 @@
 	(pad "3" smd rect
 		(at 2.5 -4.4)
 		(size 6 5.2)
-		(layers "B.Cu" "B.Mask" "B.Paste")
+		(layers "B.Cu" "B.Mask")
 		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
 		(uuid "b551c57a-3bd0-4301-b681-dd18cd652354")
