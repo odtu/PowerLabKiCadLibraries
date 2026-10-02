@@ -1,0 +1,163 @@
+(footprint "SOT-23-6"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SOT-23-6")
+	(property "Reference" "REF**"
+		(at 0 -2.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ea6cfeb9-6ae3-4269-ba8f-fd3674cc7140")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOT-23-6"
+		(at 0 2.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "167031da-3963-4dee-9aa3-371d530e6dd5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db8e5081-cf84-4e58-9b1e-415ff42ae327")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SOT-23-6"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c32a4cc6-cae5-4f89-965f-c295c1a6b8e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.8 -1.55)
+		(end 0.8 -1.55)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "904fbd0c-9763-4d1b-9712-9dff67edcbb6")
+	)
+	(fp_line
+		(start -0.8 1.55)
+		(end 0.8 1.55)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "051634b3-4ead-4e35-b90a-e4aaa68f820e")
+	)
+	(fp_circle
+		(center -1.2 -1.75)
+		(end -1.15 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "11677e03-28b5-45e5-94f0-9f87400bdb09")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a0149b69-1dfb-4f81-801f-1cad5d3711e4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.2 -0.95)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "c0f438d0-30ca-46fa-af66-a0be1d19898c")
+	)
+	(pad "2" smd rect
+		(at -1.2 0)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "140c6d33-8ddb-45d5-a3e6-d8ea6bf1b037")
+	)
+	(pad "3" smd rect
+		(at -1.2 0.95)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "cee3dbb6-f4b4-43c1-8d7a-191e6d4d5779")
+	)
+	(pad "4" smd rect
+		(at 1.2 0.95)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "c770bbc0-35bb-4caa-a69c-83a533a2888e")
+	)
+	(pad "5" smd rect
+		(at 1.2 0)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "f17e6cce-de7b-4c79-9ebe-e66be545641a")
+	)
+	(pad "6" smd rect
+		(at 1.2 -0.95)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "a7b3b69e-e485-4783-a5f9-28e83859c56c")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/GateDrivers/LowSide/METUPowerLab_GateDrivers_LowSide_SOT-23-6.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
