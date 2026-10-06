@@ -1,0 +1,155 @@
+(footprint "SOT-23-5"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "SOT-23-5 (TI DBV)")
+	(property "Reference" "REF**"
+		(at 0 -2.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e01")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOT-23-5"
+		(at 0 2.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e02")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SOT-23-5"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.8 -1.55)
+		(end 0.8 -1.55)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e05")
+	)
+	(fp_line
+		(start -0.8 1.55)
+		(end 0.8 1.55)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e06")
+	)
+	(fp_circle
+		(center -1.2 -1.75)
+		(end -1.15 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e07")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e08")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.2 -0.95)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e11")
+	)
+	(pad "2" smd rect
+		(at -1.2 0)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e12")
+	)
+	(pad "3" smd rect
+		(at -1.2 0.95)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e13")
+	)
+	(pad "4" smd rect
+		(at 1.2 0.95)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e14")
+	)
+	(pad "5" smd rect
+		(at 1.2 -0.95)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "5b0e6a3c-2d4f-4c71-9a8e-1f3b7c9d2e15")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Logics/Comparators/METUPowerLab_Logics_Comparators_SOT-23-5.stp"
+		(offset
+			(xyz 0 1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)
