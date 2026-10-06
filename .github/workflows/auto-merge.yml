@@ -1,0 +1,118 @@
+name: Auto-merge library PRs
+
+# Merges a library pull request as soon as "Library checks" passes on it.
+#
+# Runs from the base branch after the checks finish (workflow_run), so it has a
+# write token even for PRs from forks, and it never checks out or runs PR code.
+# It merges only when ALL of these hold:
+#   - every library check passed, on the PR's current head commit
+#   - the author has write access to this repository
+#   - the PR changes only symbols/, footprints/ or 3dmodels/
+#   - the PR is not a draft and has no "hold" / "do-not-merge" / "release" label
+# A PR whose files are already identical on main (a duplicate) is closed instead.
+# To keep a PR open for human review, add the "hold" label.
+#
+# Manual dry run (reports the decision, changes nothing):
+#   gh workflow run auto-merge.yml -f pr=7 -f dry_run=true
+
+on:
+  workflow_run:
+    workflows: ["Library checks"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: PR number to evaluate
+        required: true
+        type: number
+      dry_run:
+        description: Only report what would happen
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: auto-merge
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success')
+    steps:
+      - uses: actions/github-script@v7
+        env:
+          DISPATCH_PR: ${{ inputs.pr }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        with:
+          script: |
+            const repo = context.repo;
+            const dryRun = process.env.DRY_RUN === 'true';
+            const LIBRARY_PATH = /^(symbols|footprints|3dmodels)\//;
+            const HOLD_LABELS = ['hold', 'do-not-merge', 'release'];
+            const WRITE = ['admin', 'maintain', 'write'];
+
+            // Which PR? workflow_run lists no PRs for forks, so match on the head commit.
+            let pr, checkedSha;
+            if (context.eventName === 'workflow_dispatch') {
+              pr = (await github.rest.pulls.get({ ...repo, pull_number: Number(process.env.DISPATCH_PR) })).data;
+              checkedSha = pr.head.sha;
+            } else {
+              checkedSha = context.payload.workflow_run.head_sha;
+              const open = await github.paginate(github.rest.pulls.list, { ...repo, state: 'open', per_page: 100 });
+              pr = open.find(p => p.head.sha === checkedSha);
+              if (!pr) { core.info(`No open PR at ${checkedSha} (pushed again or closed); nothing to do.`); return; }
+            }
+            const tag = `PR #${pr.number} "${pr.title}"`;
+            const skip = reason => core.notice(`${tag}: not merging, ${reason}.`);
+
+            if (pr.state !== 'open' && !dryRun) return skip('it is not open');
+            if (pr.head.sha !== checkedSha) return skip('new commits arrived after the checks ran');
+            if (pr.draft) return skip('it is a draft');
+            const held = pr.labels.map(l => l.name.toLowerCase()).filter(n => HOLD_LABELS.includes(n));
+            if (held.length) return skip(`it has the label "${held[0]}"`);
+
+            // The checks must have passed on this exact commit (dispatch has no run to rely on).
+            if (context.eventName === 'workflow_dispatch') {
+              const runs = (await github.rest.actions.listWorkflowRunsForRepo({ ...repo, head_sha: checkedSha, per_page: 50 })).data.workflow_runs
+                .filter(r => r.name === 'Library checks' && r.event === 'pull_request');
+              if (!runs.length || runs[0].conclusion !== 'success') return skip('"Library checks" has not passed on its head commit');
+            }
+
+            const { data: perm } = await github.rest.repos.getCollaboratorPermissionLevel({ ...repo, username: pr.user.login });
+            if (!WRITE.includes(perm.permission)) return skip(`${pr.user.login} has no write access (${perm.permission}); a maintainer reviews it`);
+
+            const files = await github.paginate(github.rest.pulls.listFiles, { ...repo, pull_number: pr.number, per_page: 100 });
+            const other = files.filter(f => !LIBRARY_PATH.test(f.filename));
+            if (!files.length) return skip('it changes no files');
+            if (other.length) return skip(`it changes files outside the library (${other[0].filename}); a maintainer reviews it`);
+
+            // Duplicate of something already merged: every file already identical on the base branch.
+            let duplicate = !files.some(f => f.status === 'removed');
+            for (const f of files) {
+              if (!duplicate) break;
+              try {
+                const { data } = await github.rest.repos.getContent({ ...repo, path: f.filename, ref: pr.base.ref });
+                duplicate = data.sha === f.sha;
+              } catch { duplicate = false; }
+            }
+
+            if (duplicate) {
+              core.notice(`${tag}: duplicate, its files are already identical on ${pr.base.ref}.`);
+              if (dryRun) return core.notice('Dry run: would close it as a duplicate.');
+              await github.rest.issues.createComment({ ...repo, issue_number: pr.number,
+                body: `Closing: these files are already identical on \`${pr.base.ref}\` (probably a duplicate of an earlier pull request).` });
+              await github.rest.pulls.update({ ...repo, pull_number: pr.number, state: 'closed' });
+              return;
+            }
+
+            if (dryRun) return core.notice(`${tag}: dry run, would merge (${files.length} library files).`);
+            await github.rest.pulls.merge({ ...repo, pull_number: pr.number, merge_method: 'merge', sha: checkedSha });
+            await github.rest.issues.createComment({ ...repo, issue_number: pr.number,
+              body: 'Merged automatically: all library checks passed. Panel users get these parts with the next library **Update**.' });
+            core.notice(`${tag}: merged.`);

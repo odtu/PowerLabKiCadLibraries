@@ -1,4 +1,12 @@
-Please review DesignRules.md and follow the guidelines when designing the libraries. Once you're done, fork the repo and open a pull request. We will review your submission and merge it if everything looks good.
+Please review DesignRules.md and follow the guidelines when designing the libraries. Once you're done, fork the repo and open a pull request (or use **Share** in the PowerLab KiCad Assistant panel, which does it for you).
+
+### Automatic merge
+
+A pull request from someone with write access to this repository is **merged automatically as soon as all library checks pass**, if it only changes `symbols/`, `footprints/` or `3dmodels/`. Pull requests from other contributors, and ones that touch anything else, wait for a maintainer.
+
+- To keep a pull request open for review, add the **`hold`** label (or open it as a draft). Remove the label to let it merge.
+- A pull request whose files are already identical on `main` (a duplicate) is closed automatically.
+- The checks can't confirm that pinouts, pad sizes or ratings match the datasheet. **That stays your responsibility** before you share.
 
 ### Automatic checks on pull requests
 
