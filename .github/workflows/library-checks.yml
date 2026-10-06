@@ -1,0 +1,189 @@
+name: Library checks
+
+# Enforces HowToCreateNewDesign/DesignRules.md on pull requests.
+#  - standards:     tools/check_library.py on the changed symbol/footprint files
+#  - kicad-load:    the changed libraries must load in KiCad 10 (kicad-cli)
+#  - release-files: PRs must not touch the PCM package (zip / metadata.json)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+    paths:
+      - "symbols/**"
+      - "footprints/**"
+      - "3dmodels/**"
+      - "tools/**"
+      - "PowerLabKiCadLibraries*.zip"
+      - "metadata.json"
+      - ".github/workflows/library-checks.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: library-checks-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  standards:
+    name: Library standards (DesignRules.md)
+    runs-on: ubuntu-latest
+    outputs:
+      symbols: ${{ steps.changed.outputs.symbols }}
+      footprint_libs: ${{ steps.changed.outputs.footprint_libs }}
+      any: ${{ steps.changed.outputs.any }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check changed symbols and footprints
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: python3 tools/check_library.py --changed "origin/${BASE_REF}"
+
+      - name: Check whole library (report only)
+        if: github.event_name != 'pull_request'
+        run: python3 tools/check_library.py --all --exit-zero
+
+      - name: List libraries for the KiCad load test
+        id: changed
+        if: always()
+        shell: bash
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          set -euo pipefail
+          declare -A seen=()
+          syms=()
+          libs=()
+          add_lib() {
+            if [ -d "$1" ] && [ -z "${seen[$1]+x}" ]; then seen[$1]=1; libs+=("$1"); fi
+          }
+          if [ "$EVENT" = "pull_request" ]; then
+            while IFS= read -r -d '' f; do
+              case "$f" in
+                symbols/*.kicad_sym)
+                  if [ -f "$f" ]; then syms+=("$f"); fi ;;
+                footprints/*.pretty/*.kicad_mod)
+                  add_lib "$(dirname "$f")" ;;
+              esac
+            done < <(git diff -z --name-only --diff-filter=AMR "origin/${BASE_REF}...HEAD" --)
+          else
+            for f in symbols/*.kicad_sym; do syms+=("$f"); done
+            for d in footprints/*.pretty; do add_lib "$d"; done
+          fi
+          {
+            echo "symbols<<__END_OF_LIST__"
+            if [ "${#syms[@]}" -gt 0 ]; then printf '%s\n' "${syms[@]}"; fi
+            echo "__END_OF_LIST__"
+            echo "footprint_libs<<__END_OF_LIST__"
+            if [ "${#libs[@]}" -gt 0 ]; then printf '%s\n' "${libs[@]}"; fi
+            echo "__END_OF_LIST__"
+            if [ "$(( ${#syms[@]} + ${#libs[@]} ))" -gt 0 ]; then echo "any=true"; else echo "any=false"; fi
+          } >> "$GITHUB_OUTPUT"
+          echo "Symbol libraries: ${#syms[@]}, footprint libraries: ${#libs[@]}"
+
+  kicad-load:
+    name: Libraries load in KiCad 10
+    needs: standards
+    # Run even if the standards check found errors, so both results are visible.
+    if: always() && needs.standards.outputs.any == 'true'
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      # The image's default user cannot write to the runner-owned workspace.
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Export changed libraries to SVG with kicad-cli
+        shell: bash
+        env:
+          SYMBOLS: ${{ needs.standards.outputs.symbols }}
+          FOOTPRINT_LIBS: ${{ needs.standards.outputs.footprint_libs }}
+        run: |
+          set -uo pipefail
+          kicad-cli version
+          out="$(mktemp -d)"
+          fail=0
+          # Escape a value for a GitHub annotation property (file=...).
+          prop() { local s="$1"; s="${s//%/%25}"; s="${s//:/%3A}"; s="${s//,/%2C}"; printf '%s' "$s"; }
+          mapfile -t syms <<< "$SYMBOLS"
+          mapfile -t libs <<< "$FOOTPRINT_LIBS"
+
+          n=0
+          for f in "${syms[@]}"; do
+            [ -n "$f" ] || continue
+            n=$((n + 1))
+            dest="$out/sym/$n"
+            mkdir -p "$dest"
+            echo "::group::kicad-cli sym export svg $f"
+            kicad-cli sym export svg --output "$dest" "$f" < /dev/null 2>&1 | tee "$dest.log"
+            rc=${PIPESTATUS[0]}
+            svgs=$(find "$dest" -name '*.svg' | wc -l)
+            echo "::endgroup::"
+            if [ "$rc" -ne 0 ] || [ "$svgs" -eq 0 ] || grep -qi 'unable to load' "$dest.log"; then
+              echo "::error file=$(prop "$f")::KiCad 10 could not load this symbol library (kicad-cli exit $rc, $svgs SVGs exported). Open it in the KiCad 10 Symbol Editor and re-save it."
+              fail=1
+            else
+              echo "OK  $f ($svgs SVGs)"
+            fi
+          done
+
+          for d in "${libs[@]}"; do
+            [ -n "$d" ] || continue
+            n=$((n + 1))
+            dest="$out/fp/$n"
+            mkdir -p "$dest"
+            mods=$(find "$d" -maxdepth 1 -name '*.kicad_mod' | wc -l)
+            echo "::group::kicad-cli fp export svg $d"
+            kicad-cli fp export svg --output "$dest" "$d" < /dev/null 2>&1 | tee "$dest.log"
+            rc=${PIPESTATUS[0]}
+            svgs=$(find "$dest" -name '*.svg' | wc -l)
+            echo "::endgroup::"
+            if [ "$rc" -ne 0 ] || [ "$svgs" -eq 0 ] || grep -qi 'unable to load' "$dest.log"; then
+              echo "::error file=$(prop "$d")::KiCad 10 could not load this footprint library (kicad-cli exit $rc, $svgs of $mods footprints exported). Open it in the KiCad 10 Footprint Editor and re-save it."
+              fail=1
+            elif [ "$svgs" -lt "$mods" ]; then
+              echo "::warning file=$(prop "$d")::Only $svgs SVGs exported for $mods footprints; check the kicad-cli log above."
+              echo "OK? $d ($svgs/$mods SVGs)"
+            else
+              echo "OK  $d ($svgs SVGs)"
+            fi
+          done
+          exit "$fail"
+
+  release-files:
+    name: PCM package files untouched
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: PowerLabKiCadLibraries*.zip and metadata.json are maintainer-only
+        shell: bash
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          IS_RELEASE: ${{ contains(github.event.pull_request.labels.*.name, 'release') }}
+        run: |
+          set -euo pipefail
+          changed="$(git diff --name-only --no-renames "origin/${BASE_REF}...HEAD" -- 'PowerLabKiCadLibraries*.zip' 'metadata.json')"
+          if [ -z "$changed" ]; then
+            echo "OK: the PR does not modify the PCM package files."
+            exit 0
+          fi
+          if [ "$IS_RELEASE" = "true" ]; then
+            echo "::notice::PCM package files changed; allowed because the PR has the 'release' label."
+            exit 0
+          fi
+          while IFS= read -r f; do
+            echo "::error file=${f}::${f} is regenerated by the maintainers at release time and must not be changed in a library PR. Restore it with: git checkout origin/${BASE_REF} -- '${f}'"
+          done <<< "$changed"
+          echo "Please revert the files above and submit only symbols/, footprints/ and 3dmodels/ changes."
+          exit 1
