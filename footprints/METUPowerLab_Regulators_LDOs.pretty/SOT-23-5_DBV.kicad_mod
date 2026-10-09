@@ -1,0 +1,162 @@
+(footprint "SOT-23-5_DBV"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SOT-23-5 DBV (TI DBV0005A land pattern)")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4a0043c5-28a1-55f7-804b-b34cc359932b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOT-23-5_DBV"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3593ad9-e74b-5218-bf6c-bb86dab83a8f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps709.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a023fcc4-acaa-5811-a16a-ce59e12ec1f5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SOT-23-5 DBV (TI DBV0005A land pattern)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "367cb895-ce40-51cb-8571-ed9d8a3113c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.6 -1.55)
+		(end 0.6 -1.55)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3b29a73c-c26d-5cde-95ae-a87d2155beaa")
+	)
+	(fp_line
+		(start -0.6 1.55)
+		(end 0.6 1.55)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "04597260-96d0-5ae8-a588-1b095afdc62d")
+	)
+	(fp_circle
+		(center -2.1 -1.5)
+		(end -1.95 -1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "c7cf73af-94fc-56ee-bcd8-887f2ca2ebe5")
+	)
+	(fp_rect
+		(start -0.8 -1.45)
+		(end 0.8 1.45)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a68adacf-96f1-5db3-87da-4ccb29d6fdb9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a6dfd5f7-697c-55a0-8383-e1b2ccb63cd7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.3 -0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "85354178-d8cf-5d2c-a077-4b80e6ee6f94")
+	)
+	(pad "2" smd rect
+		(at -1.3 0)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "2dbc338a-fc58-5401-8eab-6630afe433a6")
+	)
+	(pad "3" smd rect
+		(at -1.3 0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "f0efde1c-0ce4-5a9f-8fce-16680faebd1d")
+	)
+	(pad "4" smd rect
+		(at 1.3 0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "19282617-6b76-53e8-9fcd-8f56ac9fe201")
+	)
+	(pad "5" smd rect
+		(at 1.3 -0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "a2170d25-c1e6-5b22-a700-bb37005fa39d")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Regulators/LDOs/METUPowerLab_Regulators_LDOs_SOT-23-5_DBV.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
