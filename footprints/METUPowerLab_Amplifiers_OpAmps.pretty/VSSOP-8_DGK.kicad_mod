@@ -1,0 +1,183 @@
+(footprint "VSSOP-8_DGK"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "VSSOP-8 3x3mm P0.65mm (TI DGK0008A land pattern)")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9ed49d77-542b-5754-afcd-462a88fffbc8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "VSSOP-8_DGK"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5629005b-9629-5775-958c-84f51f7d7d65")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv9062.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "822d55c4-f3d9-503b-9737-f668e61889f1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "VSSOP-8 3x3mm P0.65mm (TI DGK0008A land pattern)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aa8c7978-39f6-50c3-99c6-2c473ce1af5f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.25 -1.6)
+		(end 1.25 -1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a17a5c3b-33be-5438-8847-6e0f41f5fc93")
+	)
+	(fp_line
+		(start -1.25 1.6)
+		(end 1.25 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e04d9cd5-02ca-5a68-a76f-7314392b64ef")
+	)
+	(fp_circle
+		(center -2.2 -1.7)
+		(end -2.05 -1.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "66cf5db3-06ac-577b-8ce2-e04e37bddb8d")
+	)
+	(fp_rect
+		(start -1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "219c6941-2c5f-5a72-9a59-3d3d4d942310")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "54ce212e-5784-5017-9fad-432e5828fcbd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.2 -0.975)
+		(size 1.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "366a6819-98e5-555a-b0d8-419ac906aba3")
+	)
+	(pad "2" smd rect
+		(at -2.2 -0.325)
+		(size 1.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "d51e6c0c-a8e3-5db0-93af-59ef494a0714")
+	)
+	(pad "3" smd rect
+		(at -2.2 0.325)
+		(size 1.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "1b55697e-15f0-56a8-8a5c-8056a1b1b31b")
+	)
+	(pad "4" smd rect
+		(at -2.2 0.975)
+		(size 1.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "b31ce813-c3fb-5ef7-8172-c6e1659dd826")
+	)
+	(pad "5" smd rect
+		(at 2.2 0.975)
+		(size 1.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "b71e17bb-68e7-52a1-9a59-9a47a7661a84")
+	)
+	(pad "6" smd rect
+		(at 2.2 0.325)
+		(size 1.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "4e9baffa-660a-505a-bf73-49be8df169d1")
+	)
+	(pad "7" smd rect
+		(at 2.2 -0.325)
+		(size 1.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "5096aea5-a32f-521f-a8df-806f0df65b36")
+	)
+	(pad "8" smd rect
+		(at 2.2 -0.975)
+		(size 1.4 0.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(uuid "b34a00c1-1249-5094-b0ae-008a5430fd1a")
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Amplifiers/OpAmps/METUPowerLab_Amplifiers_OpAmps_VSSOP-8_DGK.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
