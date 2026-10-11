@@ -98,16 +98,15 @@
 		(uuid "a33ebe4a-35bb-4ddc-89c0-716de7d5e08c")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0.7 0)
+		(at 1.85 0.75 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "41d761fb-14c8-414f-b6ed-5345b582af0a")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.08)
+				(size 1 1)
+				(thickness 0.1)
 			)
-			(justify left)
 		)
 	)
 	(pad "1" smd rect
