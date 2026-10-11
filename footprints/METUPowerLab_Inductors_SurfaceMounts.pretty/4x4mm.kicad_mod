@@ -106,5 +106,39 @@
 		(thermal_bridge_angle 45)
 		(uuid "9cfad3e9-e5fd-4d0d-b2d5-6886a597f33c")
 	)
+	(zone
+		(layers "F.Cu")
+		(uuid "1eb377d0-60b7-46f5-920a-6bb5205d0fe1")
+		(name "Inductor Keepout")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 0.85 -3.8)
+				(xy 3.15 -3.8)
+				(xy 3.15 -0.2)
+				(xy 0.85 -0.2)
+			)
+		)
+	)
 	(embedded_fonts no)
 )

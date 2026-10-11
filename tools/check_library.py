@@ -69,7 +69,8 @@ RULES = OrderedDict([
     ("fp-silk-width", (WARNING, "Silkscreen body outline (fp_line/fp_rect on SilkS) should be width 0.1")),
     ("fp-ref-text", (WARNING, "Reference text should be (size 1 1) (thickness 0.1)")),
     ("fp-value-text", (WARNING, "Value text should be (size 1 1) (thickness 0.15)")),
-    ("fp-courtyard-keepout", (WARNING, "Courtyard / keepout only allowed for RF/magnetic sensitive areas")),
+    ("fp-courtyard-keepout", (WARNING, "Courtyard / keepout only allowed for RF/magnetic sensitive areas (and the between-pads keepout of inductors)")),
+    ("fp-inductor-keepout", (WARNING, "Inductor footprints with >= 0.6 mm between their pads need an F.Cu keepout (no tracks/vias/copper pour) between the pads")),
     ("fp-courtyard-width", (WARNING, "Courtyard lines (when allowed) should be width 0.05")),
     ("fp-smd-pad-shape", (WARNING, "SMD pads should default to rect (roundrect only with a specific reason)")),
     ("fp-thermal-via", (WARNING, "Thermal vias should be thru_hole circle, size 0.5, drill 0.3, layers *.Cu *.Mask, remove_unused_layers no")),
@@ -83,6 +84,11 @@ NET_TIE_REFERENCE = "NT"  # KiCad's net-tie prefix; tolerated only on net-tie sy
 
 GRID = 1.27
 EPS = 1e-6
+
+# Inductor footprints (libraries METUPowerLab_Inductors_*) get a keepout between
+# their pads when a track could fit there: lab default track 0.2 + 2 x 0.2 clearance.
+INDUCTOR_LIB_RE = re.compile(r"^METUPowerLab_Inductors_")
+INDUCTOR_KEEPOUT_MIN_GAP = 0.6
 
 
 # --------------------------------------------------------------------------
@@ -700,6 +706,9 @@ class Pad(object):
         self.type = node[2] if len(node) > 2 and isinstance(node[2], str) else ""
         self.shape = node[3] if len(node) > 3 and isinstance(node[3], str) else ""
         self.size = numbers(child(node, "size"))
+        at = numbers(child(node, "at"))
+        self.at = at[:2] if len(at) >= 2 else None
+        self.rot = at[2] if len(at) >= 3 else 0.0
         d = numbers(child(node, "drill"))
         self.drill = d[0] if d else None
         layers = child(node, "layers")
@@ -710,6 +719,41 @@ class Pad(object):
 
     def label(self):
         return "'%s'" % self.number if self.number else "(unnumbered)"
+
+    def bbox(self):
+        """(x0, y0, x1, y1) of the pad, or None if it isn't axis-aligned / sized."""
+        if self.at is None or len(self.size) < 2:
+            return None
+        w, h = self.size[0], self.size[1]
+        rot = round(self.rot) % 180
+        if rot == 90:
+            w, h = h, w
+        elif rot != 0:
+            return None
+        x, y = self.at
+        return (x - w / 2, y - h / 2, x + w / 2, y + h / 2)
+
+
+def _pad_gap(a, b):
+    """Edge-to-edge distance between two pad bounding boxes along the axis that separates them."""
+    return max(b[0] - a[2], a[0] - b[2], b[1] - a[3], a[1] - b[3])
+
+
+def _keepout_rules(zone):
+    ko = child(zone, "keepout")
+    return dict((head(c), c[1]) for c in ko[1:] if isinstance(c, SList) and len(c) > 1) if ko is not None else {}
+
+
+def _covers_gap(zone, a, b):
+    """True if the zone polygon's bounding box covers the centre of the gap between pads a and b."""
+    pts = [numbers(xy) for xy in walk(zone, "xy")]
+    pts = [p for p in pts if len(p) >= 2]
+    if not pts:
+        return False
+    cx = (max(a[0], b[0]) + min(a[2], b[2])) / 2
+    cy = (max(a[1], b[1]) + min(a[3], b[3])) / 2
+    xs, ys = [p[0] for p in pts], [p[1] for p in pts]
+    return min(xs) - EPS <= cx <= max(xs) + EPS and min(ys) - EPS <= cy <= max(ys) + EPS
 
 
 _checked_pretty = set()
@@ -855,6 +899,33 @@ def check_footprint_file(path, rep):
                 % ", ".join("%s (x%d)" % kv for kv in silk_bad.items()))
 
     keepouts = [z for z in children(root, "zone") if any(True for _ in walk(z, "keepout"))]
+
+    # inductors: keepout between the two pads
+    if INDUCTOR_LIB_RE.match(parent):
+        terminals = [p for p in smd_pads if p.number]
+        boxes = [p.bbox() for p in terminals]
+        if len(terminals) == 2 and terminals[0].number != terminals[1].number and all(boxes):
+            a, b = boxes
+            gap = _pad_gap(a, b)
+            ind_keepouts = [z for z in keepouts if _covers_gap(z, a, b)]
+            keepouts = [z for z in keepouts if z not in ind_keepouts]
+            if gap >= INDUCTOR_KEEPOUT_MIN_GAP - EPS and not ind_keepouts:
+                rep.add("fp-inductor-keepout", rp, terminals[0].line, "inductor pads are %.2f mm apart but there is "
+                        "no keepout between them; add an F.Cu keepout zone covering the gap with tracks, vias and "
+                        "copper pour not allowed" % gap)
+            for z in ind_keepouts:
+                layers = atoms(child(z, "layers") or child(z, "layer") or SList())
+                rules = _keepout_rules(z)
+                probs = []
+                if "F.Cu" not in layers and "*.Cu" not in layers and "F&B.Cu" not in layers:
+                    probs.append("not on F.Cu (layers %s)" % (" ".join(layers) or "missing"))
+                for item in ("tracks", "vias", "copperpour"):
+                    if rules.get(item) != "not_allowed":
+                        probs.append("%s %s" % (item, rules.get(item, "missing")))
+                if probs:
+                    rep.add("fp-inductor-keepout", rp, z.line, "inductor keepout between the pads should be on F.Cu "
+                            "with tracks, vias and copperpour not_allowed: %s" % ", ".join(probs))
+
     if crtyd or keepouts:
         parts = []
         if crtyd:

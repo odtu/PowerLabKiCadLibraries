@@ -146,6 +146,40 @@
 		(thermal_bridge_angle 45)
 		(uuid "f1f217c2-dd6e-4857-9e69-6fedeeac630b")
 	)
+	(zone
+		(layers "F.Cu")
+		(uuid "a04b8d22-9c2f-4e79-904d-67961b63a89d")
+		(name "Inductor Keepout")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 1.6 -5.35)
+				(xy 4.4 -5.35)
+				(xy 4.4 -0.65)
+				(xy 1.6 -0.65)
+			)
+		)
+	)
 	(embedded_fonts no)
 	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_6_6mm.STEP"
 		(offset
