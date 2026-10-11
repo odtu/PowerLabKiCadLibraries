@@ -13,13 +13,13 @@
     "resources": {},
     "versions": [
         {
-            "version": "2.1.0",
+            "version": "2.2.0",
             "status": "stable",
             "kicad_version": "10.0",
             "download_url": "https://github.com/odtu/PowerLabKiCadLibraries/raw/main/PowerLabKiCadLibraries.zip",
-            "download_sha256": "778f2c94cd0e35eedab139eaeafb1411445dd84559703878f75d2257c31e41f4",
-            "download_size": 15942934,
-            "install_size": 96393572
+            "download_sha256": "fc7b3af513ed8ffd216c1490ff8784c6cd9c570720be2a131d19e2eca3dab59f",
+            "download_size": 15897824,
+            "install_size": 96445792
         }
     ]
 }
