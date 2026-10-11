@@ -58,16 +58,75 @@
 	)
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
-	(fp_rect
+	(fp_line
 		(start -9 -12.75)
+		(end 9 -12.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a308c288-d170-415a-ad9f-4c9f144813d9")
+	)
+	(fp_line
+		(start -9 -12.75)
+		(end -9 -5.96)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3f1c2a6e-8d4b-4e0a-9b7c-1d2e3f4a5b61")
+	)
+	(fp_line
+		(start 9 -12.75)
+		(end 9 -5.96)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3f1c2a6e-8d4b-4e0a-9b7c-1d2e3f4a5b62")
+	)
+	(fp_line
+		(start -9 11.95)
+		(end -9 12.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3f1c2a6e-8d4b-4e0a-9b7c-1d2e3f4a5b63")
+	)
+	(fp_line
+		(start -9 12.75)
+		(end -6.415 12.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3f1c2a6e-8d4b-4e0a-9b7c-1d2e3f4a5b64")
+	)
+	(fp_line
+		(start 9 11.95)
 		(end 9 12.75)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
-		(fill no)
 		(layer "F.SilkS")
-		(uuid "a308c288-d170-415a-ad9f-4c9f144813d9")
+		(uuid "3f1c2a6e-8d4b-4e0a-9b7c-1d2e3f4a5b65")
+	)
+	(fp_line
+		(start 6.415 12.75)
+		(end 9 12.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3f1c2a6e-8d4b-4e0a-9b7c-1d2e3f4a5b66")
 	)
 	(fp_circle
 		(center -10.2 -5.26)
