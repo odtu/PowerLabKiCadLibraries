@@ -7,23 +7,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -20.955 44.45 0)
+			(at -20.32 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Value" "EPC23102"
-			(at 0 0 0)
+			(at 0.635 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Footprint" "METUPowerLab_Transistors_GaNFETs_PowerStages:13-PowerWFQFN"
@@ -103,30 +101,36 @@
 			)
 		)
 		(property "RDSon" "5.2 mOhm"
-			(at 0 0 0)
+			(at 0.635 9.144 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Current Rating" "35A"
-			(at 0 0 0)
+			(at 0.635 10.668 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Voltage Rating" "10V up to 80V"
-			(at 0 0 0)
+			(at 0.635 12.192 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-40°C up to 125°C (TJ)"

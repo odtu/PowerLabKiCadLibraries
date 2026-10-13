@@ -86,12 +86,13 @@
 			)
 		)
 		(property "Current Rating" "13A"
-			(at 1.27 6.985 0)
+			(at 0 -3.048 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser Number" "534-7770"

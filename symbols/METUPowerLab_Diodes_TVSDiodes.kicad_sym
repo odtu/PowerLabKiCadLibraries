@@ -83,12 +83,13 @@
 			)
 		)
 		(property "Reverse Standoff Voltage" "24V"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Breakdown Voltage" "26.7V"
@@ -101,12 +102,13 @@
 			)
 		)
 		(property "Clamping Voltage" "46.2V"
-			(at 0 0 0)
+			(at 0 -5.334 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current - Peak Pulse(10/1000µs)" "9A (8/20µs)"
@@ -373,12 +375,13 @@
 			)
 		)
 		(property "Reverse Standoff Voltage" "3.3V (Max)"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Breakdown Voltage" "3.6V"
@@ -391,12 +394,13 @@
 			)
 		)
 		(property "Clamping Voltage" "13V"
-			(at 0 0 0)
+			(at 0 -5.334 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current - Peak Pulse(10/1000µs)" "5A(8/20µs)"
@@ -662,13 +666,14 @@
 				(hide yes)
 			)
 		)
-		(property "Reverse Standoff Voltage" "5(Max)"
-			(at 0 0 0)
+		(property "Reverse Standoff Voltage" "5V (Max)"
+			(at 0 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Breakdown Voltage" "5.5V"
@@ -681,12 +686,13 @@
 			)
 		)
 		(property "Clamping Voltage" "7.2V"
-			(at 0 0 0)
+			(at 0 -5.334 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current - Peak Pulse(10/1000µs)" "3A(8/20µs)"
@@ -962,12 +968,13 @@
 			)
 		)
 		(property "Reverse Standoff Voltage" "1V (Max)"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Breakdown Voltage" "1.4V"
@@ -980,12 +987,13 @@
 			)
 		)
 		(property "Clamping Voltage" "5.2V"
-			(at 0 0 0)
+			(at 0 -5.334 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current - Peak Pulse(10/1000µs)" "8A"
@@ -1261,12 +1269,13 @@
 			)
 		)
 		(property "Reverse Standoff Voltage" "54V"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Breakdown Voltage" "60V"
@@ -1279,12 +1288,13 @@
 			)
 		)
 		(property "Clamping Voltage" "87.1V"
-			(at 0 0 0)
+			(at 0 -5.334 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current - Peak Pulse(10/1000µs)" "4.6A"
@@ -1560,12 +1570,13 @@
 			)
 		)
 		(property "Reverse Standoff Voltage" "48V"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Breakdown Voltage" "53.3V"
@@ -1578,12 +1589,13 @@
 			)
 		)
 		(property "Clamping Voltage" "77.4V"
-			(at 0 0 0)
+			(at 0 -5.334 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current - Peak Pulse(10/1000µs)" "7.7A"
@@ -1850,12 +1862,13 @@
 			)
 		)
 		(property "Reverse Standoff Voltage" "36V"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Breakdown Voltage" "40V"
@@ -1868,12 +1881,13 @@
 			)
 		)
 		(property "Clamping Voltage" "58.1V"
-			(at 0 0 0)
+			(at 0 -5.334 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current - Peak Pulse(10/1000µs)" "10.3A"
@@ -2140,12 +2154,13 @@
 			)
 		)
 		(property "Reverse Standoff Voltage" "1V (Max)"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Breakdown Voltage" "1.4V"
@@ -2158,12 +2173,13 @@
 			)
 		)
 		(property "Clamping Voltage" "8.9V"
-			(at 0 0 0)
+			(at 0 -5.334 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current - Peak Pulse(10/1000µs)" "12A(8/20µs)"

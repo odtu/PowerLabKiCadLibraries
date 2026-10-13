@@ -85,11 +85,14 @@
 			)
 		)
 		(property "Voltage Rating" "63V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"

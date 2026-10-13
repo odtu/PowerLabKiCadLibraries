@@ -86,14 +86,14 @@
 			)
 		)
 		(property "Output Voltage" "3.3V"
-			(at 0 0 0)
-			(show_name no)
+			(at -7.62 -11.938 0)
+			(show_name yes)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Accuracy" "±0.05%"

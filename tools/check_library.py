@@ -53,9 +53,9 @@ RULES = OrderedDict([
     ("sym-footprint-format", (WARNING, "Footprint field should be LibraryNickname:FootprintName")),
     ("sym-fp-filter", (WARNING, "ki_fp_filters entries for METUPowerLab libraries should match at least one footprint")),
     ("sym-hidden-fields", (ERROR, "Footprint, Datasheet and Description fields must be hidden")),
-    ("sym-visible-fields", (WARNING, "Only Reference and Value should be visible")),
+    ("sym-visible-fields", (WARNING, "Only Reference, Value and the key rating fields (KEY_RATING_FIELDS) should be visible")),
     ("sym-flags", (WARNING, "Symbols should be (in_bom yes) (on_board yes) (exclude_from_sim no)")),
-    ("sym-text-size", (WARNING, "Reference/Value text should be (size 1.27 1.27)")),
+    ("sym-text-size", (WARNING, "Reference/Value text should be (size 1.27 1.27); visible rating fields (size 1 1)")),
     ("sym-body-style", (WARNING, "Body rectangles should use (stroke (width 0)) and fill background or none")),
     ("sym-pin-grid", (ERROR, "Pin connection points must be on the 1.27 mm grid")),
     ("fp-file-name", (ERROR, ".kicad_mod names must not contain spaces or be 'Untitled', and must live in a .pretty folder")),
@@ -81,6 +81,14 @@ RULES = OrderedDict([
 ALLOWED_REFERENCES = {"R", "C", "L", "D", "Q", "U", "J", "Y", "F", "FB", "SW", "TP"}
 POWER_REFERENCES = {"#PWR", "#FLG"}
 NET_TIE_REFERENCE = "NT"  # KiCad's net-tie prefix; tolerated only on net-tie symbols
+
+# Rating fields that may be shown under the Value (DesignRules.md, "Visible key ratings").
+KEY_RATING_FIELDS = {
+    "Power", "Tolerance", "Voltage Rating", "Current Rating", "Saturation Current",
+    "Impedance @ Frequency", "VDS", "ID", "RDSon", "DC Reverse Voltage",
+    "Reverse Standoff Voltage", "Clamping Voltage", "Current - Hold", "Current - Trip",
+    "Forward Voltage", "Load Capacitance", "Output Voltage", "Voltage Input Rating",
+}
 
 GRID = 1.27
 EPS = 1e-6
@@ -603,11 +611,12 @@ def check_symbol_file(path, rep, field_index, tree=None):
                 rep.add("sym-hidden-fields", rp, p.line, "%s: %s field must be hidden (hide yes)" % (where, fname))
         visible = [n for n, p in props.items()
                    if n not in ("Reference", "Value", "Footprint", "Datasheet", "Description")
+                   and n not in KEY_RATING_FIELDS
                    and not n.startswith("ki_") and not _prop_hidden(p)]
         if visible:
             rep.add("sym-visible-fields", rp, props[visible[0]].line,
-                    "%s: field(s) %s are visible; only Reference and Value should be shown"
-                    % (where, ", ".join("'%s'" % v for v in visible)))
+                    "%s: field(s) %s are visible; only Reference, Value and the key rating fields "
+                    "should be shown" % (where, ", ".join("'%s'" % v for v in visible)))
         if not is_power:
             for fname in ("Reference", "Value"):
                 p = props.get(fname)
@@ -633,6 +642,14 @@ def check_symbol_file(path, rep, field_index, tree=None):
             size, _ = _font_size(p)
             if len(size) < 2 or not (feq(size[0], 1.27) and feq(size[1], 1.27)):
                 rep.add("sym-text-size", rp, p.line, "%s: %s text size %s, expected (size 1.27 1.27)"
+                        % (where, fname, " ".join("%g" % s for s in size) or "missing"))
+        for fname in KEY_RATING_FIELDS:
+            p = props.get(fname)
+            if p is None or _prop_hidden(p):
+                continue
+            size, _ = _font_size(p)
+            if len(size) < 2 or not (feq(size[0], 1) and feq(size[1], 1)):
+                rep.add("sym-text-size", rp, p.line, "%s: visible rating field %s text size %s, expected (size 1 1)"
                         % (where, fname, " ".join("%g" % s for s in size) or "missing"))
 
         # Body rectangles

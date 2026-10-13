@@ -15,11 +15,12 @@
 			)
 		)
 		(property "Value" "NCP1117ST33T3G"
-			(at 0 0 0)
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "METUPowerLab_Regulators_LDOs:SOT-223"
@@ -95,12 +96,14 @@
 			)
 		)
 		(property "Output Voltage" "3.3V"
-			(at 0 0 0)
+			(at 0 -10.668 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Dropout Voltage (Max)" "1.2V @ 800mA"
@@ -113,12 +116,14 @@
 			)
 		)
 		(property "Current Rating" "1A"
-			(at 0 0 0)
+			(at 0 -12.192 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Protection Features" "Over Current, Over Temperature"
@@ -357,12 +362,14 @@
 			)
 		)
 		(property "Output Voltage" "3.3V"
-			(at 0 0 0)
+			(at 0 -10.668 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Dropout Voltage (Max)" "1.4V @ 150mA"
@@ -375,12 +382,14 @@
 			)
 		)
 		(property "Current Rating" "150mA"
-			(at 0 0 0)
+			(at 0 -12.192 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Protection Features" "Over Current, Over Temperature"
@@ -666,12 +675,14 @@
 			)
 		)
 		(property "Output Voltage" "5V"
-			(at 0 0 0)
+			(at 0 -10.668 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Dropout Voltage (Max)" "1.2V @ 150mA"
@@ -684,12 +695,14 @@
 			)
 		)
 		(property "Current Rating" "150mA"
-			(at 0 0 0)
+			(at 0 -12.192 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "Protection Features" "Over Current, Over Temperature"
