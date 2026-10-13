@@ -13,7 +13,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "R"
-			(at 0 4.445 0)
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,13 +73,24 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±5%"
-			(at 0 0 0)
+		(property "Power" "6W"
+			(at 0 5.842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+			)
+		)
+		(property "Tolerance" "±5%"
+			(at 0 4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
 			)
 		)
 		(property "Operating Temperature" "-55°C ~ 170°C"
@@ -227,7 +238,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "R"
-			(at 0 4.445 0)
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -287,13 +298,24 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±1%"
-			(at 0 0 0)
+		(property "Power" "1W"
+			(at 0 5.842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 0 4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
 			)
 		)
 		(property "Operating Temperature" "-55°C ~ 155°C"
@@ -441,7 +463,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "R"
-			(at 0 4.445 0)
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -501,13 +523,24 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±1%"
-			(at 0 0 0)
+		(property "Power" "3W"
+			(at 0 5.842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 0 4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
 			)
 		)
 		(property "Operating Temperature" "-65°C ~ 170°C"

@@ -90,5 +90,30 @@ Any pad whose job is primarily heat spreading or carrying high current — a shi
 
 - **Body rectangle**: `(stroke (width 0))` (inherit the schematic's default line width) and fill type `background` for a normal opaque part (ICs, passives). Connectors, screw terminals, and shunt resistors use `(fill (type none))` instead, drawn as an open outline — keep using `none` only for that same kind of part (something you'd recognize as a physical connector/terminal, not a black-box component), not interchangeably.
 - **Reference/Value text** on the symbol: `(size 1.27 1.27)`.
-- **Hidden fields**: `Footprint`, `Datasheet`, and `Description` are always `(hide yes)` on the symbol — only `Reference` and `Value` are visible.
+- **Hidden fields**: `Footprint`, `Datasheet`, and `Description` are always `(hide yes)` on the symbol. `Reference` and `Value` are visible, plus the key ratings below. Every other field stays hidden.
+- **Visible key ratings**: passives, discretes, power connectors and regulators show the one to three ratings you would otherwise open the datasheet for, so a part can be checked straight from the schematic. Don't show anything beyond this list (no package, temperature, distributor numbers…):
+
+    | Library | Visible fields |
+    |---|---|
+    | Resistors (chip, shunt) | `Power`, `Tolerance` |
+    | Capacitors | `Voltage Rating` |
+    | Inductors | `Current Rating`, `Saturation Current` (name shown) |
+    | Ferrite beads | `Impedance @ Frequency`, `Current Rating` |
+    | MOSFETs, power blocks | `VDS`, `ID`, `RDSon` (name shown) |
+    | GaN power stages | `Voltage Rating`, `Current Rating`, `RDSon` (name shown) |
+    | Schottky diodes | `DC Reverse Voltage`, `Current Rating` |
+    | TVS diodes | `Reverse Standoff Voltage`, `Clamping Voltage` (name shown) |
+    | PTC fuses | `Current - Hold`, `Current - Trip` (name shown) |
+    | LEDs | `Forward Voltage`, `Current Rating` |
+    | Crystals | `Load Capacitance` (name shown; the Value already is the frequency) |
+    | LDOs, voltage references | `Output Voltage`, `Current Rating` (name shown) |
+    | Buck converters | `Voltage Input Rating`, `Current Rating` (name shown) |
+    | Power connectors, screw terminals | `Current Rating` |
+
+    - Text `(size 1 1)`, smaller than Reference/Value, so the ratings read as secondary information.
+    - Stacked directly under the Value with the Value's x and justification: first line 1.778 mm below the Value, then one line every 1.524 mm. Where the Value sits above the body (shunts, crystals), stack them upward between the Value and the Reference instead.
+    - `(show_name yes)` only where the value alone could be misread (two ratings with the same unit, or a bare `V`/`A` on an IC). Where the unit says it all (`1/10W`, `±1%`, `50V`, `13A`), show the value without the name.
+    - Leave a field hidden when its value is empty or `-` (e.g. the power of a 0 Ω jumper).
+    - Write the value with its unit, e.g. `1/10W`, `5V (Max)` or `2.1 mOhm`, not `1/10 Watt`, `5(Max)` or `2.1mOhm`.
+    - `tools/check_library.py` knows these field names (`KEY_RATING_FIELDS`). If you add a new part type that needs one, add the field to that list and to this table.
 - **BOM/board flags**: every symbol unit is `(in_bom yes) (on_board yes) (exclude_from_sim no)` — don't turn any of these off without a specific reason.

@@ -83,21 +83,23 @@
 			)
 		)
 		(property "Current Rating" "0.9A"
-			(at 0 0 0)
+			(at 0 -3.556 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
-		(property "Saturation Current" "1AA"
-			(at 0 0 0)
+		(property "Saturation Current" "1A"
+			(at 0 -5.08 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Shielding" "Shielded"
@@ -369,21 +371,23 @@
 			)
 		)
 		(property "Current Rating" "3.3A"
-			(at 0 0 0)
+			(at 0 -3.556 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Saturation Current" "4.4A"
-			(at 0 0 0)
+			(at 0 -5.08 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Shielding" "Shielded"
@@ -664,21 +668,23 @@
 			)
 		)
 		(property "Current Rating" "1.22A"
-			(at 0 0 0)
+			(at 0 -3.556 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Saturation Current" "1.5A"
-			(at 0 0 0)
+			(at 0 -5.08 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Shielding" "Shielded"
@@ -950,21 +956,23 @@
 			)
 		)
 		(property "Current Rating" "8.1A"
-			(at 0 0 0)
+			(at 0 -3.556 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Saturation Current" "7.4A"
-			(at 0 0 0)
+			(at 0 -5.08 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Shielding" "Shielded"
@@ -1218,21 +1226,23 @@
 			)
 		)
 		(property "Current Rating" "1A"
-			(at 0 0 0)
+			(at 0 -3.556 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Saturation Current" "1.3A"
-			(at 0 0 0)
+			(at 0 -5.08 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Shielding" "Shielded"
@@ -1504,21 +1514,23 @@
 			)
 		)
 		(property "Current Rating" "1.87A"
-			(at 0 0 0)
+			(at 0 -3.556 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Saturation Current" "2.24A"
-			(at 0 0 0)
+			(at 0 -5.08 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Shielding" "Shielded"

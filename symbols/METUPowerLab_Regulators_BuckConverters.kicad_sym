@@ -106,13 +106,12 @@
 			)
 		)
 		(property "Voltage Input Rating" "4.2V up to 80V"
-			(at 10.16 -17.78 0)
-			(show_name no)
+			(at 8.89 -13.208 0)
+			(show_name yes)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -128,13 +127,12 @@
 			)
 		)
 		(property "Current Rating" "2A"
-			(at 10.16 -17.78 0)
-			(show_name no)
+			(at 8.89 -14.732 0)
+			(show_name yes)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -1297,13 +1295,12 @@
 			)
 		)
 		(property "Voltage Input Rating" "4V up to 65V"
-			(at 0 0 0)
-			(show_name no)
+			(at 7.874 -2.794 0)
+			(show_name yes)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -1319,13 +1316,12 @@
 			)
 		)
 		(property "Current Rating" "1A"
-			(at 0 0 0)
-			(show_name no)
+			(at 7.874 -4.318 0)
+			(show_name yes)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -1633,13 +1629,12 @@
 			)
 		)
 		(property "Voltage Input Rating" "4.5V up to 17V"
-			(at 0 0 0)
-			(show_name no)
+			(at 7.874 -2.794 0)
+			(show_name yes)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
@@ -1655,13 +1650,12 @@
 			)
 		)
 		(property "Current Rating" "1A"
-			(at 0 0 0)
-			(show_name no)
+			(at 7.874 -4.318 0)
+			(show_name yes)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)

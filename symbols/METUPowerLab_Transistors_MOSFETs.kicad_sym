@@ -21,11 +21,12 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 8.255 1.905 0)
+			(at 5.08 1.905 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "METUPowerLab_Transistors_MOSFETs:SOT-23"
@@ -83,30 +84,36 @@
 			)
 		)
 		(property "VDS" "30V"
-			(at 0 0 0)
+			(at 5.08 0.127 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "ID" "5.7A"
-			(at 0 0 0)
+			(at 5.08 -1.397 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "RDSon" "26.5 mOhm"
-			(at 0 0 0)
+			(at 5.08 -2.921 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "VGS" "12V"
@@ -458,30 +465,33 @@
 			)
 		)
 		(property "VDS" "60V"
-			(at 0 0 0)
+			(at 15.494 0.254 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "ID" "30A"
-			(at 0 0 0)
+			(at 15.494 -1.27 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "RDSon" "14 mOhm"
-			(at 0 0 0)
+			(at 15.494 -2.794 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "VGS" "16V"
@@ -842,30 +852,33 @@
 			)
 		)
 		(property "VDS" "80V"
-			(at 0 0 0)
+			(at 15.494 0.254 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "ID" "82A"
-			(at 0 0 0)
+			(at 15.494 -1.27 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "RDSon" "6 mOhm"
-			(at 0 0 0)
+			(at 15.494 -2.794 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "VGS" "20V"
@@ -1226,30 +1239,33 @@
 			)
 		)
 		(property "VDS" "80V"
-			(at 20.32 -5.715 0)
+			(at 15.24 19.812 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "ID" "74A"
-			(at 19.685 -1.27 0)
+			(at 15.24 18.288 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "RDSon" "6.9 mOhm"
-			(at 20.32 0.635 0)
+			(at 15.24 16.764 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "VGS" "20"
@@ -1905,30 +1921,33 @@
 			)
 		)
 		(property "VDS" "80V"
-			(at 0 0 0)
+			(at 15.494 0.254 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "ID" "28A (Ta), 203A (Tc)"
-			(at 0 0 0)
+			(at 15.494 -1.27 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "RDSon" "2.1 mOhm"
-			(at 0 0 0)
+			(at 15.494 -2.794 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "VGS" "20V"

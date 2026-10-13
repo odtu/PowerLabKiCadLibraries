@@ -68,21 +68,23 @@
 			)
 		)
 		(property "VDS" "60V"
-			(at 0 0 0)
+			(at 13.97 -7.493 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
-		(property "RDSon" "2.1mOhm"
-			(at 0 0 0)
+		(property "RDSon" "2.1 mOhm"
+			(at 13.97 -10.541 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "VTH" "2.5V"
@@ -104,12 +106,13 @@
 			)
 		)
 		(property "ID" "30A"
-			(at 0 0 0)
+			(at 13.97 -9.017 0)
+			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 150°C (TJ)"

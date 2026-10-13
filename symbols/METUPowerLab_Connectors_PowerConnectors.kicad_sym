@@ -113,12 +113,13 @@
 			)
 		)
 		(property "Current Rating" "27A"
-			(at 0 0 0)
+			(at 0 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Farnell Number" "3267285"
@@ -334,12 +335,13 @@
 			)
 		)
 		(property "Current Rating" "20A"
-			(at 0 0 0)
+			(at 0 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Farnell Number" "4295426"
@@ -555,12 +557,13 @@
 			)
 		)
 		(property "Current Rating" "13A"
-			(at 0 0 0)
+			(at 0 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Farnell Number" "3783387"

@@ -85,11 +85,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -313,11 +316,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -550,11 +556,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -787,11 +796,14 @@
 			)
 		)
 		(property "Voltage Rating" "10V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -1024,11 +1036,14 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -1261,11 +1276,14 @@
 			)
 		)
 		(property "Voltage Rating" "10V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 85°C"
@@ -1498,11 +1516,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -1735,11 +1756,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 105°C"
@@ -1963,11 +1987,14 @@
 			)
 		)
 		(property "Voltage Rating" "25V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 85°C"
@@ -2200,11 +2227,14 @@
 			)
 		)
 		(property "Voltage Rating" "75V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 85°C"
@@ -2437,11 +2467,14 @@
 			)
 		)
 		(property "Voltage Rating" "16V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -2674,11 +2707,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -2911,11 +2947,14 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -3148,11 +3187,14 @@
 			)
 		)
 		(property "Voltage Rating" "10V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 85°C"
@@ -3385,11 +3427,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -3622,11 +3667,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -3850,11 +3898,14 @@
 			)
 		)
 		(property "Voltage Rating" "16V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 85°C"
@@ -4087,11 +4138,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -4324,11 +4378,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -4543,11 +4600,14 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -4771,11 +4831,14 @@
 			)
 		)
 		(property "Voltage Rating" "10V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 85°C"
@@ -5008,11 +5071,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -5227,11 +5293,14 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -5455,11 +5524,14 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -5692,11 +5764,14 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -5929,11 +6004,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -6157,11 +6235,14 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -6394,11 +6475,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -6631,11 +6715,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -6859,11 +6946,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 85°C"
@@ -7087,11 +7177,14 @@
 			)
 		)
 		(property "Voltage Rating" "50V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -7324,11 +7417,14 @@
 			)
 		)
 		(property "Voltage Rating" "100V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -7552,11 +7648,14 @@
 			)
 		)
 		(property "Voltage Rating" "25V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 125°C"
@@ -7789,11 +7888,14 @@
 			)
 		)
 		(property "Voltage Rating" "25V"
-			(at 2.54 -4.572 0)
+			(at 0.635 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
+				(justify left)
 			)
 		)
 		(property "Operating Temperature" "-55°C up to 85°C"

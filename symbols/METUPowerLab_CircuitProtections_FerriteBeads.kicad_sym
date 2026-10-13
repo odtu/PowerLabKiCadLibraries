@@ -74,21 +74,23 @@
 			)
 		)
 		(property "Impedance @ Frequency" "220 Ohms @ 100 MHz"
-			(at 0 0 0)
+			(at 0 -6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current Rating" "2A"
-			(at 0 0 0)
+			(at 0 -8.382 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "DC Resistance" "50 mOhm"
@@ -322,21 +324,23 @@
 			)
 		)
 		(property "Impedance @ Frequency" "60 Ohms @ 100 MHz"
-			(at 0 0 0)
+			(at 0 -6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current Rating" "3A"
-			(at 0 0 0)
+			(at 0 -8.382 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "DC Resistance" "25 mOhm"

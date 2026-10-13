@@ -101,21 +101,23 @@
 			)
 		)
 		(property "Forward Voltage" "3.2V"
-			(at 0 0 0)
+			(at 0 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current Rating" "20mA"
-			(at 0 0 0)
+			(at 0 -5.842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mounting Type" "Surface Mount"
@@ -394,21 +396,23 @@
 			)
 		)
 		(property "Forward Voltage" "3.2V"
-			(at 0 0 0)
+			(at 0 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current Rating" "20mA"
-			(at 0 0 0)
+			(at 0 -5.842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mounting Type" "Surface Mount"
@@ -687,21 +691,23 @@
 			)
 		)
 		(property "Forward Voltage" "2V"
-			(at 0 0 0)
+			(at 0 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current Rating" "20mA"
-			(at 0 0 0)
+			(at 0 -5.842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mounting Type" "Surface Mount"
@@ -980,21 +986,23 @@
 			)
 		)
 		(property "Forward Voltage" "2.8V"
-			(at 0 0 0)
+			(at 0 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Current Rating" "20mA"
-			(at 0 0 0)
+			(at 0 -5.842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mounting Type" "Surface Mount"
