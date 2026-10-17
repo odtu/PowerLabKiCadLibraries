@@ -86,6 +86,14 @@ Any pad whose job is primarily heat spreading or carrying high current — a shi
 - **Thermal via geometry**: `thru_hole circle`, `(size 0.5)`, `(drill 0.3)`, `(layers "*.Cu" "*.Mask")`, `(remove_unused_layers no)` — matches the via size already in use across this library, and stays within any standard fab's capability. Lay the vias out on a grid at roughly **1.0 mm pitch**, kept back **at least 0.3 mm** from the pad's copper edge so a via never breaks out past the solder mask opening. If the pad is too narrow for a grid (under ~1.2 mm in one direction), fall back to a single centered row of vias at that same 1.0 mm pitch rather than skipping thermal vias altogether.
 - **Fab note, not a footprint property**: vias placed inside a solder-paste-covered pad ("via-in-pad") should be called out as tented/plugged in the board's fab notes — otherwise paste wicks down the via barrel during reflow and starves the joint. That instruction lives in the manufacturing notes/stackup, not in the `.kicad_mod` file itself.
 
+### Multi-unit symbols for large ICs
+
+- A microcontroller, DSP, FPGA or any IC with more than about 40 pins is drawn as a **multi-unit symbol**, one unit per function, never as one big block. A designer then places each unit next to the circuit it serves.
+- Typical units: power and ground (supplies on top pointing up, grounds at the bottom pointing down), clock / reset / debug, analog (ADC, DAC, references), comparator / PGA inputs, and GPIO or peripheral banks. Follow the datasheet's pin groups.
+- Don't give the units names (`unit_name`): KiCad appends the name to the reference, so a part reads `U4Power` instead of `U4A`. Keep the units in a fixed order instead: A power, then clock/reset/debug, analog, and the GPIO banks last.
+- Units share the Reference and Value positions, so put both above the units and top-align the bodies. Otherwise the Value lands inside a taller unit.
+- Every pin appears in exactly one unit. Smaller ICs (a gate driver, a regulator) stay one unit. `METUPowerLab_Microcontrollers_C2000:TMS320F280049PMS` is the reference example.
+
 ### Symbol drawing style
 
 - **Body rectangle**: `(stroke (width 0))` (inherit the schematic's default line width) and fill type `background` for a normal opaque part (ICs, passives). Connectors, screw terminals, and shunt resistors use `(fill (type none))` instead, drawn as an open outline — keep using `none` only for that same kind of part (something you'd recognize as a physical connector/terminal, not a black-box component), not interchangeably.
