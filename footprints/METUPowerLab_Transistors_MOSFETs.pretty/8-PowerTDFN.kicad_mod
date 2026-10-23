@@ -118,13 +118,13 @@
 		(uuid "1625b39d-a0b5-488c-974e-2bad307b794f")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 3.3 -3.3 0)
+		(at 3.5 -3.3 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "cf7df156-c612-4081-afa1-ee3b3abdfefb")
 		(effects
 			(font
-				(size 0.8 0.8)
+				(size 1 1)
 				(thickness 0.1)
 			)
 			(justify left)
