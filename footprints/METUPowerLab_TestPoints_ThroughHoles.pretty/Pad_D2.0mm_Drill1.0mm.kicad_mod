@@ -1,0 +1,93 @@
+(footprint "Pad_D2.0mm_Drill1.0mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Test point, plated pad D2.0mm drill 1.0mm (probe hook or test-loop wire)")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "495b1f2f-28aa-47f4-902e-1962bbf7e7d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Pad_D2.0mm_Drill1.0mm"
+		(at 0 2.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35ea6d93-3f9d-4392-8524-0604b3e0f361")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://github.com/odtu/Powerlab/blob/master/KiCAD/PCB_DESIGN_RULES.md"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4dff7e34-1864-4d69-9f0e-d5ed7e23e4ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Test point, plated pad D2.0mm drill 1.0mm (probe hook or test-loop wire)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0225ed88-4507-490b-b75d-c4bab2ef2a2c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 1.35 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7183b564-e054-4b0a-988a-cd0fa711862f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.45 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "44340fe1-7bf6-4df9-ac90-95edaf5b2886")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.0 2.0)
+		(drill 1.0)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
+		(uuid "317c61cc-9511-4685-a581-e6a0c06db6c4")
+	)
+	(embedded_fonts no)
+)
