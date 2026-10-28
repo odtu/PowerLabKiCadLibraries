@@ -94,6 +94,13 @@ Any pad whose job is primarily heat spreading or carrying high current — a shi
 - Units share the Reference and Value positions, so put both above the units and top-align the bodies. Otherwise the Value lands inside a taller unit.
 - Every pin appears in exactly one unit. Smaller ICs (a gate driver, a regulator) stay one unit. `METUPowerLab_Microcontrollers_C2000:TMS320F280049PMS` is the reference example.
 
+### Pin alternates for microcontrollers and other multiplexed pins
+
+- Every pin that can take more than one function (an MCU or DSP GPIO, an analog pin shared with comparators or op-amps, a dual-use clock or debug pin) lists all of its other functions as **KiCad pin alternates**. In the file each one is an `(alternate "NAME" type line)` entry on the pin; in the symbol editor they are under Pin Properties → Alternate pin definitions. A designer then picks the function a pin is used for (`TIM1_CH1`, `FDCAN1_RX`, `ADC1_IN2`…) in the schematic, and the pin shows that name.
+- The pin's own name stays the port or primary name (`PA8`, `GPIO0`, `A2/B6/C9`). The alternates add the rest. Don't repeat the pin's own name among them.
+- Take the functions from the vendor's machine-readable pin data, not by hand from a PDF. For STM32 use ST's [STM32_open_pin_data](https://github.com/STMicroelectronics/STM32_open_pin_data) (`mcu/<part>.xml`); for TI C2000 use the datasheet's Pin Attributes table. Give each alternate its direction (`input`, `output`, `bidirectional`, `open_collector`), with `bidirectional` where the data gives none.
+- Examples: `METUPowerLab_Microcontrollers_STM32:STM32G491MET3` and `:STM32F103CBT7` (from ST's pin data), and `METUPowerLab_Microcontrollers_C2000:F280039CSPM` (from TI's Table 5-1).
+
 ### Symbol drawing style
 
 - **Body rectangle**: `(stroke (width 0))` (inherit the schematic's default line width) and fill type `background` for a normal opaque part (ICs, passives). Connectors, screw terminals, and shunt resistors use `(fill (type none))` instead, drawn as an open outline — keep using `none` only for that same kind of part (something you'd recognize as a physical connector/terminal, not a black-box component), not interchangeably.
