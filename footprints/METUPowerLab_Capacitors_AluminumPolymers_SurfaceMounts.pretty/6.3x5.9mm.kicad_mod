@@ -1,0 +1,211 @@
+(footprint "6.3x5.9mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Panasonic OS-CON SMD size C6, 6.3 mm x 5.9 mm (Panasonic land pattern a 2.1, b 9.1, c 1.6)")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "484d21f7-14ed-5cab-bc63-aedfb8b3e76a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "6.3x5.9mm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fbddc28-9ffb-52d4-95e8-b90ac3f690f5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000COL10.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "581fd635-f709-560b-9a59-f8e874855075")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Panasonic OS-CON SMD size C6, 6.3 mm x 5.9 mm (Panasonic land pattern a 2.1, b 9.1, c 1.6)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4d31986-c33e-5ae5-afd4-6254d025e4cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd rect
+		(at -2.8 0)
+		(size 3.5 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "48cb1ef8-bcee-5ae9-b017-e585c636ae6d")
+	)
+	(pad "2" smd rect
+		(at 2.8 0)
+		(size 3.5 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "7b4e3151-eb33-5758-a335-9c7a056afe48")
+	)
+	(fp_line
+		(start -3.3 -1.1)
+		(end -3.3 -2.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "50ed4249-ff47-5e1f-8fbc-8976faa39476")
+	)
+	(fp_line
+		(start -3.3 -2.3)
+		(end -2.3 -3.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e2e80c57-e426-5ed9-9e5a-8d88781d06ec")
+	)
+	(fp_line
+		(start -2.3 -3.3)
+		(end 3.3 -3.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "df8d8a73-629f-5bfd-9cd9-3bf9e1325cae")
+	)
+	(fp_line
+		(start 3.3 -3.3)
+		(end 3.3 -1.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1117ef9b-69f4-51fe-9922-f33a8a8b55a2")
+	)
+	(fp_line
+		(start -3.3 1.1)
+		(end -3.3 2.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5c9230e2-21b3-56fb-96e6-768012138f0f")
+	)
+	(fp_line
+		(start -3.3 2.3)
+		(end -2.3 3.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4c7de974-1db8-5ff3-940d-321d05bc8f96")
+	)
+	(fp_line
+		(start -2.3 3.3)
+		(end 3.3 3.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "88c37165-d34f-5838-9006-990c97b58120")
+	)
+	(fp_line
+		(start 3.3 3.3)
+		(end 3.3 1.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7a44d4c7-e2e4-5844-9273-890b6fdd6cc2")
+	)
+	(fp_line
+		(start -4.6 -1.6)
+		(end -3.8 -1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "44166398-ab9a-5741-965d-02d0630c9665")
+	)
+	(fp_line
+		(start -4.2 -2)
+		(end -4.2 -1.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "145f2517-5e22-57e6-9d9d-45d78e9a294e")
+	)
+	(fp_rect
+		(start -3.15 -3.15)
+		(end 3.15 3.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ba1fb302-dbd1-5f0a-9234-8bf63ff40364")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -4.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9cb734a9-507a-5454-8f55-f9b6bb9be67e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(model "${METUPOWERLAB_3D}/Capacitors/AluminumPolymers/SurfaceMounts/METUPowerLab_Capacitors_AluminumPolymers_SurfaceMounts_6.3x5.9mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

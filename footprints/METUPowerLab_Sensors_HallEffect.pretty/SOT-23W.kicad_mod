@@ -1,0 +1,170 @@
+(footprint "SOT-23W"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SOT-23W 3-pin (Allegro LH package land pattern)")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "716b2351-4147-5605-b0e8-6411b9b8a5b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOT-23W"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8d10496c-b379-5e4f-ae41-671ae9145c8c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/a1220-1-2-3-datasheet.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f2937c73-d6d1-53a7-ae17-6173b1821385")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SOT-23W 3-pin (Allegro LH package land pattern)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dff8164c-c792-5eca-8ac2-9b2c73fa9cf2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd rect
+		(at -1.2 -0.95)
+		(size 1 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "0da11a12-0112-565f-8d4c-d3eebe30d7f8")
+	)
+	(pad "2" smd rect
+		(at -1.2 0.95)
+		(size 1 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "000a2ef9-46cd-5bcb-8fb7-29d20d133a57")
+	)
+	(pad "3" smd rect
+		(at 1.2 0)
+		(size 1 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "19af32d2-a36e-5350-81ed-69c7236a8d2d")
+	)
+	(fp_line
+		(start -0.3 -1.6)
+		(end 0.3 -1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ad0e472a-91b0-5fd6-b84b-5c96f18dd3f3")
+	)
+	(fp_line
+		(start -0.3 1.6)
+		(end 0.3 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "352916e4-3ef6-5491-a201-d164dfc26435")
+	)
+	(fp_line
+		(start 0.9 -1.6)
+		(end 0.9 -0.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "67f95a8b-b7ba-5790-9e4a-c67c26bf73d3")
+	)
+	(fp_line
+		(start 0.9 1.6)
+		(end 0.9 0.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a99c0df0-e58d-5cc4-8fb6-f30ca19184ca")
+	)
+	(fp_circle
+		(center -1.9 -1.55)
+		(end -1.75 -1.55)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "811cb51a-b8dc-58d3-9164-090aa06b124d")
+	)
+	(fp_rect
+		(start -0.955 -1.49)
+		(end 0.955 1.49)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "daf05252-0bf4-5e7e-9568-bbf452ab8695")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9c648eee-a7cf-50aa-9c1f-afd38ed4ce5d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(model "${METUPOWERLAB_3D}/Sensors/HallEffect/METUPowerLab_Sensors_HallEffect_SOT-23W.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
