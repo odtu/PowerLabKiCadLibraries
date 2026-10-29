@@ -1,0 +1,170 @@
+(footprint "SOT-23_DBZ"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SOT-23 3-pin (TI DBZ0003A land pattern); origin at the package centre, where the Hall element sits")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c6dda8e2-ade3-47e7-91fd-89710bfd12a4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOT-23_DBZ"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7e64134-168d-4e54-be15-35038aec9059")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv5055-q1.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d264f3dc-f23a-412c-9b49-001f6ce53016")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SOT-23 3-pin (TI DBZ0003A land pattern); origin at the package centre, where the Hall element sits"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91816516-b7c1-48e1-b6de-6155cf57584e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" smd rect
+		(at -1.05 -0.95)
+		(size 1.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "29ee24b2-bb7a-4aac-ae0d-f31d2d09da2b")
+	)
+	(pad "2" smd rect
+		(at -1.05 0.95)
+		(size 1.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "a09d3f82-897d-4de3-81c2-5ee6854876e6")
+	)
+	(pad "3" smd rect
+		(at 1.05 0)
+		(size 1.3 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1)
+		(thermal_bridge_angle 45)
+		(uuid "aec7f5e0-9b8a-4e89-8e5f-fe9caad658a2")
+	)
+	(fp_line
+		(start -0.3 -1.6)
+		(end 0.3 -1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cf0b66ad-cce0-4042-8cc6-48fbd33b35d7")
+	)
+	(fp_line
+		(start -0.3 1.6)
+		(end 0.3 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "549feacf-8430-482c-8e4b-51a42547f5b2")
+	)
+	(fp_line
+		(start 0.75 -1.6)
+		(end 0.75 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d43e557d-92e0-4368-b2b7-642edee4b3b4")
+	)
+	(fp_line
+		(start 0.75 1.6)
+		(end 0.75 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "12e61010-a0ba-4a56-a4aa-ca0ab0654dda")
+	)
+	(fp_circle
+		(center -2 -1.5)
+		(end -1.85 -1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "2bee7dd5-0b8e-4dbe-abf8-c0290a072912")
+	)
+	(fp_rect
+		(start -0.65 -1.46)
+		(end 0.65 1.46)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "38275c87-b573-4ae3-94a6-7d30b4cafcbb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "067a09fd-beb7-4ba3-a6c0-fcd5e5cc6080")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(model "${METUPOWERLAB_3D}/Sensors/HallEffect/METUPowerLab_Sensors_HallEffect_SOT-23_DBZ.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
