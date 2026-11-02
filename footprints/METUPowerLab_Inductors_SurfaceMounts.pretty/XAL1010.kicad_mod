@@ -1,0 +1,122 @@
+(footprint "XAL1010"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Coilcraft XAL1010 shielded power inductor, 11.3x10.0mm, https://www.coilcraft.com/getmedia/dd74e670-e705-456a-9a69-585fe02eaf3c/xal1010.pdf")
+	(tags "inductor xal1010")
+	(property "Reference" "REF**"
+		(at 0 -6.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "XAL1010"
+		(at 0 6.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.coilcraft.com/getmedia/dd74e670-e705-456a-9a69-585fe02eaf3c/xal1010.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "11.3*10mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line (start -5.4 -6.05) (end 5.4 -6.05) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
+	(fp_line (start -5.4 6.05) (end 5.4 6.05) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
+	(fp_line (start -5.4 -6.05) (end -5.4 -4.8) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
+	(fp_line (start 5.4 -6.05) (end 5.4 -4.8) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
+	(fp_line (start -5.4 6.05) (end -5.4 4.8) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
+	(fp_line (start 5.4 6.05) (end 5.4 4.8) (stroke (width 0.1) (type default)) (layer "F.SilkS"))
+	(fp_rect (start -5.25 -5.9) (end 5.25 5.9) (stroke (width 0.1) (type default)) (fill no) (layer "F.Fab"))
+	(fp_text user "${REFERENCE}"
+		(at 0 -6.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect (at -3.325 0) (size 2.38 9) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin 0.1) (thermal_bridge_angle 45))
+	(pad "2" smd rect (at 3.325 0) (size 2.38 9) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin 0.1) (thermal_bridge_angle 45))
+	(zone
+		(layers "F.Cu")
+		(name "Inductor Keepout")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -2.135 -4.5)
+				(xy 2.135 -4.5)
+				(xy 2.135 4.5)
+				(xy -2.135 4.5)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_XAL1010.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
