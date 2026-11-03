@@ -29,6 +29,7 @@ The biggest reason for creating these libraries as Power Lab is to design PCBs f
 ### Reference designators
 
 - Use standard, single-purpose KiCad reference prefixes only: `R` resistors, `C` capacitors, `L` inductors, `D` diodes, `Q` transistors/MOSFETs/GaN FETs, `U` ICs (regulators, PMICs, logic, memories, microcontrollers, isolators, etc.), `J` connectors, `Y` crystals/oscillators, `F` fuses, `FB` ferrite beads, `SW` switches, `TP` test points.
+- Two KiCad prefixes are allowed only on their own kind of part: `NT` on net ties and `JP` on solder jumpers (`METUPowerLab_Jumpers_SolderJumpers`).
 - Never invent a category-specific prefix such as `IC` — all integrated circuits use `U`, regardless of sub-category.
 - Never hardcode a designator number into the Reference field (e.g. `U6`). The Reference property must always be just the bare prefix (`U`) so KiCad's annotator can number it per-schematic; a baked-in number causes duplicate/incorrect references the moment the part is placed more than once.
 

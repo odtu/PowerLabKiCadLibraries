@@ -39,7 +39,7 @@ RULES = OrderedDict([
     ("parse", (ERROR, "File must be a valid KiCad S-expression file of the expected kind")),
     ("lib-name", (ERROR, "Library file/folder name must be METUPowerLab_Xxxxx_Yyyy (exact prefix, letters/digits/'-' segments)")),
     ("lib-name-style", (WARNING, "Name segments should start with an uppercase letter (Xxxxx_Yyyy style)")),
-    ("sym-reference", (ERROR, "Reference must be a bare allowed prefix (R C L D Q U J Y F FB SW TP; #PWR/#FLG for power symbols, NT for net ties)")),
+    ("sym-reference", (ERROR, "Reference must be a bare allowed prefix (R C L D Q U J Y F FB SW TP; #PWR/#FLG for power symbols, NT for net ties, JP for solder jumpers)")),
     ("sym-datasheet", (ERROR, "Datasheet field must not be blank")),
     ("sym-manufacturer", (ERROR, "Manufacturer field must be present (not required for power symbols and (in_bom no) parts)")),
     ("sym-manufacturer-empty", (WARNING, "Manufacturer field should not be empty")),
@@ -81,6 +81,7 @@ RULES = OrderedDict([
 ALLOWED_REFERENCES = {"R", "C", "L", "D", "Q", "U", "J", "Y", "F", "FB", "SW", "TP"}
 POWER_REFERENCES = {"#PWR", "#FLG"}
 NET_TIE_REFERENCE = "NT"  # KiCad's net-tie prefix; tolerated only on net-tie symbols
+SOLDER_JUMPER_REFERENCE = "JP"  # KiCad's jumper prefix; tolerated only on solder-jumper symbols
 
 # Rating fields that may be shown under the Value (DesignRules.md, "Visible key ratings").
 KEY_RATING_FIELDS = {
@@ -507,6 +508,7 @@ def check_symbol_file(path, rep, field_index, tree=None):
         is_power = child(sym, "power") is not None or (ref or "").startswith("#")
         not_purchased = is_power or child_value(sym, "in_bom", "yes") == "no"
         is_net_tie = "nettie" in re.sub(r"[^a-z]", "", (sname + stem).lower())
+        is_solder_jumper = "solderjumper" in re.sub(r"[^a-z]", "", (sname + stem).lower())
 
         # Reference
         if ref is None:
@@ -523,7 +525,8 @@ def check_symbol_file(path, rep, field_index, tree=None):
             elif re.search(r"\d", ref):
                 rep.add("sym-reference", rp, rline, "%s: Reference '%s' must be the bare prefix without a "
                         "designator number (e.g. '%s')" % (where, ref, re.sub(r"[\d?]+$", "", ref) or "U"))
-            elif ref not in ALLOWED_REFERENCES and not (is_net_tie and ref == NET_TIE_REFERENCE):
+            elif ref not in ALLOWED_REFERENCES and not (is_net_tie and ref == NET_TIE_REFERENCE) \
+                    and not (is_solder_jumper and ref == SOLDER_JUMPER_REFERENCE):
                 rep.add("sym-reference", rp, rline, "%s: Reference '%s' is not an allowed prefix (%s)"
                         % (where, ref, " ".join(sorted(ALLOWED_REFERENCES))))
 
