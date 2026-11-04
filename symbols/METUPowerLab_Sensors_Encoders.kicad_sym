@@ -148,6 +148,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "encoder magnetic position sensor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "MA730GQ-Z_1_1"
 			(rectangle
 				(start 0 38.1)
@@ -560,6 +571,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "encoder magnetic position sensor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "RLC2HD _1_1"

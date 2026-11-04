@@ -111,6 +111,8 @@ INDUCTOR_KEEPOUT_MIN_GAP = 0.6
 # Pad geometry limits (PCBWay standard-price spec; thermal vias 0.5/0.3 leave a 0.1 mm ring).
 MIN_PAD_CLEARANCE = 0.15
 MIN_ANNULAR_RING = 0.1
+# Pins closer than this need a mask margin under 0.1 mm to keep a 0.1 mm mask web between them.
+FINE_PITCH_GAP = 0.3
 
 
 # --------------------------------------------------------------------------
@@ -276,13 +278,55 @@ class Finding(object):
         self.message = message
 
 
+# Warnings that were checked by hand and are correct by design. Each entry is
+# (rule, path glob, message regex or None, reason). Only WARNINGs can be waived;
+# errors are always reported. Add an entry only after checking the datasheet.
+REVIEWED = [
+    ("lib-name-style", "*METUPowerLab_CircuitProtections_eFuses*", None,
+     "'eFuses' is the usual spelling; renaming the library would break existing designs' library tables"),
+    ("sym-pin-duplicate", "symbols/METUPowerLab_Resistors_ShuntResistors.kicad_sym", None,
+     "Kelvin shunts: force and sense pins share each pad on purpose"),
+    ("fp-pad-clearance", "*/USB4105.kicad_mod", None,
+     "GCT USB4105 land pattern: the close pairs (A1/B12, A12/B1 GND; A4/B9, A9/B4 VBUS) are the same net"),
+    ("fp-courtyard-keepout", "*/ESP32-WROOM-32E.kicad_mod", None, "antenna keepout from the Espressif datasheet"),
+    ("fp-courtyard-keepout", "*/RLC2HD.kicad_mod", None, "magnetic encoder readhead: keepout/outline from the datasheet"),
+    ("fp-silk-width", "footprints/METUPowerLab_Graphics.pretty/*", None, "artwork, not a component outline"),
+    ("fp-pad-mask-margin", "footprints/METUPowerLab_Mechanicals_Fiducials.pretty/*", None,
+     "fiducials need a wide mask opening around the copper"),
+    ("fp-smd-pad-shape", "footprints/METUPowerLab_Mechanicals_Fiducials.pretty/*", None, "fiducials are round"),
+    ("fp-smd-pad-shape", "footprints/METUPowerLab_TestPoints_*", None, "round test pads"),
+    ("fp-3d-model-none", "footprints/METUPowerLab_TestPoints_*", None, "bare copper test point, nothing is placed"),
+    ("fp-3d-model-none", "footprints/METUPowerLab_NetTies_*", None, "net tie is copper only"),
+    ("fp-3d-model-none", "footprints/METUPowerLab_Jumpers_SolderJumpers.pretty/*", None, "solder jumper is copper only"),
+    ("sym-flags", "symbols/METUPowerLab_TestPoints_*", r"\(in_bom no\)", "test points are not purchased"),
+    ("sym-flags", "symbols/METUPowerLab_NetTies_*", r"\(in_bom no\)", "net ties are not purchased"),
+    ("sym-flags", "symbols/METUPowerLab_Jumpers_SolderJumpers.kicad_sym", r"\(in_bom no\)",
+     "solder jumpers are not purchased"),
+    ("sym-body-style", "symbols/METUPowerLab_NetTies_*", None, "filled copper drawing, KiCad net-tie style"),
+    ("sym-body-style", "symbols/METUPowerLab_Jumpers_SolderJumpers.kicad_sym", None,
+     "filled pad drawing, KiCad solder-jumper style"),
+]
+
+
+def reviewed_reason(rule, path, message):
+    for r, glob, pattern, reason in REVIEWED:
+        if r == rule and fnmatch.fnmatchcase(path, glob) and (pattern is None or re.search(pattern, message)):
+            return reason
+    return None
+
+
 class Reporter(object):
     def __init__(self):
         self.findings = []
+        self.reviewed = []
 
     def add(self, rule, path, line, message, severity=None):
         sev = severity or RULES[rule][0]
-        self.findings.append(Finding(sev, rule, path, line or 1, message))
+        f = Finding(sev, rule, path, line or 1, message)
+        if sev == WARNING and reviewed_reason(rule, path, message):
+            self.reviewed.append(f)
+        else:
+            self.findings.append(f)
 
     def count(self, severity):
         return sum(1 for f in self.findings if f.severity == severity)
@@ -866,6 +910,19 @@ def _drill_size(pad):
     return (d[0], d[1] if len(d) > 1 else d[0])
 
 
+def _min_pin_gap(pads):
+    """Smallest edge-to-edge gap between copper pads with different numbers (inf if none)."""
+    copper = [p for p in pads if p.number and p.type in ("smd", "thru_hole") and len(p.size) >= 2 and p.at]
+    best = float("inf")
+    for i, a in enumerate(copper):
+        for b in copper[i + 1:]:
+            if a.number != b.number and _copper_sides(a) & _copper_sides(b):
+                g = _copper_gap(a, b)
+                if g is not None:
+                    best = min(best, g)
+    return best
+
+
 def _copper_gap(a, b):
     """Edge-to-edge distance between two pads (negative = overlap), or None if unknown
     (custom shapes, rotations that are not a multiple of 90 degrees)."""
@@ -979,8 +1036,12 @@ def check_footprint_file(path, rep):
                 "(attr %s) does not match the pads: %d smd and %d thru_hole signal pad(s) -> expected (attr %s)"
                 % (" ".join(attr_tokens) or "missing", len(smd_pads), len(th_signal), " or ".join(expected)))
 
-    # solder mask margin
-    bad_mask = [p for p in pads if not feq(p.mask_margin, 0.1)]
+    # solder mask margin. Paste-only apertures have no mask. Fine-pitch parts (pins closer
+    # than 0.3 mm) may use a smaller margin so a solder mask web stays between the pins.
+    copper_pads = [p for p in pads if p.type == "np_thru_hole" or _copper_sides(p)]
+    fine_pitch = _min_pin_gap(copper_pads) < FINE_PITCH_GAP - EPS
+    bad_mask = [p for p in copper_pads if not feq(p.mask_margin, 0.1)
+                and not (fine_pitch and p.mask_margin is not None and -EPS <= p.mask_margin < 0.1)]
     if bad_mask:
         rep.add("fp-pad-mask-margin", rp, bad_mask[0].line, "%d pad(s) without (solder_mask_margin 0.1): %s"
                 % (len(bad_mask), _fmt_list("%s=%s" % (p.label(), "missing" if p.mask_margin is None
@@ -1322,6 +1383,9 @@ def report(rep, args, n_sym_files, n_symbols, n_fp):
             c = per_rule[rid]
             lines.append("  %-26s %4d error(s) %4d warning(s)" % (rid, c[ERROR], c[WARNING]))
     lines.append("Total: %d error(s), %d warning(s)" % (n_err, n_warn))
+    if rep.reviewed:
+        lines.append("(%d reviewed exception(s) not counted; see REVIEWED in tools/check_library.py)"
+                     % len(rep.reviewed))
     if n_err:
         lines.append("Errors must be fixed before merging; see HowToCreateNewDesign/DesignRules.md.")
     print("\n".join(lines))
@@ -1357,6 +1421,9 @@ def write_markdown(rep, path, n_sym_files, n_symbols, n_fp):
         per_rule[f.rule][f.severity] += 1
     md = ["Checked %d symbol libraries (%d symbols) and %d footprints: **%d error(s)**, %d warning(s)."
           % (n_sym_files, n_symbols, n_fp, n_err, n_warn), ""]
+    if rep.reviewed:
+        md += ["%d reviewed exception(s) are not counted (`REVIEWED` in `tools/check_library.py`)."
+               % len(rep.reviewed), ""]
     if per_rule:
         md += ["| Rule | Errors | Warnings | Description |", "|---|---:|---:|---|"]
         for rid, (sev, desc) in RULES.items():

@@ -12,7 +12,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "SN74LVC1G08DCKR"
@@ -21,7 +20,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "METUPowerLab_Logics_ANDGates:SC-70-5"
@@ -150,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Single Gate OR"
+		(property "ki_keywords" "single gate or"
 			(at 0 0 0)
 			(effects
 				(font

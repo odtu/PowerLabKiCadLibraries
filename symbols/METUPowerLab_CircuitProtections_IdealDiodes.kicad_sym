@@ -168,6 +168,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "ideal diode or-ing controller reverse current protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "LM5050-1_1_1"
 			(rectangle
 				(start -5.08 7.62)
@@ -455,6 +466,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "ideal diode controller reverse polarity protection automotive"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "LM74700QDBVRQ1_1_1"

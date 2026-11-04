@@ -148,6 +148,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "usb uart bridge interface"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "FT232HL-REEL_0_0"
 			(polyline
 				(pts

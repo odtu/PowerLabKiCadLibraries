@@ -149,6 +149,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "connector power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "2002411212_0_1"
 			(rectangle
 				(start -1.27 3.81)
@@ -369,6 +380,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "2125201002_0_1"
@@ -593,6 +615,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "connector power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "2157601002_0_1"
 			(rectangle
 				(start -1.27 3.81)
@@ -731,6 +764,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "XT30(2+2)PW-M_0_1"

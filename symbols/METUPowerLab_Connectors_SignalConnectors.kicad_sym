@@ -157,6 +157,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "connector signal"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "0430451209_0_1"
 			(rectangle
 				(start -3.81 13.97)
@@ -684,6 +695,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector signal"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "0430451809_0_1"
@@ -1389,6 +1411,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "connector signal"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "2147210040_0_1"
 			(rectangle
 				(start -1.27 8.89)
@@ -1693,6 +1726,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector signal"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "384471-E_0_1"

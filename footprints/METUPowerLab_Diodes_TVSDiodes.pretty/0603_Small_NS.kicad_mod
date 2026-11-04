@@ -87,4 +87,15 @@
 		(uuid "20e1a77d-44a8-4ca7-8b8f-e65eaf092501")
 	)
 	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Diodes/TVSDiodes/METUPowerLab_Diodes_TVSDiodes_0603.step"
+		(offset
+			(xyz 0.8 0.4 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

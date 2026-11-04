@@ -170,6 +170,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "mosfet transistor n-channel"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "AO3400A_0_1"
 			(polyline
 				(pts
@@ -555,6 +566,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "mosfet transistor n-channel"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "IAUZ30N06S5L140ATMA1_0_1"
@@ -982,6 +1004,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "mosfet transistor n-channel"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "NTMFS006N08MC_0_1"
 			(polyline
 				(pts
@@ -1367,6 +1400,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "mosfet transistor n-channel dual"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "NVMFD6H840NLWFT1G_0_1"
@@ -2049,6 +2093,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "mosfet transistor n-channel"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "NVMFS6H800NT1G_0_1"

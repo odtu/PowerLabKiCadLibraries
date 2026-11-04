@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Single Gate OR"
+		(property "ki_keywords" "single gate or"
 			(at 0 0 0)
 			(effects
 				(font

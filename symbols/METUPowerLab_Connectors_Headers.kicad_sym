@@ -184,6 +184,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "connector pin header"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "1x2_0_1"
 			(rectangle
 				(start -1.27 3.81)
@@ -423,6 +434,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "connector pin header right angle"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "1x2 Right Angle_0_1"
 			(rectangle
 				(start -1.27 3.81)
@@ -651,6 +673,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector pin header smd right angle"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "2x20 _0_1"

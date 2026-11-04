@@ -311,7 +311,7 @@
 		(uuid "34e722b2-3595-44f6-896e-25aeb8ffb0f3")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Diodes_PowerDI3333-8.step"
+	(model "${METUPOWERLAB_3D}/Transistors/MOSFETs/METUPowerLab_Transistors_MOSFETs_8-PowerTDFN.step"
 		(offset
 			(xyz 0 0 0)
 		)

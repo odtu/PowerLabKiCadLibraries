@@ -166,7 +166,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -403,7 +403,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -640,7 +640,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -877,7 +877,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1114,7 +1114,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1351,7 +1351,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1588,7 +1588,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1825,7 +1825,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2084,7 +2084,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2343,7 +2343,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2580,7 +2580,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3076,7 +3076,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3313,7 +3313,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3550,7 +3550,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3798,7 +3798,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4035,7 +4035,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4272,7 +4272,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4531,7 +4531,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4768,7 +4768,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5005,7 +5005,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5264,7 +5264,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5501,7 +5501,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5738,7 +5738,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5997,7 +5997,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6234,7 +6234,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6471,7 +6471,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6730,7 +6730,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6989,7 +6989,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7226,7 +7226,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7463,7 +7463,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7937,7 +7937,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8174,7 +8174,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8411,7 +8411,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8648,7 +8648,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8885,7 +8885,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9122,7 +9122,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9359,7 +9359,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9596,7 +9596,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9855,7 +9855,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10092,7 +10092,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10329,7 +10329,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10566,7 +10566,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10803,7 +10803,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11040,7 +11040,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "R res resistor"
+		(property "ki_keywords" "r res resistor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

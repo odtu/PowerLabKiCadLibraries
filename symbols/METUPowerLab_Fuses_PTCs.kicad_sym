@@ -201,7 +201,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "PTC"
+		(property "ki_keywords" "ptc"
 			(at 0 0 0)
 			(effects
 				(font

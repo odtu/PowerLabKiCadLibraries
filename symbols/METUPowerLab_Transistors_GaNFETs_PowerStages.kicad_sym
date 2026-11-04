@@ -169,6 +169,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "gan fet half bridge power stage"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "EPC23102_1_1"
 			(rectangle
 				(start -20.32 40.64)

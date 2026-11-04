@@ -102,10 +102,10 @@
 	(pad "" smd rect (at -0.65 0.65) (size 1.05 1.05) (layers "F.Paste"))
 	(pad "" smd rect (at 0.65 0.65) (size 1.05 1.05) (layers "F.Paste"))
 	(pad "25" smd rect (at 0 0) (size 2.6 2.6) (layers "B.Cu" "B.Mask") (solder_mask_margin 0.1))
-	(pad "25" thru_hole circle (at -0.5 -0.5) (size 0.5 0.5) (drill 0.3) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
-	(pad "25" thru_hole circle (at 0.5 -0.5) (size 0.5 0.5) (drill 0.3) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
-	(pad "25" thru_hole circle (at -0.5 0.5) (size 0.5 0.5) (drill 0.3) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
-	(pad "25" thru_hole circle (at 0.5 0.5) (size 0.5 0.5) (drill 0.3) (layers "*.Cu" "*.Mask") (remove_unused_layers no))
+	(pad "25" thru_hole circle (at -0.5 -0.5) (size 0.5 0.5) (drill 0.3) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (solder_mask_margin 0.1))
+	(pad "25" thru_hole circle (at 0.5 -0.5) (size 0.5 0.5) (drill 0.3) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (solder_mask_margin 0.1))
+	(pad "25" thru_hole circle (at -0.5 0.5) (size 0.5 0.5) (drill 0.3) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (solder_mask_margin 0.1))
+	(pad "25" thru_hole circle (at 0.5 0.5) (size 0.5 0.5) (drill 0.3) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (solder_mask_margin 0.1))
 	(embedded_fonts no)
 	(model "${METUPOWERLAB_3D}/Interfaces/USBBridges/METUPowerLab_Interfaces_USBBridges_24-QFN.step"
 		(offset

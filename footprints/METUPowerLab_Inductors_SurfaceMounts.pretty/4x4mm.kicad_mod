@@ -141,4 +141,15 @@
 		)
 	)
 	(embedded_fonts no)
+	(model "${METUPOWERLAB_3D}/Inductors/SurfaceMounts/METUPowerLab_Inductors_SurfaceMounts_4x4mm.step"
+		(offset
+			(xyz 2 2 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

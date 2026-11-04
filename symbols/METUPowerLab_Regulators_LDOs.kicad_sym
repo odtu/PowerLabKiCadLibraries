@@ -198,6 +198,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "regulator ldo linear"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "NCP1117ST33T3G_1_1"
 			(rectangle
 				(start 0 10.16)

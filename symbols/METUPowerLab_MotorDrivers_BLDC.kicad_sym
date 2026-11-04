@@ -175,6 +175,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "motor driver bldc three phase gate driver"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "DRV8323RSRGZT_0_0"
 			(polyline
 				(pts
