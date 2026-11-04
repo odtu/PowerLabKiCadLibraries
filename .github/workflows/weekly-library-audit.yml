@@ -1,0 +1,161 @@
+name: Weekly library audit
+
+# Every Monday, checks the WHOLE library (not just a PR's changes):
+#  - standards: tools/check_library.py --all, including the pin/pad checks
+#               (symbol pins vs footprint pads, pad sizes, drills, annular rings,
+#               overlapping or too-close pads)
+#  - kicad-load: every symbol and footprint library still loads in KiCad 10
+# The results go into one GitHub issue labelled "library-audit", which is
+# updated each week (with a comment, so watchers get notified) and closed
+# automatically once the library is clean.
+#
+# Run it by hand: gh workflow run weekly-library-audit.yml
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC (09:00 Turkey)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-library-audit
+  cancel-in-progress: true
+
+jobs:
+  standards:
+    name: Library standards (whole library)
+    runs-on: ubuntu-latest
+    outputs:
+      errors: ${{ steps.check.outputs.errors }}
+      warnings: ${{ steps.check.outputs.warnings }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check every symbol and footprint
+        id: check
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 tools/check_library.py --all --exit-zero --markdown standards.md | tee standards.log
+          total="$(grep -E '^Total: ' standards.log | tail -1)"
+          echo "errors=$(sed -E 's/^Total: ([0-9]+) error.*/\1/' <<< "$total")" >> "$GITHUB_OUTPUT"
+          echo "warnings=$(sed -E 's/.* ([0-9]+) warning.*/\1/' <<< "$total")" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: standards
+          path: standards.md
+
+  kicad-load:
+    name: Every library loads in KiCad 10
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+    outputs:
+      failures: ${{ steps.load.outputs.failures }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Export every library to SVG with kicad-cli
+        id: load
+        shell: bash
+        run: |
+          set -uo pipefail
+          kicad-cli version
+          out="$(mktemp -d)"
+          : > kicad-load.md
+          failures=0
+          n=0
+          for f in symbols/*.kicad_sym footprints/*.pretty; do
+            n=$((n + 1)); dest="$out/$n"; mkdir -p "$dest"
+            if [ -d "$f" ]; then kind=fp; want=$(find "$f" -maxdepth 1 -name '*.kicad_mod' | wc -l)
+            else kind=sym; want=1; fi
+            kicad-cli "$kind" export svg --output "$dest" "$f" < /dev/null > "$dest.log" 2>&1
+            rc=$?
+            got=$(find "$dest" -name '*.svg' | wc -l)
+            if [ "$rc" -ne 0 ] || [ "$got" -eq 0 ] || grep -qi 'unable to load' "$dest.log"; then
+              echo "::error file=$f::KiCad 10 could not load this library (kicad-cli exit $rc)"
+              echo "- :x: \`$f\`: KiCad 10 could not load it (kicad-cli exit $rc). Open and re-save it in KiCad 10." >> kicad-load.md
+              failures=$((failures + 1))
+            elif [ "$kind" = fp ] && [ "$got" -lt "$want" ]; then
+              echo "::warning file=$f::only $got of $want footprints exported"
+              echo "- :warning: \`$f\`: only $got of $want footprints exported." >> kicad-load.md
+            else
+              echo "OK  $f"
+            fi
+          done
+          echo "failures=$failures" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kicad-load
+          path: kicad-load.md
+
+  report:
+    name: Update the audit issue
+    needs: [standards, kicad-load]
+    if: always() && needs.standards.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/download-artifact@v4
+
+      - name: Create, update or close the "library-audit" issue
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ERRORS: ${{ needs.standards.outputs.errors }}
+          WARNINGS: ${{ needs.standards.outputs.warnings }}
+          LOAD_RESULT: ${{ needs.kicad-load.result }}
+          LOAD_FAILURES: ${{ needs.kicad-load.outputs.failures }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          today="$(date -u +%Y-%m-%d)"
+          load_failures="${LOAD_FAILURES:-0}"
+          ERRORS="${ERRORS:-0}"
+          WARNINGS="${WARNINGS:-0}"
+          {
+            echo "Weekly audit of the whole library, $today ([workflow run]($RUN_URL))."
+            echo
+            echo "Errors are real problems (a pin with no pad, overlapping pads, a library KiCad cannot open) and should be fixed."
+            echo "Warnings are style or sanity issues worth a look. Pad *dimensions* are not compared against the datasheet here; that needs a review with the datasheet open."
+            echo
+            echo "### KiCad 10 load test"
+            if [ "$LOAD_RESULT" != "success" ]; then
+              echo ":warning: The load test did not finish ($LOAD_RESULT); see the workflow run."
+            elif [ -s kicad-load/kicad-load.md ]; then
+              cat kicad-load/kicad-load.md
+            else
+              echo "All symbol and footprint libraries load in KiCad 10."
+            fi
+            echo
+            echo "### Library standards and pin/pad checks"
+            cat standards/standards.md
+          } > body.md
+
+          gh label create library-audit --color FBCA04 \
+            --description "Weekly whole-library audit results" --force > /dev/null
+          issue="$(gh issue list --label library-audit --state open --limit 1 --json number --jq '.[0].number // empty')"
+          problems=$(( ERRORS + WARNINGS + load_failures ))
+          line="**$today:** $ERRORS error(s), $WARNINGS warning(s), $load_failures librar(ies) failing to load in KiCad 10. [Run]($RUN_URL)"
+
+          if [ "$problems" -eq 0 ]; then
+            if [ -n "$issue" ]; then
+              gh issue comment "$issue" --body "$line The library is clean; closing."
+              gh issue close "$issue"
+            fi
+            echo "Library is clean."
+          elif [ -n "$issue" ]; then
+            gh issue edit "$issue" --body-file body.md
+            gh issue comment "$issue" --body "$line"
+            echo "Updated issue #$issue"
+          else
+            gh issue create --title "Weekly library audit" --label library-audit --body-file body.md
+          fi
