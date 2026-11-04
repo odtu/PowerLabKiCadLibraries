@@ -148,6 +148,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "comparator"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "LM211DT_0_1"
 			(polyline
 				(pts
@@ -463,6 +474,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "comparator"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "TS391ILT_0_1"

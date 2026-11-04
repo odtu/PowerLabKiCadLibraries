@@ -192,6 +192,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "diode tvs esd transient voltage suppressor protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "CDSOD323-T24SC_0_1"
 			(polyline
 				(pts
@@ -482,6 +493,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode tvs esd transient voltage suppressor protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "CPDQC3V3C-HF_0_1"
@@ -785,6 +807,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "diode tvs esd transient voltage suppressor protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "DESD5V0U1BL-7B_0_1"
 			(polyline
 				(pts
@@ -1084,6 +1117,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode tvs esd transient voltage suppressor protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "ESDL2012MX4T5G_0_1"
@@ -1387,6 +1431,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "diode tvs esd transient voltage suppressor protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "SMAJ54CA_0_1"
 			(polyline
 				(pts
@@ -1677,6 +1732,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode tvs esd transient voltage suppressor protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "SMBJ48CA-13-F_0_1"
@@ -1971,6 +2037,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "diode tvs esd transient voltage suppressor protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "SMBJ36CA-13-F_0_1"
 			(polyline
 				(pts
@@ -2261,6 +2338,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode tvs esd transient voltage suppressor protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "SP0115-01UTG_0_1"

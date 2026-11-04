@@ -156,7 +156,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "L ferrite bead inductor filter"
+		(property "ki_keywords" "l ferrite bead inductor filter"
 			(at 0 0 0)
 			(effects
 				(font
@@ -406,7 +406,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "L ferrite bead inductor filter"
+		(property "ki_keywords" "l ferrite bead inductor filter"
 			(at 0 0 0)
 			(effects
 				(font

@@ -183,6 +183,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "led light emitting diode indicator blue"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Blue_0_1"
 			(polyline
 				(pts
@@ -476,6 +487,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "led light emitting diode indicator green"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "Green _0_1"
@@ -773,6 +795,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "led light emitting diode indicator red"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Red_0_1"
 			(polyline
 				(pts
@@ -1048,6 +1081,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "led light emitting diode indicator white"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "White_0_1"

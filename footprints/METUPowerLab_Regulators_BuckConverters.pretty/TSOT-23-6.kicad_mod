@@ -170,7 +170,7 @@
 		(uuid "fff237a6-8a85-4d8c-82ae-73603913391f")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step"
+	(model "${METUPOWERLAB_3D}/Regulators/BuckConverters/METUPowerLab_Regulators_BuckConverters_TSOT-23-6.step"
 		(offset
 			(xyz 0.8 1.45 0)
 		)

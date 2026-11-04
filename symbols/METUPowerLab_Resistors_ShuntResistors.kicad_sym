@@ -138,6 +138,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "resistor shunt current sense"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "2 mOhm_0_1"
 			(rectangle
 				(start -2.54 1.27)
@@ -363,6 +374,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "resistor shunt current sense"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "2 mOhm 1Watt_0_1"
 			(rectangle
 				(start -2.54 1.27)
@@ -577,6 +599,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "resistor shunt current sense"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "5 mOhm _0_1"

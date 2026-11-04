@@ -85,7 +85,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "USB TYPEC PD"
+		(property "ki_keywords" "usb typec pd"
 			(at 0 0 0)
 			(effects
 				(font

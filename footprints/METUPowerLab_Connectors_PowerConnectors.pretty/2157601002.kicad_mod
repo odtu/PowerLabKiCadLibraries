@@ -124,6 +124,7 @@
 		(size 3 3)
 		(drill 3)
 		(layers "F&B.Cu" "*.Mask")
+		(solder_mask_margin 0.1)
 		(uuid "8a80b521-6966-4c57-b5cb-dba18aa01a59")
 	)
 	(pad "1" thru_hole circle

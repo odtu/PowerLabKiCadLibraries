@@ -146,7 +146,7 @@
 		(uuid "49edf724-b271-410c-aebd-6d2bfd4ffb66")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step"
+	(model "${METUPOWERLAB_3D}/Diodes/TVSDiodes/METUPowerLab_Diodes_TVSDiodes_DO-214AC.step"
 		(offset
 			(xyz 2 1.3 0)
 		)

@@ -166,6 +166,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "eeprom memory serial microwire"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "93LC56BT-I/OT_1_1"
 			(rectangle
 				(start 0 12.7)

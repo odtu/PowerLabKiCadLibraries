@@ -213,6 +213,17 @@
 				)
 			)
 		)
+		(property "ki_keywords" "regulator buck converter step-down dc-dc"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "LMR38020FSDDAR_0_0"
 			(polyline
 				(pts
@@ -1402,6 +1413,17 @@
 				)
 			)
 		)
+		(property "ki_keywords" "regulator buck converter step-down dc-dc"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "LMR51610XDBVR_1_1"
 			(rectangle
 				(start 0 15.24)
@@ -1726,6 +1748,17 @@
 			)
 		)
 		(property "Mouser Number" "595-TPS561201DDCR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "regulator buck converter step-down dc-dc"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

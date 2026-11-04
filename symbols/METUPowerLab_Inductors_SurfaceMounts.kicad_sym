@@ -453,6 +453,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "inductor choke shielded power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "100µH_0_1"
 			(arc
 				(start -2.54 0)
@@ -750,6 +761,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "inductor choke shielded power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "2.2µH_0_1"
 			(arc
 				(start -2.54 0)
@@ -1038,6 +1060,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "inductor choke shielded power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "33µH_0_1"
 			(arc
 				(start -2.54 0)
@@ -1306,6 +1339,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "inductor choke shielded power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "4.7µH_0_1"
@@ -1594,6 +1638,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "inductor choke shielded power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "4.7µH 1A_0_1"
@@ -1891,6 +1946,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "inductor choke shielded power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "6.8µH_0_1"

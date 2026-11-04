@@ -60,7 +60,7 @@ The biggest reason for creating these libraries as Power Lab is to design PCBs f
 
 These are the geometric conventions found consistently across the existing library — match them on every new footprint:
 
-- **Solder mask margin**: every pad gets `(solder_mask_margin 0.1)` (0.1 mm mask overlap/expansion beyond the copper pad). This is used on 100% of existing pads — don't leave it off.
+- **Solder mask margin**: every pad gets `(solder_mask_margin 0.1)` (0.1 mm mask overlap/expansion beyond the copper pad). This is used on 100% of existing pads — don't leave it off. Two exceptions: **fine-pitch parts** whose pins are closer than 0.3 mm (0.5 mm-pitch QFN/LQFP) use `(solder_mask_margin 0.05)` so a solder mask web survives between the pins, and **paste-only apertures** (pads on `F.Paste` only) need no margin.
 - **Silkscreen outline width**: the body outline (`fp_line`/`fp_rect` on `F.SilkS`) is drawn at `(width 0.1)`. This is the standard across the whole library — don't use 0.2, 0.15, 0.12, etc. for the outline. (Small decorative elements — a pin-1 dot, a polarity mark — are a separate concern and may use a different width to stay visible at their size; that's fine, it's the *body outline* width that must be 0.1.)
 - **Reference text** (silkscreen): `(size 1 1)` with `(thickness 0.1)`.
 - **Value text** (usually hidden, on F.Fab): `(size 1 1)` with `(thickness 0.15)`.

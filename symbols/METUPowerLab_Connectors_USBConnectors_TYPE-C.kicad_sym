@@ -175,6 +175,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "connector usb type-c receptacle"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "USB4105-GF-A_0_0"
 			(polyline
 				(pts

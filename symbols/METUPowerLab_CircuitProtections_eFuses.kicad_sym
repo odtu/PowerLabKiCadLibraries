@@ -67,6 +67,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "efuse hot swap current limit protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "PTPS16890VMAR_0_0"
 			(polyline
 				(pts
@@ -1503,6 +1514,17 @@
 				(hide yes)
 			)
 		)
+		(property "ki_keywords" "efuse hot swap current limit protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "TPS2492PWR_0_0"
 			(polyline
 				(pts
@@ -2581,6 +2603,17 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ki_keywords" "efuse hot swap current limit protection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "TPS26631RGER_0_0"
