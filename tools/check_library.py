@@ -17,6 +17,7 @@ are printed as GitHub Actions annotations.
 
 import argparse
 import fnmatch
+import math
 import os
 import re
 import subprocess
@@ -58,6 +59,10 @@ RULES = OrderedDict([
     ("sym-text-size", (WARNING, "Reference/Value text should be (size 1.27 1.27); visible rating fields (size 1 1)")),
     ("sym-body-style", (WARNING, "Body rectangles should use (stroke (width 0)) and fill background or none")),
     ("sym-pin-grid", (ERROR, "Pin connection points must be on the 1.27 mm grid")),
+    ("sym-pin-number", (ERROR, "Every symbol pin must have a number")),
+    ("sym-pin-duplicate", (WARNING, "A pin number should be used once per symbol (OK for Kelvin sense + force pins on one pad)")),
+    ("sym-pin-pad", (ERROR, "Every symbol pin number must exist as a pad in the linked METUPowerLab footprint")),
+    ("sym-pad-unused", (WARNING, "Every numbered copper pad of the linked footprint should have a symbol pin (else it gets no net)")),
     ("fp-file-name", (ERROR, ".kicad_mod names must not contain spaces or be 'Untitled', and must live in a .pretty folder")),
     ("fp-name-mismatch", (WARNING, "Footprint name inside the file should match the file name")),
     ("fp-3d-model-path", (ERROR, "3D model paths must not be absolute or relative paths; use ${METUPOWERLAB_3D}/...")),
@@ -76,6 +81,10 @@ RULES = OrderedDict([
     ("fp-thermal-via", (WARNING, "Thermal vias should be thru_hole circle, size 0.5, drill 0.3, layers *.Cu *.Mask, remove_unused_layers no")),
     ("fp-thermal-via-number", (WARNING, "Via-like thru_hole pads on an SMD footprint should share the number of the pad they cool")),
     ("fp-npth-signal", (WARNING, "np_thru_hole pads are for mechanical holes only (should have no pad number)")),
+    ("fp-pad-size", (ERROR, "Pads must have a positive size; holes must have a drill smaller than the pad")),
+    ("fp-annular-ring", (WARNING, "Plated holes should have an annular ring of at least 0.1 mm")),
+    ("fp-pad-overlap", (ERROR, "Copper pads with different numbers must not overlap (that is a short)")),
+    ("fp-pad-clearance", (WARNING, "Copper pads with different numbers should be at least 0.15 mm apart (PCBWay standard)")),
 ])
 
 ALLOWED_REFERENCES = {"R", "C", "L", "D", "Q", "U", "J", "Y", "F", "FB", "SW", "TP"}
@@ -98,6 +107,10 @@ EPS = 1e-6
 # their pads when a track could fit there: lab default track 0.2 + 2 x 0.2 clearance.
 INDUCTOR_LIB_RE = re.compile(r"^METUPowerLab_Inductors_")
 INDUCTOR_KEEPOUT_MIN_GAP = 0.6
+
+# Pad geometry limits (PCBWay standard-price spec; thermal vias 0.5/0.3 leave a 0.1 mm ring).
+MIN_PAD_CLEARANCE = 0.15
+MIN_ANNULAR_RING = 0.1
 
 
 # --------------------------------------------------------------------------
@@ -377,6 +390,48 @@ def footprints_in_lib(nickname, root=REPO_ROOT):
     return _footprint_cache[key]
 
 
+_pad_number_cache = {}
+
+
+def footprint_pad_numbers(nickname, name, root=REPO_ROOT):
+    """Numbers of the copper pads (not np_thru_hole) of <root>/footprints/<nickname>.pretty/<name>.kicad_mod,
+    or None if the file is missing or does not parse."""
+    key = (root, nickname, name)
+    if key not in _pad_number_cache:
+        path = os.path.join(root, "footprints", nickname + ".pretty", name + ".kicad_mod")
+        tree = read_and_parse(path, Reporter(), ("footprint", "module")) if os.path.isfile(path) else None
+        if tree is None:
+            _pad_number_cache[key] = None
+        else:
+            _pad_number_cache[key] = set(p.number for p in (Pad(n) for n in children(tree, "pad"))
+                                         if p.number and p.type != "np_thru_hole")
+    return _pad_number_cache[key]
+
+
+_UNIT_RE = re.compile(r"_(\d+)_(\d+)\Z")
+
+
+def symbol_pins(sym, by_name, _depth=0):
+    """[(number, name, line)] of the pins of a top-level symbol, body style 1 only (the
+    De Morgan style 2 repeats the same numbers). Derived symbols take their parent's pins."""
+    pins = []
+    for sub in children(sym, "symbol"):
+        sub_name = sub[1] if len(sub) > 1 and isinstance(sub[1], str) else ""
+        m = _UNIT_RE.search(sub_name)
+        if m and int(m.group(2)) > 1:
+            continue
+        for pin in walk(sub, "pin"):
+            num = child(pin, "number")
+            nm = child(pin, "name")
+            pins.append((num[1] if num is not None and len(num) > 1 and isinstance(num[1], str) else "",
+                         nm[1] if nm is not None and len(nm) > 1 and isinstance(nm[1], str) else "",
+                         pin.line))
+    parent = child_value(sym, "extends")
+    if not pins and parent and parent in by_name and _depth < 5:
+        return symbol_pins(by_name[parent], by_name, _depth + 1)
+    return pins
+
+
 # --------------------------------------------------------------------------
 # Field name index (library-wide) for near-duplicate detection
 # --------------------------------------------------------------------------
@@ -477,6 +532,7 @@ def check_symbol_file(path, rep, field_index, tree=None):
     lib_root = library_root(path)
     near_dups = OrderedDict()  # field name -> [line, [symbols], similar]
     symbols = children(root, "symbol")
+    by_name = dict((s[1], s) for s in symbols if len(s) > 1 and isinstance(s[1], str))
     for sym in symbols:
         sname = sym[1] if len(sym) > 1 and isinstance(sym[1], str) else "?"
         where = "symbol '%s'" % sname
@@ -684,6 +740,39 @@ def check_symbol_file(path, rep, field_index, tree=None):
                 rep.add("sym-pin-grid", rp, pin.line, "%s: pin %s at (%g, %g) is not on the 1.27 mm grid"
                         % (where, pnum, xy[0], xy[1]))
 
+        # Pin numbers, and pins vs the pads of the linked footprint
+        pins = symbol_pins(sym, by_name)
+        unnumbered = [(nm, ln) for num, nm, ln in pins if not num.strip()]
+        if unnumbered:
+            rep.add("sym-pin-number", rp, unnumbered[0][1], "%s: %d pin(s) have no number (%s)"
+                    % (where, len(unnumbered), _fmt_list("'%s'" % nm for nm, _ in unnumbered)))
+        by_number = OrderedDict()
+        for num, nm, ln in pins:
+            if num.strip():
+                by_number.setdefault(num, []).append((nm, ln))
+        dups = [(num, uses) for num, uses in by_number.items() if len(uses) > 1]
+        if dups:
+            rep.add("sym-pin-duplicate", rp, dups[0][1][1][1], "%s: pin number(s) used more than once: %s; these "
+                    "pins all land on one pad (fine for Kelvin sense + force, otherwise give each pin its own number)"
+                    % (where, _fmt_list("%s (%s)" % (num, "/".join(nm for nm, _ in uses)) for num, uses in dups)))
+        if fp and ":" in fp and by_number and not is_power:
+            nick, fname = fp.split(":", 1)
+            pads = footprint_pad_numbers(nick, fname, lib_root) if nick.startswith(LIB_PREFIX) else None
+            if pads is not None:
+                fpl = props["Footprint"].line
+                missing = [n for n in by_number if n not in pads]
+                unused = sorted((n for n in pads if n not in by_number),
+                                key=lambda s: (0, int(s)) if s.isdigit() else (1, s))
+                if missing:
+                    rep.add("sym-pin-pad", rp, fpl, "%s: pin(s) %s have no pad in footprint '%s' (pads: %s); "
+                            "those pins would connect to nothing on the PCB"
+                            % (where, _fmt_list("%s (%s)" % (n, by_number[n][0][0]) for n in missing), fp,
+                               _fmt_list(sorted(pads, key=lambda s: (0, int(s)) if s.isdigit() else (1, s)), 12)))
+                if unused:
+                    rep.add("sym-pad-unused", rp, fpl, "%s: footprint '%s' pad(s) %s have no symbol pin and will "
+                            "get no net; add the pins (e.g. exposed pad) or leave the pads unnumbered if mechanical"
+                            % (where, fp, _fmt_list(unused)))
+
     for fname, (line, syms, sims) in near_dups.items():
         others = "; ".join("'%s' (used %d times, %s)" % (o, field_index.counts.get(o, 0), why) for o, why in sims)
         shown = ", ".join("'%s'" % s for s in syms[:5]) + (" and %d more" % (len(syms) - 5) if len(syms) > 5 else "")
@@ -752,6 +841,46 @@ class Pad(object):
             return None
         x, y = self.at
         return (x - w / 2, y - h / 2, x + w / 2, y + h / 2)
+
+
+def _copper_sides(pad):
+    """{'F', 'B'} copper sides a pad occupies (inner layers count as both)."""
+    if pad.type in ("thru_hole", "np_thru_hole"):
+        return {"F", "B"}
+    sides = set()
+    for layer in pad.layers:
+        if layer in ("*.Cu", "F&B.Cu"):
+            sides.update(("F", "B"))
+        elif layer == "F.Cu":
+            sides.add("F")
+        elif layer == "B.Cu":
+            sides.add("B")
+    return sides
+
+
+def _drill_size(pad):
+    """(w, h) of the pad's hole, or None."""
+    d = numbers(child(pad.node, "drill"))
+    if not d:
+        return None
+    return (d[0], d[1] if len(d) > 1 else d[0])
+
+
+def _copper_gap(a, b):
+    """Edge-to-edge distance between two pads (negative = overlap), or None if unknown
+    (custom shapes, rotations that are not a multiple of 90 degrees)."""
+    if "custom" in (a.shape, b.shape):
+        return None
+    if a.shape == "circle" and b.shape == "circle" and a.at and b.at and a.size and b.size:
+        return math.hypot(a.at[0] - b.at[0], a.at[1] - b.at[1]) - a.size[0] / 2 - b.size[0] / 2
+    ba, bb = a.bbox(), b.bbox()
+    if ba is None or bb is None:
+        return None
+    dx = max(bb[0] - ba[2], ba[0] - bb[2])
+    dy = max(bb[1] - ba[3], ba[1] - bb[3])
+    if dx > 0 and dy > 0:
+        return math.hypot(dx, dy)
+    return max(dx, dy)
 
 
 def _pad_gap(a, b):
@@ -898,6 +1027,52 @@ def check_footprint_file(path, rep):
     if npth_numbered:
         rep.add("fp-npth-signal", rp, npth_numbered[0].line, "np_thru_hole pad(s) %s have a pad number; NPTH is for "
                 "unplated mechanical holes only" % _fmt_list(p.label() for p in npth_numbered))
+
+    # pad size, drill and annular ring
+    thin_ring = []
+    for p in pads:
+        drill = _drill_size(p)
+        if p.type != "np_thru_hole" and p.shape != "custom" and (len(p.size) < 2 or min(p.size[:2]) <= 0):
+            rep.add("fp-pad-size", rp, p.line, "pad %s has size %s; pads need a positive width and height"
+                    % (p.label(), " ".join("%g" % s for s in p.size) or "missing"))
+            continue
+        if p.type in ("thru_hole", "np_thru_hole") and (drill is None or min(drill) <= 0):
+            rep.add("fp-pad-size", rp, p.line, "%s pad %s has no drill" % (p.type, p.label()))
+            continue
+        if p.type == "thru_hole" and drill and len(p.size) >= 2:
+            w, h = p.size[0], p.size[1]
+            ring = min(w - drill[0], h - drill[1]) / 2
+            if ring <= EPS:
+                rep.add("fp-pad-size", rp, p.line, "thru_hole pad %s: drill %s is not smaller than the pad %gx%g "
+                        "(no copper ring)" % (p.label(), "x".join("%g" % d for d in sorted(set(drill))), w, h))
+            elif ring < MIN_ANNULAR_RING - EPS:
+                thin_ring.append((p, ring))
+    if thin_ring:
+        rep.add("fp-annular-ring", rp, thin_ring[0][0].line, "%d plated hole(s) with an annular ring under %g mm: %s"
+                % (len(thin_ring), MIN_ANNULAR_RING, _fmt_list("%s=%.3f" % (p.label(), r) for p, r in thin_ring)))
+
+    # copper pads of different numbers: overlap (short) and clearance
+    copper = [p for p in pads if p.number and p.type in ("smd", "thru_hole") and len(p.size) >= 2 and p.at]
+    shorts, tight = [], []
+    for i, a in enumerate(copper):
+        for b in copper[i + 1:]:
+            if a.number == b.number or not (_copper_sides(a) & _copper_sides(b)):
+                continue
+            gap = _copper_gap(a, b)
+            if gap is None:
+                continue
+            if gap < -EPS:
+                shorts.append((a, b, gap))
+            elif gap < MIN_PAD_CLEARANCE - EPS:
+                tight.append((a, b, gap))
+    if shorts:
+        rep.add("fp-pad-overlap", rp, shorts[0][0].line, "%d pair(s) of pads with different numbers overlap: %s"
+                % (len(shorts), _fmt_list("%s/%s (%.3f mm)" % (a.label(), b.label(), -g) for a, b, g in shorts)))
+    if tight:
+        rep.add("fp-pad-clearance", rp, tight[0][0].line, "%d pair(s) of pads closer than %g mm: %s; check the land "
+                "pattern against the datasheet" % (len(tight), MIN_PAD_CLEARANCE,
+                                                    _fmt_list("%s/%s (%.3f mm)" % (a.label(), b.label(), g)
+                                                              for a, b, g in tight)))
 
     # graphics: silk width, courtyard
     silk_bad = Counter()
@@ -1058,6 +1233,7 @@ def main(argv=None):
     ap.add_argument("-q", "--quiet", action="store_true", help="do not print individual warnings")
     ap.add_argument("--exit-zero", action="store_true", help="always exit 0 (report only)")
     ap.add_argument("--list-rules", action="store_true", help="list the rules and their severity, then exit")
+    ap.add_argument("--markdown", metavar="FILE", help="also write the full report as Markdown (used by the weekly audit)")
     args = ap.parse_args(argv)
 
     for stream in (sys.stdout, sys.stderr):
@@ -1114,6 +1290,8 @@ def main(argv=None):
         n_fp += 1
 
     report(rep, args, len(syms), n_symbols, n_fp)
+    if args.markdown:
+        write_markdown(rep, args.markdown, len(syms), n_symbols, n_fp)
     if rep.count(ERROR) and not args.exit_zero:
         return 1
     return 0
@@ -1166,6 +1344,50 @@ def report(rep, args, n_sym_files, n_symbols, n_fp):
                 fh.write("\n".join(md) + "\n")
         except OSError:
             pass
+
+
+MARKDOWN_LIMIT = 60000  # GitHub issue bodies are capped at 65536 characters
+
+
+def write_markdown(rep, path, n_sym_files, n_symbols, n_fp):
+    """Full report as Markdown: totals, per-rule table, then every finding grouped by file."""
+    n_err, n_warn = rep.count(ERROR), rep.count(WARNING)
+    per_rule = defaultdict(Counter)
+    for f in rep.findings:
+        per_rule[f.rule][f.severity] += 1
+    md = ["Checked %d symbol libraries (%d symbols) and %d footprints: **%d error(s)**, %d warning(s)."
+          % (n_sym_files, n_symbols, n_fp, n_err, n_warn), ""]
+    if per_rule:
+        md += ["| Rule | Errors | Warnings | Description |", "|---|---:|---:|---|"]
+        for rid, (sev, desc) in RULES.items():
+            if rid in per_rule:
+                md.append("| `%s` | %d | %d | %s |" % (rid, per_rule[rid][ERROR], per_rule[rid][WARNING], desc))
+        md.append("")
+    by_file = OrderedDict()
+    for f in sorted(rep.findings, key=lambda f: (f.severity != ERROR, f.path, f.line, f.rule)):
+        by_file.setdefault(f.path, []).append(f)
+    body = []
+    for fpath, items in by_file.items():
+        body.append("")
+        body.append("#### `%s`" % fpath)
+        for f in items:
+            icon = ":x:" if f.severity == ERROR else ":warning:"
+            body.append("- %s line %d `[%s]` %s" % (icon, f.line, f.rule, f.message.replace("|", "\\|")))
+    text = "\n".join(md)
+    shown = []
+    used = len(text)
+    for line in body:
+        if used + len(line) + 1 > MARKDOWN_LIMIT:
+            shown.append("")
+            shown.append("_Report truncated; see the workflow run log for the full list._")
+            break
+        shown.append(line)
+        used += len(line) + 1
+    if by_file:
+        text += "\n<details><summary>All findings (%d)</summary>\n%s\n\n</details>\n" % (len(rep.findings),
+                                                                                         "\n".join(shown))
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(text)
 
 
 if __name__ == "__main__":
