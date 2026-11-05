@@ -1,0 +1,88 @@
+(footprint "NetTie_2_3.0mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "2-Pin Net Tie SMD 3.0mm, 3.0 mm wide copper bridge for high-current joins (about 9 A rms on 2 oz outer copper, 10 C rise)")
+	(net_tie_pad_groups "1, 2")
+	(property "Reference" "REF**"
+		(at 0 -2.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "dc3b54e0-e2a7-481d-988f-6ee9e739a71c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "NetTie_2_3.0mm"
+		(at 0 2.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce4b8c68-0b05-4102-8b03-8f15530b64aa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://github.com/odtu/Powerlab/blob/master/KiCAD/PCB_DESIGN_RULES.md"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ef59d10-28ae-45c3-8627-6e9350b2c99a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2-Pin Net Tie SMD 3.0mm, 3.0 mm wide copper bridge for high-current joins"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b8b18c6-7e39-4536-be06-6b4d2d9b0b51")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom)
+	(fp_poly
+		(pts
+			(xy -0.5 -1.5) (xy 0.5 -1.5) (xy 0.5 1.5) (xy -0.5 1.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "b604785b-9e76-4d35-8818-66f872461e29")
+	)
+	(pad "1" smd rect
+		(at -0.5 0)
+		(size 0.5 3)
+		(layers "F.Cu")
+		(solder_mask_margin 0.1)
+		(uuid "8e4178db-0a9a-4789-978d-3e180a161d12")
+	)
+	(pad "2" smd rect
+		(at 0.5 0)
+		(size 0.5 3)
+		(layers "F.Cu")
+		(solder_mask_margin 0.1)
+		(uuid "76decdf8-4299-44e6-909f-eb765b09ba4a")
+	)
+	(embedded_fonts no)
+)
