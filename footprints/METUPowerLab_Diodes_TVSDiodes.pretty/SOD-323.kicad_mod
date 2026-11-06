@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(descr "SOD-323")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 0 -1.75 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
@@ -18,7 +18,7 @@
 		)
 	)
 	(property "Value" "SOD-323"
-		(at 0 1 0)
+		(at 0 1.75 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -58,8 +58,8 @@
 	)
 	(attr smd)
 	(fp_line
-		(start 0 -1.3)
-		(end 0 0)
+		(start -1.75 -0.75)
+		(end 0.85 -0.75)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -68,8 +68,8 @@
 		(uuid "ec72262b-61af-4ef3-8b71-e0f18350776b")
 	)
 	(fp_line
-		(start 0 -1.3)
-		(end 1.8 -1.3)
+		(start -1.75 0.75)
+		(end 0.85 0.75)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -78,8 +78,8 @@
 		(uuid "92137aa9-2b8f-42c2-a373-d45165b7763b")
 	)
 	(fp_line
-		(start 0 0)
-		(end 1.8 0)
+		(start -1.75 -0.75)
+		(end -1.75 0.75)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -87,39 +87,8 @@
 		(layer "F.SilkS")
 		(uuid "2eb6fc81-76f8-4263-8aee-e744d77b1015")
 	)
-	(fp_line
-		(start 1.4 -1.3)
-		(end 1.4 0)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "68703d87-b65e-48b7-86d5-39c6df304e70")
-	)
-	(fp_line
-		(start 1.8 0)
-		(end 1.8 -1.3)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "de5e896b-cd19-4d97-ae44-8f9351f9ff38")
-	)
-	(fp_circle
-		(center 2 -1.5)
-		(end 2.05 -1.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "d9fbf97e-a8c8-4fda-8059-fa20a25087d4")
-	)
 	(fp_text user "${REFERENCE}"
-		(at 1.5 1 0)
+		(at 0 1.75 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "a57d610e-abc8-4dbf-99b5-edba87fce6f3")
@@ -131,16 +100,16 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -0.4 -0.65)
-		(size 0.4 0.32)
+		(at -1.1 0)
+		(size 0.8 0.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
 		(uuid "60a526a5-b43a-45e9-87ef-48aabd16dfac")
 	)
 	(pad "2" smd rect
-		(at 2.2 -0.65)
-		(size 0.4 0.32)
+		(at 1.1 0)
+		(size 0.8 0.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.1)
 		(thermal_bridge_angle 45)
@@ -149,7 +118,7 @@
 	(embedded_fonts no)
 	(model "${METUPOWERLAB_3D}/Diodes/TVSDiodes/METUPowerLab_Diodes_TVSDiodes_SOD323.step"
 		(offset
-			(xyz 0.85 0.65 0)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
